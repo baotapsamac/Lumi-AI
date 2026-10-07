@@ -1,12 +1,12 @@
 import { unzipSync } from 'fflate';
 
+import type { SourceBlock } from './source-model';
 import type {
   MaterializedAnswer,
   MaterializedChapter,
   MaterializedH5PPlan,
   MaterializedQuestion,
 } from './h5p-pipeline';
-import type { SourceBlock } from './source-model';
 
 export type DocxSection = {
   id: string;
