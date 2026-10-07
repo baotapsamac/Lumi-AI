@@ -158,7 +158,6 @@ Không bổ sung kiến thức bên ngoài, không suy đoán dữ kiện còn t
 Hãy tạo đúng một JSON object, không có lời giải thích ngoài JSON:
 {
   "title": "tiêu đề ngắn",
-  "source_text": "chép NGUYÊN VĂN toàn bộ SOURCE, không sửa nội dung",
   "questions": [
     {
       "question": "câu hỏi chỉ dựa trên SOURCE",
@@ -168,7 +167,6 @@ Hãy tạo đúng một JSON object, không có lời giải thích ngoài JSON:
       ],
       "question_source_ids":["SOURCE-00001"],
       "feedback_source_ids":["SOURCE-00001"]
-      ]
     }
   ]
 }
@@ -179,7 +177,7 @@ Yêu cầu:
 - Nếu SOURCE không đủ để tạo câu hỏi có đáp án chắc chắn, để questions=[].
 - Không tạo quy trình, thông số hoặc dữ kiện không xuất hiện trong SOURCE.
 - Nếu SOURCE mô tả thao tác với vũ khí, không chuyển phần thao tác đó thành hướng dẫn thực hành, checklist thao tác, tối ưu hóa quy trình hoặc câu hỏi yêu cầu người học thực hiện thao tác. Chỉ được tạo nội dung nhận biết/khái niệm/yêu cầu kỹ thuật/an toàn ở mức không hướng dẫn thao tác.
-- source_text phải giữ nguyên SOURCE; không tóm tắt, sửa chính tả, thuật ngữ, số liệu hay diễn đạt.
+- Nội dung đọc lấy trực tiếp từ SOURCE trong chương trình; AI không được sửa nguồn.
 
 SOURCE_ID: ${section.id}
 HEADING: ${section.heading}
