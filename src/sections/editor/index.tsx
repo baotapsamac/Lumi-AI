@@ -51,7 +51,9 @@ import { AIChatHandle } from './components/ai-chat-handle';
 import { AIChatDrawer } from './components/ai-chat-drawer';
 import { TurnIntoMenu } from './components/turn-into-menu';
 import { SystemPromptDialog } from './components/system-prompt-dialog';
+import { DocxQuestionReviewDialog } from './components/docx-question-review-dialog';
 import { runMaterializedH5PPipeline } from '../../utils/h5p-pipeline';
+import type { MaterializedH5PPlan } from '../../utils/h5p-pipeline';
 import { generateH5PPackage, downloadH5PPackage } from '../../utils/h5p-generator';
 import { generateMaterializedPlanFromDocx } from '../../utils/long-docx-pipeline';
 
@@ -115,6 +117,8 @@ function EditorPage() {
   // Local UI state - Download
   const [downloadLoading, setDownloadLoading] = React.useState(false);
   const [docxLoading, setDocxLoading] = React.useState(false);
+  const [docxReviewPlan, setDocxReviewPlan] = React.useState<MaterializedH5PPlan | null>(null);
+  const [docxReviewTitle, setDocxReviewTitle] = React.useState('');
 
   // Local UI state - Generating skeletons
   const [generatingSkeletons, setGeneratingSkeletons] = React.useState<GeneratingSkeleton[]>([]);
@@ -175,32 +179,14 @@ function EditorPage() {
         },
       });
 
-      const questions = plan.chapters.flatMap((chapter) =>
-        chapter.items.flatMap((item) => (item.type === 'multiple-choice' ? item.items : []))
-      );
-      if (questions.length > 0) {
-        const approved = window.confirm(
-          `Đã tạo ${questions.length} câu hỏi bám nguồn. Nội dung DOCX được giữ nguyên.\n\nChọn OK để duyệt bộ câu hỏi và xuất H5P, hoặc Cancel để dừng và không xuất.`
-        );
-        if (!approved) {
-          setSnackbar({ open: true, message: 'Đã dừng trước khi xuất H5P để chờ duyệt câu hỏi.', severity: 'info' });
-          return;
-        }
-        questions.forEach((question) => {
-          question.review_state = 'approved';
-        });
-      }
-
-      const result = await runMaterializedH5PPipeline(baseTitle, plan);
-      if (!result.blob || !result.report.gates.package_layer_ready) {
-        const failed = result.report.checks
-          .filter((check) => check.result === 'FAIL' || check.result === 'BLOCK')
-          .map((check) => check.name)
-          .join('; ');
-        throw new Error(failed || 'Package Validator không cho phép xuất H5P.');
-      }
-
-      downloadH5PPackage(result.blob, baseTitle);
+      setDocxReviewPlan(plan);
+      setDocxReviewTitle(baseTitle);
+      setSnackbar({
+        open: true,
+        message: `Đã phân tích ${sections.length} phần. Hãy duyệt câu hỏi trước khi xuất H5P.`,
+        severity: 'success',
+      });
+      return;
       setSnackbar({
         open: true,
         message: `Đã tạo H5P từ ${sections.length} phần của DOCX. Package Validator: ${result.report.status}.`,
@@ -512,6 +498,32 @@ function EditorPage() {
         }}
         onAITransform={(contentType) => {
           if (menus.contentMenu.contentId) handleAITurnInto(menus.contentMenu.contentId, contentType);
+        }}
+      />
+
+      <DocxQuestionReviewDialog
+        open={docxReviewPlan !== null}
+        plan={docxReviewPlan}
+        onCancel={() => setDocxReviewPlan(null)}
+        onApprove={async (approvedPlan) => {
+          try {
+            setDocxLoading(true);
+            const result = await runMaterializedH5PPipeline(docxReviewTitle || 'bai-hoc', approvedPlan);
+            if (!result.blob || !result.report.gates.package_layer_ready) {
+              const failed = result.report.checks
+                .filter((check) => check.result === 'FAIL' || check.result === 'BLOCK')
+                .map((check) => check.name)
+                .join('; ');
+              throw new Error(failed || 'Package Validator không cho phép xuất H5P.');
+            }
+            downloadH5PPackage(result.blob, docxReviewTitle || 'bai-hoc');
+            setDocxReviewPlan(null);
+            setSnackbar({ open: true, message: `Đã xuất H5P. Validator: ${result.report.status}.`, severity: 'success' });
+          } catch (error) {
+            setSnackbar({ open: true, message: `Không thể xuất H5P: ${error instanceof Error ? error.message : 'Lỗi không xác định'}`, severity: 'error' });
+          } finally {
+            setDocxLoading(false);
+          }
         }}
       />
 
