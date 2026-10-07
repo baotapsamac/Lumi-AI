@@ -187,11 +187,6 @@ function EditorPage() {
         severity: 'success',
       });
       return;
-      setSnackbar({
-        open: true,
-        message: `Đã tạo H5P từ ${sections.length} phần của DOCX. Package Validator: ${result.report.status}.`,
-        severity: 'success',
-      });
     } catch (error) {
       setSnackbar({
         open: true,
