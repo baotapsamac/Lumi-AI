@@ -99,7 +99,10 @@ export async function extractDocxSections(
   for (const paragraph of paragraphs) {
     const headingLike =
       isHeadingStyle(paragraph.style) ||
-      (/^\d+(?:\.\d+)*[.)]?\s+\S/.test(paragraph.text) && paragraph.text.length <= 160);
+      (/^(?:[IVXLCDM]+|[A-Z])\.[ ]+\S/i.test(paragraph.text) && paragraph.text.length <= 160) ||
+      (paragraph.text.length <= 120 &&
+        paragraph.text === paragraph.text.toLocaleUpperCase('vi-VN') &&
+        /[A-ZÀ-Ỹ]/i.test(paragraph.text));
 
     if (headingLike && buffer.length > 0) {
       flush();
@@ -176,20 +179,29 @@ ${section.text}`;
     temperature: 0.2,
   };
 
-  const response = await fetch(options.apiEndpoint, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${options.apiToken}`,
-    },
-    body: JSON.stringify(body),
-  });
-  if (!response.ok) {
-    const detail = await response.text();
-    throw new Error(`AI API lỗi ${response.status}: ${detail.slice(0, 500)}`);
+  let lastError: Error | null = null;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    try {
+      const response = await fetch(options.apiEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${options.apiToken}`,
+        },
+        body: JSON.stringify(body),
+      });
+      if (!response.ok) {
+        const detail = await response.text();
+        throw new Error(`AI API lỗi ${response.status}: ${detail.slice(0, 500)}`);
+      }
+      const data = await response.json();
+      return extractJsonObject(data.choices?.[0]?.message?.content || '');
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(String(error));
+      if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
+    }
   }
-  const data = await response.json();
-  return extractJsonObject(data.choices?.[0]?.message?.content || '');
+  throw lastError || new Error('Không thể xử lý phần tài liệu.');
 }
 
 function normalizeQuestion(
