@@ -78,7 +78,7 @@ export async function extractDocxSections(
   const paragraphs = Array.from(bodyNode.children).flatMap((node) => {
     if (node.localName === 'p') {
       const text = xmlText(node).trim();
-      return text ? [{ text, style: paragraphStyle(node) }] : [];
+      return text ? [{ text, style: paragraphStyle(node), rows: undefined as string[][] | undefined }] : [];
     }
     if (node.localName === 'tbl') {
       const rows = Array.from(node.getElementsByTagName('w:tr')).map((row) =>
@@ -87,7 +87,7 @@ export async function extractDocxSections(
         )
       );
       const text = rows.map((row) => row.join(' | ')).join('\\n');
-      return text ? [{ text, style: 'SourceTable' }] : [];
+      return text ? [{ text, style: 'SourceTable', rows }] : [];
     }
     return [];
   });
@@ -96,13 +96,13 @@ export async function extractDocxSections(
 
   const sections: DocxSection[] = [];
   let heading = file.name.replace(/\.docx$/i, '');
-  let buffer: string[] = [];
+  let buffer: Array<{ text: string; rows?: string[][] }> = [];
   let paragraphCount = 0;
   let blockOrdinal = 0;
   let headingLevel = 1;
 
   const flush = () => {
-    const text = buffer.join('\n\n').trim();
+    const text = buffer.map((entry) => entry.text).join('\n\n').trim();
     if (!text) return;
     sections.push({
       id: `SEGMENT-${String(sections.length + 1).padStart(4, '0')}`,
@@ -112,9 +112,10 @@ export async function extractDocxSections(
       headingLevel,
       blocks: buffer.map((value, index) => ({
         id: `SOURCE-${String(blockOrdinal - buffer.length + index + 1).padStart(5, '0')}`,
-        type: 'paragraph' as const,
+        type: value.rows ? 'table' as const : 'paragraph' as const,
         ordinal: blockOrdinal - buffer.length + index + 1,
-        text: value,
+        text: value.text,
+        rows: value.rows,
       })),
     });
     buffer = [];
@@ -141,10 +142,10 @@ export async function extractDocxSections(
       continue;
     }
 
-    const candidateLength = buffer.reduce((sum, value) => sum + value.length + 2, 0) + paragraph.text.length;
+    const candidateLength = buffer.reduce((sum, value) => sum + value.text.length + 2, 0) + paragraph.text.length;
     if (candidateLength > maxChunkChars && buffer.length > 0) flush();
 
-    buffer.push(paragraph.text);
+    buffer.push({ text: paragraph.text, rows: paragraph.rows });
     paragraphCount += 1;
     blockOrdinal += 1;
   }
