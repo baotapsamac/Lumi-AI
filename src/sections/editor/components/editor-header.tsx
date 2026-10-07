@@ -24,12 +24,14 @@ type EditorHeaderProps = {
   apiToken: string;
   hasCustomSystemPrompt: boolean;
   downloadLoading: boolean;
+  docxLoading: boolean;
   hasContent: boolean;
   onProviderChange: (provider: ProviderType) => void;
   onEndpointChange: (endpoint: string) => void;
   onTokenChange: (token: string) => void;
   onSystemPromptEdit: () => void;
   onDownload: () => void;
+  onDocxImport: (file: File) => void;
 };
 
 export function EditorHeader({
@@ -38,12 +40,14 @@ export function EditorHeader({
   apiToken,
   hasCustomSystemPrompt,
   downloadLoading,
+  docxLoading,
   hasContent,
   onProviderChange,
   onEndpointChange,
   onTokenChange,
   onSystemPromptEdit,
   onDownload,
+  onDocxImport,
 }: EditorHeaderProps) {
   return (
     <Box
@@ -116,6 +120,31 @@ export function EditorHeader({
           </Button>
         </Tooltip>
       </Stack>
+      <Stack direction="row" spacing={1}>
+        <Button
+          component="label"
+          variant="outlined"
+          disabled={docxLoading}
+          startIcon={
+            docxLoading ? (
+              <CircularProgress size={20} color="inherit" />
+            ) : (
+              <Iconify icon="solar:document-add-bold" />
+            )
+          }
+        >
+          {docxLoading ? 'Đang xử lý DOCX...' : 'DOCX → H5P'}
+          <input
+            hidden
+            type="file"
+            accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            onChange={(event) => {
+              const file = event.target.files?.[0];
+              if (file) onDocxImport(file);
+              event.currentTarget.value = '';
+            }}
+          />
+        </Button>
       <Button
         variant="contained"
         startIcon={
@@ -130,6 +159,7 @@ export function EditorHeader({
       >
         {downloadLoading ? 'Wird vorbereitet...' : 'Herunterladen'}
       </Button>
+      </Stack>
     </Box>
   );
 }
