@@ -1,0 +1,345 @@
+{
+  "schemaVersion": "1.0",
+  "title": "An toàn thông tin cơ bản trong học tập",
+  "learningOutcomes": [
+    {
+      "id": "O1",
+      "type": "knowledge",
+      "text": "Phân biệt các nhóm thông tin và các khái niệm bảo vệ thông tin trong nguồn."
+    },
+    {
+      "id": "O2",
+      "type": "skill",
+      "text": "Nhận biết và lựa chọn thao tác kiểm tra thông điệp đáng ngờ theo nguồn."
+    },
+    {
+      "id": "O3",
+      "type": "autonomy",
+      "text": "Lựa chọn cách chia sẻ và báo sự cố có trách nhiệm theo nguồn."
+    }
+  ],
+  "estimatedDurationMinutes": 35,
+  "chapters": [
+    {
+      "title": "Nhận diện và bảo vệ thông tin",
+      "purpose": "Phân biệt nhóm thông tin và nguyên tắc giữ tài khoản.",
+      "sourceRefs": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "activities": [
+        {
+          "purpose": "Giải thích kiến thức nền từ nguồn.",
+          "outcomeIds": [
+            "O1"
+          ],
+          "bloomLevel": 2,
+          "type": "text",
+          "segments": [
+            {
+              "text": "An toàn thông tin cơ bản là việc bảo vệ thông tin khi học tập và làm việc trên thiết bị số. Bài học này tập trung vào ba mục tiêu: giữ bí mật thông tin, giữ thông tin chính xác và bảo đảm thông tin có thể sử dụng khi cần. Người học nên xác định loại thông tin trước khi lựa chọn cách chia sẻ.",
+              "evidence": [
+                {
+                  "sourceRef": "S1",
+                  "quote": "An toàn thông tin cơ bản là việc bảo vệ thông tin khi học tập và làm việc trên thiết bị số. Bài học này tập trung vào ba mục tiêu: giữ bí mật thông tin, giữ thông tin chính xác và bảo đảm thông tin có thể sử dụng khi cần. Người học nên xác định loại thông tin trước khi lựa chọn cách chia sẻ."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "purpose": "Khám phá hai nhóm thông tin để chọn cách chia sẻ.",
+          "outcomeIds": [
+            "O1"
+          ],
+          "bloomLevel": 2,
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Thông tin công khai",
+              "content": "Thông tin công khai có thể được chia sẻ cho mọi người theo mục đích đã xác định. Ví dụ trong bài học là thông báo lịch sinh hoạt chung của lớp. Khi đọc một thông báo công khai, người học vẫn cần kiểm tra người gửi và thời điểm thông báo để tránh dùng nội dung đã cũ.",
+              "evidence": [
+                {
+                  "sourceRef": "S2",
+                  "quote": "Thông tin công khai có thể được chia sẻ cho mọi người theo mục đích đã xác định. Ví dụ trong bài học là thông báo lịch sinh hoạt chung của lớp. Khi đọc một thông báo công khai, người học vẫn cần kiểm tra người gửi và thời điểm thông báo để tránh dùng nội dung đã cũ."
+                }
+              ]
+            },
+            {
+              "title": "Thông tin cá nhân và nội bộ",
+              "content": "Thông tin cá nhân liên quan đến một người cụ thể, chẳng hạn tên và địa chỉ liên hệ. Thông tin nội bộ chỉ dành cho nhóm được phép tiếp cận, chẳng hạn ghi chú làm việc của nhóm học tập. Không gửi thông tin cá nhân hoặc nội bộ lên một kênh công khai khi chưa có sự đồng ý phù hợp.",
+              "evidence": [
+                {
+                  "sourceRef": "S3",
+                  "quote": "Thông tin cá nhân liên quan đến một người cụ thể, chẳng hạn tên và địa chỉ liên hệ. Thông tin nội bộ chỉ dành cho nhóm được phép tiếp cận, chẳng hạn ghi chú làm việc của nhóm học tập. Không gửi thông tin cá nhân hoặc nội bộ lên một kênh công khai khi chưa có sự đồng ý phù hợp."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "purpose": "Kiểm tra cách phân loại theo mục đích chia sẻ.",
+          "outcomeIds": [
+            "O1"
+          ],
+          "bloomLevel": 2,
+          "question": "Theo nguồn, nhóm nào có thể được chia sẻ cho mọi người theo mục đích đã xác định?",
+          "evidence": [
+            {
+              "sourceRef": "S2",
+              "quote": "Thông tin công khai có thể được chia sẻ cho mọi người theo mục đích đã xác định. Ví dụ trong bài học là thông báo lịch sinh hoạt chung của lớp. Khi đọc một thông báo công khai, người học vẫn cần kiểm tra người gửi và thời điểm thông báo để tránh dùng nội dung đã cũ."
+            }
+          ],
+          "type": "multiple-choice",
+          "answers": [
+            {
+              "text": "Thông tin công khai",
+              "correct": true,
+              "justification": "Nguồn mô tả nhóm này được chia sẻ cho mọi người theo mục đích đã xác định.",
+              "evidence": [
+                {
+                  "sourceRef": "S2",
+                  "quote": "Thông tin công khai có thể được chia sẻ cho mọi người theo mục đích đã xác định. Ví dụ trong bài học là thông báo lịch sinh hoạt chung của lớp. Khi đọc một thông báo công khai, người học vẫn cần kiểm tra người gửi và thời điểm thông báo để tránh dùng nội dung đã cũ."
+                }
+              ]
+            },
+            {
+              "text": "Thông tin cá nhân",
+              "correct": false,
+              "justification": "Nguồn yêu cầu có sự đồng ý phù hợp trước khi gửi lên kênh công khai.",
+              "evidence": [
+                {
+                  "sourceRef": "S3",
+                  "quote": "Thông tin cá nhân liên quan đến một người cụ thể, chẳng hạn tên và địa chỉ liên hệ. Thông tin nội bộ chỉ dành cho nhóm được phép tiếp cận, chẳng hạn ghi chú làm việc của nhóm học tập. Không gửi thông tin cá nhân hoặc nội bộ lên một kênh công khai khi chưa có sự đồng ý phù hợp."
+                }
+              ]
+            },
+            {
+              "text": "Thông tin nội bộ",
+              "correct": false,
+              "justification": "Nguồn giới hạn nhóm này cho người được phép tiếp cận.",
+              "evidence": [
+                {
+                  "sourceRef": "S3",
+                  "quote": "Thông tin cá nhân liên quan đến một người cụ thể, chẳng hạn tên và địa chỉ liên hệ. Thông tin nội bộ chỉ dành cho nhóm được phép tiếp cận, chẳng hạn ghi chú làm việc của nhóm học tập. Không gửi thông tin cá nhân hoặc nội bộ lên một kênh công khai khi chưa có sự đồng ý phù hợp."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "purpose": "Giải thích kiến thức nền từ nguồn.",
+          "outcomeIds": [
+            "O2"
+          ],
+          "bloomLevel": 2,
+          "type": "text",
+          "segments": [
+            {
+              "text": "Mật khẩu cần được giữ riêng và không chia sẻ cho người khác. Không ghi mật khẩu vào tài liệu dùng chung của lớp. Khi một dịch vụ cho phép xác thực hai bước, người dùng có thể bật thêm bước xác minh để tăng khả năng bảo vệ tài khoản. Không gửi mã xác minh cho người tự xưng là nhân viên hỗ trợ.",
+              "evidence": [
+                {
+                  "sourceRef": "S4",
+                  "quote": "Mật khẩu cần được giữ riêng và không chia sẻ cho người khác. Không ghi mật khẩu vào tài liệu dùng chung của lớp. Khi một dịch vụ cho phép xác thực hai bước, người dùng có thể bật thêm bước xác minh để tăng khả năng bảo vệ tài khoản. Không gửi mã xác minh cho người tự xưng là nhân viên hỗ trợ."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kiểm tra thông điệp và giữ bản sao",
+      "purpose": "Phân biệt hành vi giả mạo với cách giữ bản sao; luyện kiểm tra thông điệp.",
+      "sourceRefs": [
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "activities": [
+        {
+          "purpose": "Giải thích kiến thức nền từ nguồn.",
+          "outcomeIds": [
+            "O2"
+          ],
+          "bloomLevel": 2,
+          "type": "text",
+          "segments": [
+            {
+              "text": "Phishing là hành vi dùng thông điệp giả mạo để dụ người nhận cung cấp thông tin hoặc thực hiện thao tác có hại. Dấu hiệu cần kiểm tra gồm người gửi lạ, lời thúc giục khẩn cấp và liên kết không phù hợp với nơi gửi. Một thông điệp có logo quen thuộc vẫn cần được kiểm tra bằng các dấu hiệu này.",
+              "evidence": [
+                {
+                  "sourceRef": "S5",
+                  "quote": "Phishing là hành vi dùng thông điệp giả mạo để dụ người nhận cung cấp thông tin hoặc thực hiện thao tác có hại. Dấu hiệu cần kiểm tra gồm người gửi lạ, lời thúc giục khẩn cấp và liên kết không phù hợp với nơi gửi. Một thông điệp có logo quen thuộc vẫn cần được kiểm tra bằng các dấu hiệu này."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "purpose": "Phân biệt hai khái niệm có mục đích khác nhau.",
+          "outcomeIds": [
+            "O2"
+          ],
+          "bloomLevel": 2,
+          "question": "Khái niệm nào chỉ việc tạo bản sao dữ liệu để khôi phục khi bản gốc gặp sự cố?",
+          "evidence": [
+            {
+              "sourceRef": "S6",
+              "quote": "Sao lưu là tạo bản sao dữ liệu để có thể khôi phục khi bản gốc gặp sự cố. Người học nên giữ một bản sao riêng cho tài liệu học tập quan trọng và kiểm tra xem bản sao có mở được hay không. Sao lưu không thay thế việc giữ mật khẩu riêng và không chứng minh một thông điệp là đáng tin."
+            }
+          ],
+          "type": "multiple-choice",
+          "answers": [
+            {
+              "text": "Sao lưu",
+              "correct": true,
+              "justification": "Nguồn định nghĩa đây là tạo bản sao để khôi phục.",
+              "evidence": [
+                {
+                  "sourceRef": "S6",
+                  "quote": "Sao lưu là tạo bản sao dữ liệu để có thể khôi phục khi bản gốc gặp sự cố. Người học nên giữ một bản sao riêng cho tài liệu học tập quan trọng và kiểm tra xem bản sao có mở được hay không. Sao lưu không thay thế việc giữ mật khẩu riêng và không chứng minh một thông điệp là đáng tin."
+                }
+              ]
+            },
+            {
+              "text": "Phishing",
+              "correct": false,
+              "justification": "Nguồn mô tả đây là thông điệp giả mạo, không phải tạo bản sao.",
+              "evidence": [
+                {
+                  "sourceRef": "S5",
+                  "quote": "Phishing là hành vi dùng thông điệp giả mạo để dụ người nhận cung cấp thông tin hoặc thực hiện thao tác có hại. Dấu hiệu cần kiểm tra gồm người gửi lạ, lời thúc giục khẩn cấp và liên kết không phù hợp với nơi gửi. Một thông điệp có logo quen thuộc vẫn cần được kiểm tra bằng các dấu hiệu này."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "purpose": "Giải thích kiến thức nền từ nguồn.",
+          "outcomeIds": [
+            "O2"
+          ],
+          "bloomLevel": 2,
+          "type": "text",
+          "segments": [
+            {
+              "text": "Khi nhận thông điệp đáng ngờ, bước đầu là dừng thao tác theo yêu cầu trong thông điệp. Bước tiếp theo là kiểm tra người gửi và liên kết qua một kênh liên hệ đã biết. Nếu vẫn nghi ngờ, báo cho người phụ trách bằng kênh đã xác định. Không gửi mật khẩu hoặc mã xác minh để chứng minh mình là chủ tài khoản.",
+              "evidence": [
+                {
+                  "sourceRef": "S7",
+                  "quote": "Khi nhận thông điệp đáng ngờ, bước đầu là dừng thao tác theo yêu cầu trong thông điệp. Bước tiếp theo là kiểm tra người gửi và liên kết qua một kênh liên hệ đã biết. Nếu vẫn nghi ngờ, báo cho người phụ trách bằng kênh đã xác định. Không gửi mật khẩu hoặc mã xác minh để chứng minh mình là chủ tài khoản."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "purpose": "Kiểm tra quy tắc xử lý yêu cầu cung cấp mã.",
+          "outcomeIds": [
+            "O2"
+          ],
+          "bloomLevel": 2,
+          "question": "Có thể gửi mật khẩu hoặc mã xác minh để chứng minh mình là chủ tài khoản.",
+          "evidence": [
+            {
+              "sourceRef": "S7",
+              "quote": "Khi nhận thông điệp đáng ngờ, bước đầu là dừng thao tác theo yêu cầu trong thông điệp. Bước tiếp theo là kiểm tra người gửi và liên kết qua một kênh liên hệ đã biết. Nếu vẫn nghi ngờ, báo cho người phụ trách bằng kênh đã xác định. Không gửi mật khẩu hoặc mã xác minh để chứng minh mình là chủ tài khoản."
+            }
+          ],
+          "type": "true-false",
+          "correct": false,
+          "correctedStatement": "Không gửi mật khẩu hoặc mã xác minh để chứng minh mình là chủ tài khoản.",
+          "justification": "Nhận định đảo ngược quy tắc không gửi mật khẩu hoặc mã xác minh trong nguồn."
+        },
+        {
+          "purpose": "Giải thích kiến thức nền từ nguồn.",
+          "outcomeIds": [
+            "O1"
+          ],
+          "bloomLevel": 2,
+          "type": "text",
+          "segments": [
+            {
+              "text": "Sao lưu là tạo bản sao dữ liệu để có thể khôi phục khi bản gốc gặp sự cố. Người học nên giữ một bản sao riêng cho tài liệu học tập quan trọng và kiểm tra xem bản sao có mở được hay không. Sao lưu không thay thế việc giữ mật khẩu riêng và không chứng minh một thông điệp là đáng tin.",
+              "evidence": [
+                {
+                  "sourceRef": "S6",
+                  "quote": "Sao lưu là tạo bản sao dữ liệu để có thể khôi phục khi bản gốc gặp sự cố. Người học nên giữ một bản sao riêng cho tài liệu học tập quan trọng và kiểm tra xem bản sao có mở được hay không. Sao lưu không thay thế việc giữ mật khẩu riêng và không chứng minh một thông điệp là đáng tin."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chia sẻ có trách nhiệm",
+      "purpose": "Xác định trách nhiệm khi chia sẻ tài liệu và báo sự cố.",
+      "sourceRefs": [
+        "S8",
+        "S9"
+      ],
+      "activities": [
+        {
+          "purpose": "Giải thích kiến thức nền từ nguồn.",
+          "outcomeIds": [
+            "O3"
+          ],
+          "bloomLevel": 2,
+          "type": "text",
+          "segments": [
+            {
+              "text": "Khi chia sẻ tài liệu học tập, xác định người nhận và mục đích sử dụng trước. Sau đó kiểm tra tài liệu có thông tin cá nhân hoặc nội bộ hay không. Chọn quyền truy cập phù hợp với người nhận và kiểm tra lại quyền sau khi chia sẻ. Nếu gửi nhầm, thông báo cho người phụ trách để cùng xử lý.",
+              "evidence": [
+                {
+                  "sourceRef": "S8",
+                  "quote": "Khi chia sẻ tài liệu học tập, xác định người nhận và mục đích sử dụng trước. Sau đó kiểm tra tài liệu có thông tin cá nhân hoặc nội bộ hay không. Chọn quyền truy cập phù hợp với người nhận và kiểm tra lại quyền sau khi chia sẻ. Nếu gửi nhầm, thông báo cho người phụ trách để cùng xử lý."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "purpose": "Giải thích kiến thức nền từ nguồn.",
+          "outcomeIds": [
+            "O3"
+          ],
+          "bloomLevel": 2,
+          "type": "text",
+          "segments": [
+            {
+              "text": "Người học chịu trách nhiệm giữ thông tin của mình và tôn trọng thông tin của người khác. Khi chưa chắc một yêu cầu chia sẻ có phù hợp hay không, hỏi người phụ trách trước khi thực hiện. Báo sự cố sớm giúp nhóm có cơ hội kiểm tra và xử lý; không tự che giấu một lần gửi nhầm tài liệu.",
+              "evidence": [
+                {
+                  "sourceRef": "S9",
+                  "quote": "Người học chịu trách nhiệm giữ thông tin của mình và tôn trọng thông tin của người khác. Khi chưa chắc một yêu cầu chia sẻ có phù hợp hay không, hỏi người phụ trách trước khi thực hiện. Báo sự cố sớm giúp nhóm có cơ hội kiểm tra và xử lý; không tự che giấu một lần gửi nhầm tài liệu."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "purpose": "Kiểm tra lựa chọn có trách nhiệm khi nhận thấy sự cố.",
+          "outcomeIds": [
+            "O3"
+          ],
+          "bloomLevel": 2,
+          "question": "Báo sự cố sớm giúp nhóm có cơ hội kiểm tra và xử lý; không tự che giấu một lần gửi nhầm tài liệu.",
+          "evidence": [
+            {
+              "sourceRef": "S9",
+              "quote": "Người học chịu trách nhiệm giữ thông tin của mình và tôn trọng thông tin của người khác. Khi chưa chắc một yêu cầu chia sẻ có phù hợp hay không, hỏi người phụ trách trước khi thực hiện. Báo sự cố sớm giúp nhóm có cơ hội kiểm tra và xử lý; không tự che giấu một lần gửi nhầm tài liệu."
+            }
+          ],
+          "type": "true-false",
+          "correct": true,
+          "correctedStatement": "Báo sự cố sớm giúp nhóm có cơ hội kiểm tra và xử lý; không tự che giấu một lần gửi nhầm tài liệu.",
+          "justification": "Nhận định trích nguyên văn quy tắc trách nhiệm của người học."
+        }
+      ]
+    }
+  ]
+}

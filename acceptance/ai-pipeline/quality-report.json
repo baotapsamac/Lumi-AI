@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "issues": [],
+  "checks": [
+    "exact-source-quotes",
+    "source-reference-scope",
+    "request-alignment",
+    "outcome-coverage",
+    "interaction-policy",
+    "assessment-policy",
+    "duplicate-content",
+    "bloom-level",
+    "chapter-size"
+  ],
+  "limitations": [
+    "Source quotes and coverage do not prove that every paraphrase is entailed by the source.",
+    "MCQ distractor relevance, false-assertion contradiction, outcome attainment and timing require human review.",
+    "Answer leakage and ambiguity use conservative wording heuristics, not exhaustive semantic detection."
+  ]
+}
