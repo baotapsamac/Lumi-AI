@@ -102,17 +102,17 @@ function uuid(): string {
 
 function escapeHtml(value: string): string {
   return value
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#039;');
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 function paragraphs(value: string): string {
   return value
     .split(/\n\s*\n/)
-    .map((p) => `<p>${escapeHtml(p).replaceAll('\n', '<br>')}</p>`)
+    .map((p) => `<p>${escapeHtml(p).replace(/\n/g, '<br>')}</p>`)
     .join('');
 }
 
@@ -208,7 +208,9 @@ function makeMultiChoice(question: MaterializedQuestion) {
   };
 }
 
-function itemToColumnEntries(item: MaterializedItem) {
+type ColumnEntry = ReturnType<typeof makeAdvancedText> | ReturnType<typeof makeMultiChoice>;
+
+function itemToColumnEntries(item: MaterializedItem): ColumnEntry[] {
   if (item.type === 'text') return [makeAdvancedText(item.content, item.id)];
   if (item.type === 'multiple-choice') return item.items.map(makeMultiChoice);
   return [makeAdvancedText(item.content || 'Nội dung này được đánh giá bởi giảng viên ngoài phần chấm điểm tự động.', item.id)];
@@ -219,7 +221,7 @@ export function buildMaterializedContentJson(plan: MaterializedH5PPlan) {
     showCoverPage: false,
     bookCover: { coverDescription: '<p style="text-align:center"></p>' },
     chapters: plan.chapters.map((chapter) => ({
-      params: { content: chapter.items.flatMap(itemToColumnEntries) },
+      params: { content: chapter.items.reduce<ColumnEntry[]>((entries, item) => entries.concat(itemToColumnEntries(item)), []) },
       library: 'H5P.Column 1.18',
       subContentId: uuid(),
       metadata: metadata('Column', chapter.title),
