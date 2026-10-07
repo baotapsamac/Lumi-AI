@@ -39,3 +39,20 @@ export function downloadProjectFile(project: LumiProject): void {
   anchor.click();
   URL.revokeObjectURL(url);
 }
+
+export async function importProjectFile(file: File): Promise<LumiProject> {
+  if (!file.name.toLowerCase().endsWith('.lumiai.json')) {
+    throw new Error('Chỉ hỗ trợ tệp dự án .lumiai.json');
+  }
+  const project = JSON.parse(await file.text()) as LumiProject;
+  if (
+    project.version !== '1.0' ||
+    !project.plan ||
+    !Array.isArray(project.plan.chapters) ||
+    !project.title ||
+    !project.id
+  ) {
+    throw new Error('Tệp dự án Lumi-AI không hợp lệ.');
+  }
+  return project;
+}
