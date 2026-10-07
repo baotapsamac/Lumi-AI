@@ -129,7 +129,7 @@ export function EditorHeader({
             docxLoading ? (
               <CircularProgress size={20} color="inherit" />
             ) : (
-              <Iconify icon="solar:document-add-bold" />
+              <Iconify icon="solar:file-text-bold" />
             )
           }
         >
