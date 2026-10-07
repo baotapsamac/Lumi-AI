@@ -1,0 +1,49 @@
+{
+  "artifactKind": "IMPLEMENTATION_STATUS_NOT_REAL_AI_TRIAL",
+  "realAIExecution": "NOT EXECUTED",
+  "providerConfigurationState": "AI_NOT_CONFIGURED",
+  "missingConfiguration": [
+    "AI_API_KEY or OPENAI_API_KEY",
+    "AI_MODEL or OPENAI_MODEL",
+    "AI_ENDPOINT or AI_BASE_URL or OPENAI_BASE_URL"
+  ],
+  "providerRequestSent": false,
+  "separateExecutionBoundary": "The supplied source concerns mortar inspection and maintenance; redesigning it into lessons, assessment questions and media guidance was not performed. This assistant boundary is not a provider refusal.",
+  "sourceSubstitution": false,
+  "parserInput": {
+    "parserStatus": "PARSER_SUCCESS",
+    "sections": 2,
+    "parents": 6,
+    "logicalAssociations": 32,
+    "segments": 38,
+    "textLossCount": 0,
+    "preservationAudit": "PASS"
+  },
+  "unchangedParserArtifactHashes": {
+    "diagnostics.json": "68f143267d7914d69b6ff7d23dcaa70eda9817d34c1ee3cc3b1092a12f3b2436",
+    "source-segments.json": "a9f3ed99e574963d22fc5343747988a2150395e53292eeef9d75d8ca06f08031",
+    "numeric-fidelity.json": "b7a871d820554393cfd1247d9fdfbcabe1718bee4c2bfd93a389613c8bb2277a",
+    "structured-source.json": "8a4e70b2f19a68e68bd9670ef247935bbfd74b9e5dca8d7c1dfdc3bf7a6643dd",
+    "preservation-audit.json": "8ca8832aee84432f347846e9e06bb934030daefbedef6bad7873605c0372e84e"
+  },
+  "realTrialArtifactsCreated": false,
+  "realBlueprintCreated": false,
+  "realQualityGate": "NOT EVALUATED",
+  "humanReview": "NOT REVIEWED",
+  "editingEffort": "NOT MEASURED",
+  "h5pCompiled": false,
+  "regressionTests": {
+    "passed": 384,
+    "total": 384,
+    "previousBaseline": 350,
+    "added": 34,
+    "lesson": 122,
+    "benchmark": 53,
+    "h5p": 145,
+    "docx": 64
+  },
+  "h5pCheck": "PASS",
+  "productionBuild": "PASS; six existing lint warnings",
+  "goldenArchiveSHA256": "9819586f6c67e9d405c308cf7faedf0559c9a4e3a6fb9e4e1a8ac2f456b2deeb",
+  "readyForPrompt15": false
+}
