@@ -6,12 +6,14 @@ import type {
   MaterializedH5PPlan,
   MaterializedQuestion,
 } from './h5p-pipeline';
+import type { SourceBlock } from './source-model';
 
 export type DocxSection = {
   id: string;
   heading: string;
   text: string;
   paragraphCount: number;
+  blocks: SourceBlock[];
 };
 
 export type LongDocxOptions = {
@@ -82,6 +84,7 @@ export async function extractDocxSections(
   let heading = file.name.replace(/\.docx$/i, '');
   let buffer: string[] = [];
   let paragraphCount = 0;
+  let blockOrdinal = 0;
 
   const flush = () => {
     const text = buffer.join('\n\n').trim();
@@ -91,6 +94,12 @@ export async function extractDocxSections(
       heading,
       text,
       paragraphCount,
+      blocks: buffer.map((value, index) => ({
+        id: `SOURCE-${String(blockOrdinal - buffer.length + index + 1).padStart(5, '0')}`,
+        type: 'paragraph' as const,
+        ordinal: blockOrdinal - buffer.length + index + 1,
+        text: value,
+      })),
     });
     buffer = [];
     paragraphCount = 0;
@@ -119,6 +128,7 @@ export async function extractDocxSections(
 
     buffer.push(paragraph.text);
     paragraphCount += 1;
+    blockOrdinal += 1;
   }
   flush();
 
@@ -218,6 +228,7 @@ function normalizeQuestion(
       correct: Boolean(answer.correct),
       feedback: answer.feedback?.trim() || '',
       origin: 'source_derived',
+      source_ids: section.blocks.map((block) => block.id),
     }));
 
   if (!question || answers.length < 2 || !answers.some((answer) => answer.correct)) return null;
@@ -233,6 +244,9 @@ function normalizeQuestion(
     question,
     answers,
     source_segments: [section.id],
+    question_source_ids: section.blocks.map((block) => block.id),
+    feedback_source_ids: section.blocks.map((block) => block.id),
+    review_state: 'draft',
   };
 }
 
@@ -291,7 +305,7 @@ export async function generateMaterializedPlanFromDocx(
       warnings: [
         {
           code: 'AI_SOURCE_DERIVED_CONTENT_REQUIRES_REVIEW',
-          message: 'Nội dung do AI chuyển đổi từ nguồn cần được người dùng xem lại trước khi xuất bản.',
+          message: 'Câu hỏi do AI tạo từ nguồn cần được người dùng duyệt trước khi xuất bản; nội dung học giữ nguyên nguồn.',
         },
       ],
     },
