@@ -305,6 +305,12 @@ function validatePlan(plan: MaterializedH5PPlan): PipelineCheck[] {
   add('PL-06', 'Every question has a correct answer', questions.every((q) => q.answers.some((a) => a.correct)));
   add('PL-07', 'Single-response questions have exactly one correct answer',
     questions.filter((q) => q.selection_mode === 'single').every((q) => q.answers.filter((a) => a.correct).length === 1));
+  if (plan.materializer_version?.startsWith('2.')) {
+    add('PL-08', 'V2 question provenance exists', questions.every((q) => Boolean(q.question_source_ids?.length)));
+    add('PL-09', 'V2 answer provenance exists', questions.every((q) => q.answers.every((a) => Boolean(a.source_ids?.length))));
+    add('PL-10', 'V2 review status is acceptable', questions.every((q) => q.review_state === 'qa_pass' || q.review_state === 'approved'), undefined, 'FAIL');
+  }
+
   return checks;
 }
 
