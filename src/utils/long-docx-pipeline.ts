@@ -73,12 +73,24 @@ export async function extractDocxSections(
     throw new Error('Không đọc được XML của tài liệu DOCX.');
   }
 
-  const paragraphs = Array.from(document.getElementsByTagName('w:p'))
-    .map((node) => ({
-      text: xmlText(node).trim(),
-      style: paragraphStyle(node),
-    }))
-    .filter((p) => p.text.length > 0);
+  const bodyNode = document.getElementsByTagName('w:body')[0];
+  if (!bodyNode) throw new Error('DOCX không có phần thân văn bản.');
+  const paragraphs = Array.from(bodyNode.children).flatMap((node) => {
+    if (node.localName === 'p') {
+      const text = xmlText(node).trim();
+      return text ? [{ text, style: paragraphStyle(node) }] : [];
+    }
+    if (node.localName === 'tbl') {
+      const rows = Array.from(node.getElementsByTagName('w:tr')).map((row) =>
+        Array.from(row.getElementsByTagName('w:tc')).map((cell) =>
+          Array.from(cell.getElementsByTagName('w:p')).map(xmlText).join(' / ').trim()
+        )
+      );
+      const text = rows.map((row) => row.join(' | ')).join('\\n');
+      return text ? [{ text, style: 'SourceTable' }] : [];
+    }
+    return [];
+  });
 
   if (paragraphs.length === 0) throw new Error('Không tìm thấy văn bản trong DOCX.');
 
