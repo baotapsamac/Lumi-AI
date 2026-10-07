@@ -175,6 +175,22 @@ function EditorPage() {
         },
       });
 
+      const questions = plan.chapters.flatMap((chapter) =>
+        chapter.items.flatMap((item) => (item.type === 'multiple-choice' ? item.items : []))
+      );
+      if (questions.length > 0) {
+        const approved = window.confirm(
+          `Đã tạo ${questions.length} câu hỏi bám nguồn. Nội dung DOCX được giữ nguyên.\n\nChọn OK để duyệt bộ câu hỏi và xuất H5P, hoặc Cancel để dừng và không xuất.`
+        );
+        if (!approved) {
+          setSnackbar({ open: true, message: 'Đã dừng trước khi xuất H5P để chờ duyệt câu hỏi.', severity: 'info' });
+          return;
+        }
+        questions.forEach((question) => {
+          question.review_state = 'approved';
+        });
+      }
+
       const result = await runMaterializedH5PPipeline(baseTitle, plan);
       if (!result.blob || !result.report.gates.package_layer_ready) {
         const failed = result.report.checks
