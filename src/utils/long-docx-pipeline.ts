@@ -31,7 +31,9 @@ type GeneratedChunk = {
   questions?: Array<{
     question?: string;
     selection_mode?: 'single' | 'multiple';
-    answers?: Array<{ text?: string; correct?: boolean; feedback?: string }>;
+    answers?: Array<{ text?: string; correct?: boolean; feedback?: string; source_ids?: string[] }>;
+    question_source_ids?: string[];
+    feedback_source_ids?: string[];
   }>;
 };
 
@@ -158,7 +160,10 @@ Hãy tạo đúng một JSON object, không có lời giải thích ngoài JSON:
       "question": "câu hỏi chỉ dựa trên SOURCE",
       "selection_mode": "single hoặc multiple",
       "answers": [
-        {"text":"phương án","correct":true,"feedback":"phản hồi dựa trên SOURCE"}
+        {"text":"phương án","correct":true,"feedback":"phản hồi dựa trên SOURCE","source_ids":["SOURCE-00001"]}
+      ],
+      "question_source_ids":["SOURCE-00001"],
+      "feedback_source_ids":["SOURCE-00001"]
       ]
     }
   ]
@@ -174,8 +179,8 @@ Yêu cầu:
 
 SOURCE_ID: ${section.id}
 HEADING: ${section.heading}
-SOURCE:
-${section.text}`;
+SOURCE_BLOCKS:
+${section.blocks.map((block) => `[${block.id}] ${block.text}`).join('\n\n')}`;
 
   const body: Record<string, unknown> = {
     model: options.model || 'gpt-5.2',
@@ -228,10 +233,17 @@ function normalizeQuestion(
       correct: Boolean(answer.correct),
       feedback: answer.feedback?.trim() || '',
       origin: 'source_derived',
-      source_ids: section.blocks.map((block) => block.id),
+      source_ids: answer.source_ids || [],
     }));
 
   if (!question || answers.length < 2 || !answers.some((answer) => answer.correct)) return null;
+
+  const knownIds = new Set(section.blocks.map((block) => block.id));
+  const validIds = (ids: string[] | undefined) =>
+    Boolean(ids?.length) && ids!.every((id) => knownIds.has(id));
+  if (!validIds(raw.question_source_ids) || !answers.every((answer) => validIds(answer.source_ids))) {
+    return null;
+  }
 
   const selectionMode =
     raw.selection_mode === 'multiple' || answers.filter((answer) => answer.correct).length > 1
@@ -244,8 +256,8 @@ function normalizeQuestion(
     question,
     answers,
     source_segments: [section.id],
-    question_source_ids: section.blocks.map((block) => block.id),
-    feedback_source_ids: section.blocks.map((block) => block.id),
+    question_source_ids: raw.question_source_ids || [],
+    feedback_source_ids: raw.feedback_source_ids || [],
     review_state: 'draft',
   };
 }
