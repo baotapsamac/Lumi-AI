@@ -21,6 +21,7 @@ const checks = [
   ['immutable source model', /SourceBlock/.test(sourceModel) && /SourceDocument/.test(sourceModel)],
   ['source-first content rendering', /content: section\.text/.test(docx) && !/content: generated\.summary/.test(docx)],
   ['question provenance', /question_source_ids/.test(docx) && /source_ids/.test(pipeline)],
+  ['answer text verified against cited source block', /answerIsSourceExtract/.test(docx) && /blockById/.test(docx)],
   ['review gate before export', /review_state = 'approved'/.test(review) && /PL-10/.test(pipeline)],
   ['per-question review UI', /Bỏ câu hỏi/.test(review) && /Duyệt và xuất H5P/.test(review)],
   ['project persistence', /saveDocxProject/.test(projectStore) && /loadDocxProject/.test(projectStore) && /downloadProjectFile/.test(projectStore)],
