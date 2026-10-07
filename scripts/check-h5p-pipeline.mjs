@@ -27,6 +27,7 @@ const checks = [
   ['review gate before export', /review_state = 'approved'/.test(review) && /PL-10/.test(pipeline)],
   ['per-question review UI', /Bỏ câu hỏi/.test(review) && /Duyệt và xuất H5P/.test(review)],
   ['project persistence', /saveDocxProject/.test(projectStore) && /loadDocxProject/.test(projectStore) && /downloadProjectFile/.test(projectStore)],
+  ['project reimport', /importProjectFile/.test(projectStore) && /importProjectFile/.test(editor)],
 ];
 
 let failed = 0;
