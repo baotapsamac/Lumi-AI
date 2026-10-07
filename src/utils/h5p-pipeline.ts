@@ -437,7 +437,7 @@ export async function runMaterializedH5PPipeline(
   libraryBundleUrl = '/h5p/interactive-book-libraries.zip',
 ): Promise<H5PPipelineResult> {
   const planChecks = validatePlan(plan);
-  if (planChecks.some((c) => c.result === 'BLOCK')) {
+  if (planChecks.some((c) => c.result === 'BLOCK' || c.result === 'FAIL')) {
     const summary = summarize(planChecks);
     return {
       blob: null,
