@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Ôn quy tắc mượn sách của lớp",
+  "chapters": [
+    {
+      "title": "Quy tắc và thực hành",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Thư viện lớp dùng phiếu mượn để ghi người mượn, tên sách và ngày nhận. Người mượn kiểm tra sách cùng người phụ trách trước khi nhận. Nếu sách đã có trang rách hoặc ghi chú, ghi tình trạng đó trên phiếu để nhóm biết tình trạng ban đầu; không tự bỏ qua dấu hiệu đã quan sát."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "Theo nguồn, công cụ nào giúp xác định người đang giữ sách?",
+          "answers": [
+            {
+              "text": "Phiếu mượn",
+              "correct": true
+            },
+            {
+              "text": "Giấy đánh dấu",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Khi trả sách, mang sách và phiếu mượn đến người phụ trách để kiểm tra. Báo rõ nếu có trang bị hỏng trong thời gian mượn. Người phụ trách ghi nhận việc trả trên phiếu rồi cất sách về vị trí quy định. Bài ôn tập này không đặt thời hạn mượn hoặc khoản phạt vì nguồn không cung cấp các thông tin đó."
+        }
+      ]
+    }
+  ]
+}

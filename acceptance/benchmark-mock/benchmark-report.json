@@ -1,0 +1,331 @@
+{
+  "schemaVersion": "1.0",
+  "provider": {
+    "provider": "fixed-mock",
+    "model": null,
+    "execution": "mock"
+  },
+  "caseCount": 3,
+  "aggregate": {
+    "schemaValidity": 1,
+    "qualityGatePassRate": 1,
+    "sourceGrounding": {
+      "numerator": 18,
+      "denominator": 18,
+      "ratio": 1
+    },
+    "learningOutcomeCoverage": {
+      "numerator": 5,
+      "denominator": 5,
+      "ratio": 1
+    },
+    "questionValidity": {
+      "numerator": 6,
+      "denominator": 6,
+      "ratio": 1
+    },
+    "duplicateRate": {
+      "duplicates": 0,
+      "total": 19,
+      "ratio": 0
+    },
+    "interactionBalancePassRate": 1,
+    "chapterStructurePassRate": 1
+  },
+  "metricScope": "Deterministic structural/reference/rule metrics only; schema-invalid cases have unavailable content metrics, never assumed zeros or perfect scores.",
+  "humanReviewStatus": "not-reviewed",
+  "humanReviewRubric": {
+    "scale": {
+      "min": 1,
+      "max": 5
+    },
+    "status": "not-reviewed",
+    "criteria": [
+      {
+        "id": "source-grounding",
+        "label": "Bám sát nguồn",
+        "one": "Nhiều ý không có căn cứ",
+        "five": "Các ý quan trọng đúng và có căn cứ"
+      },
+      {
+        "id": "lesson-structure",
+        "label": "Cấu trúc bài hợp lý",
+        "one": "Cần tổ chức lại toàn bộ",
+        "five": "Tiến trình rõ ràng, phù hợp nội dung"
+      },
+      {
+        "id": "outcome-alignment",
+        "label": "Phù hợp chuẩn đầu ra",
+        "one": "Không phục vụ chuẩn đầu ra",
+        "five": "Hoạt động phục vụ chuẩn đầu ra rõ ràng"
+      },
+      {
+        "id": "question-quality",
+        "label": "Câu hỏi có chất lượng",
+        "one": "Đáp án/distractors không phù hợp",
+        "five": "Câu hỏi rõ, có căn cứ và phân biệt tốt"
+      },
+      {
+        "id": "bloom-fit",
+        "label": "Mức Bloom phù hợp",
+        "one": "Sai mức yêu cầu",
+        "five": "Mức nhận thức phù hợp nguồn và yêu cầu"
+      },
+      {
+        "id": "interaction-fit",
+        "label": "Tương tác hợp lý",
+        "one": "Tùy tiện hoặc gây cản trở",
+        "five": "Tương tác giúp học đúng mục đích"
+      },
+      {
+        "id": "language-clarity",
+        "label": "Ngôn ngữ rõ ràng",
+        "one": "Khó hiểu, cần viết lại",
+        "five": "Rõ ràng, phù hợp người học"
+      },
+      {
+        "id": "editing-effort",
+        "label": "Editing Effort",
+        "one": "Phải sửa gần như toàn bộ",
+        "five": "Gần như dùng ngay"
+      }
+    ],
+    "instructions": "Giảng viên điền điểm 1–5, dẫn chứng và thời gian chỉnh sửa thực tế. Không suy điểm human review từ deterministic metrics."
+  },
+  "limitations": [
+    "No human-reviewed ground truth: no subject-matter accuracy score is calculated.",
+    "Valid source excerpts do not prove semantic entailment, actual Bloom level or pedagogical usefulness.",
+    "Editing Effort requires an instructor rating and observed editing time.",
+    "Mock results test the framework, not real AI performance."
+  ],
+  "cases": [
+    {
+      "id": "information-safety",
+      "source": "cases/information-safety/source.txt",
+      "preset": "theory",
+      "attempts": 1,
+      "attemptResults": [
+        {
+          "attempt": 1,
+          "stage": "quality",
+          "schemaValid": true,
+          "qualityPassed": true,
+          "errors": []
+        }
+      ],
+      "metrics": {
+        "schemaValid": true,
+        "qualityGatePassed": true,
+        "warnings": [],
+        "chapterCount": 3,
+        "blockCount": 12,
+        "questionCount": 4,
+        "interactionDistribution": {
+          "text": 7,
+          "accordion": 1,
+          "multiple-choice": 2,
+          "true-false": 2
+        },
+        "sourceGrounding": {
+          "valid": 12,
+          "total": 12,
+          "ratio": 1
+        },
+        "learningOutcomeCoverage": {
+          "covered": 3,
+          "total": 3,
+          "ratio": 1
+        },
+        "questionValidity": {
+          "valid": 4,
+          "total": 4,
+          "ratio": 1
+        },
+        "duplicateRate": {
+          "duplicates": 0,
+          "total": 13,
+          "ratio": 0
+        },
+        "interactionBalance": {
+          "passed": true,
+          "dominantRatio": 0.5833333333333334
+        },
+        "chapterStructure": {
+          "passed": true,
+          "chapterCharacters": [
+            1209,
+            1028,
+            666
+          ]
+        }
+      },
+      "humanReview": {
+        "status": "not-reviewed",
+        "scores": {
+          "source-grounding": null,
+          "lesson-structure": null,
+          "outcome-alignment": null,
+          "question-quality": null,
+          "bloom-fit": null,
+          "interaction-fit": null,
+          "language-clarity": null,
+          "editing-effort": null
+        },
+        "editingMinutes": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "seedling-care",
+      "source": "cases/seedling-care/source.txt",
+      "preset": "procedure",
+      "attempts": 1,
+      "attemptResults": [
+        {
+          "attempt": 1,
+          "stage": "quality",
+          "schemaValid": true,
+          "qualityPassed": true,
+          "errors": []
+        }
+      ],
+      "metrics": {
+        "schemaValid": true,
+        "qualityGatePassed": true,
+        "warnings": [],
+        "chapterCount": 1,
+        "blockCount": 3,
+        "questionCount": 1,
+        "interactionDistribution": {
+          "text": 2,
+          "accordion": 0,
+          "multiple-choice": 1,
+          "true-false": 0
+        },
+        "sourceGrounding": {
+          "valid": 3,
+          "total": 3,
+          "ratio": 1
+        },
+        "learningOutcomeCoverage": {
+          "covered": 1,
+          "total": 1,
+          "ratio": 1
+        },
+        "questionValidity": {
+          "valid": 1,
+          "total": 1,
+          "ratio": 1
+        },
+        "duplicateRate": {
+          "duplicates": 0,
+          "total": 3,
+          "ratio": 0
+        },
+        "interactionBalance": {
+          "passed": true,
+          "dominantRatio": 0.6666666666666666
+        },
+        "chapterStructure": {
+          "passed": true,
+          "chapterCharacters": [
+            604
+          ]
+        }
+      },
+      "humanReview": {
+        "status": "not-reviewed",
+        "scores": {
+          "source-grounding": null,
+          "lesson-structure": null,
+          "outcome-alignment": null,
+          "question-quality": null,
+          "bloom-fit": null,
+          "interaction-fit": null,
+          "language-clarity": null,
+          "editing-effort": null
+        },
+        "editingMinutes": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "library-review",
+      "source": "cases/library-review/source.txt",
+      "preset": "review",
+      "attempts": 1,
+      "attemptResults": [
+        {
+          "attempt": 1,
+          "stage": "quality",
+          "schemaValid": true,
+          "qualityPassed": true,
+          "errors": []
+        }
+      ],
+      "metrics": {
+        "schemaValid": true,
+        "qualityGatePassed": true,
+        "warnings": [],
+        "chapterCount": 1,
+        "blockCount": 3,
+        "questionCount": 1,
+        "interactionDistribution": {
+          "text": 2,
+          "accordion": 0,
+          "multiple-choice": 1,
+          "true-false": 0
+        },
+        "sourceGrounding": {
+          "valid": 3,
+          "total": 3,
+          "ratio": 1
+        },
+        "learningOutcomeCoverage": {
+          "covered": 1,
+          "total": 1,
+          "ratio": 1
+        },
+        "questionValidity": {
+          "valid": 1,
+          "total": 1,
+          "ratio": 1
+        },
+        "duplicateRate": {
+          "duplicates": 0,
+          "total": 3,
+          "ratio": 0
+        },
+        "interactionBalance": {
+          "passed": true,
+          "dominantRatio": 0.6666666666666666
+        },
+        "chapterStructure": {
+          "passed": true,
+          "chapterCharacters": [
+            625
+          ]
+        }
+      },
+      "humanReview": {
+        "status": "not-reviewed",
+        "scores": {
+          "source-grounding": null,
+          "lesson-structure": null,
+          "outcome-alignment": null,
+          "question-quality": null,
+          "bloom-fit": null,
+          "interaction-fit": null,
+          "language-clarity": null,
+          "editing-effort": null
+        },
+        "editingMinutes": null,
+        "notes": ""
+      }
+    }
+  ],
+  "configuration": {
+    "provider": "fixed-mock",
+    "maxAttempts": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "courseName": "Kỹ năng số cơ bản",
+  "learnerLevel": "beginner",
+  "audience": "Học viên mới sử dụng công cụ học tập số",
+  "language": "vi",
+  "defaultBloomLevel": [
+    1,
+    2
+  ],
+  "teachingStyle": "concise-structured",
+  "terminologyPolicy": "preserve-source",
+  "sourcePolicy": "source-only",
+  "interactionPolicy": {
+    "allowedTypes": [
+      "text",
+      "accordion",
+      "multiple-choice",
+      "true-false"
+    ],
+    "maxAccordionRatio": 0.5,
+    "maxConsecutiveQuestions": 2,
+    "minChapterCharacters": 120
+  },
+  "assessmentPolicy": {
+    "maxQuestions": 8,
+    "requireOutcomeAssessment": true
+  }
+}

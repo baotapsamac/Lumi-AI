@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Chăm sóc cây non trong lớp",
+  "chapters": [
+    {
+      "title": "Quy tắc và thực hành",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Bài thực hành chăm sóc cây non bắt đầu bằng việc quan sát đất và lá. Đất ẩm có bề mặt còn giữ nước khi chạm nhẹ. Đất khô có bề mặt không còn ẩm. Người học ghi lại quan sát trước khi quyết định thao tác chăm sóc; không dựa vào màu chậu để quyết định đất có cần nước hay không."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "Theo nguồn, trạng thái nào là căn cứ để tưới một lượng nước nhỏ?",
+          "answers": [
+            {
+              "text": "Đất khô",
+              "correct": true
+            },
+            {
+              "text": "Đất còn ẩm",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Sau khi chăm sóc, ghi ngày quan sát, trạng thái đất và thao tác đã thực hiện vào nhật ký. Báo cho người phụ trách nếu thấy lá đổi màu hoặc cây bị đổ để cùng kiểm tra. Nhật ký giúp nhóm so sánh các lần chăm sóc; không tự kết luận nguyên nhân chỉ từ một lần quan sát."
+        }
+      ]
+    }
+  ]
+}

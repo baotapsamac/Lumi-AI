@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Ôn quy tắc mượn sách của lớp",
+  "learningOutcomes": [
+    {
+      "id": "O1",
+      "type": "knowledge",
+      "text": "Nhận biết các quy tắc được nêu trong nguồn."
+    }
+  ],
+  "estimatedDurationMinutes": 20,
+  "chapters": [
+    {
+      "title": "Quy tắc và thực hành",
+      "purpose": "Tổ chức kiến thức và kiểm tra hiểu từ nguồn.",
+      "sourceRefs": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "activities": [
+        {
+          "purpose": "Kiểm tra hiểu quy tắc trong nguồn.",
+          "outcomeIds": [
+            "O1"
+          ],
+          "bloomLevel": 2,
+          "type": "text",
+          "segments": [
+            {
+              "text": "Thư viện lớp dùng phiếu mượn để ghi người mượn, tên sách và ngày nhận. Người mượn kiểm tra sách cùng người phụ trách trước khi nhận. Nếu sách đã có trang rách hoặc ghi chú, ghi tình trạng đó trên phiếu để nhóm biết tình trạng ban đầu; không tự bỏ qua dấu hiệu đã quan sát.",
+              "evidence": [
+                {
+                  "sourceRef": "S1",
+                  "quote": "Thư viện lớp dùng phiếu mượn để ghi người mượn, tên sách và ngày nhận. Người mượn kiểm tra sách cùng người phụ trách trước khi nhận. Nếu sách đã có trang rách hoặc ghi chú, ghi tình trạng đó trên phiếu để nhóm biết tình trạng ban đầu; không tự bỏ qua dấu hiệu đã quan sát."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "purpose": "Kiểm tra hiểu quy tắc trong nguồn.",
+          "outcomeIds": [
+            "O1"
+          ],
+          "bloomLevel": 2,
+          "question": "Theo nguồn, công cụ nào giúp xác định người đang giữ sách?",
+          "evidence": [
+            {
+              "sourceRef": "S2",
+              "quote": "Khi đọc, giữ sách ở nơi sạch và khô, dùng giấy đánh dấu thay vì gấp góc trang. Không viết thêm vào trang sách dùng chung. Khi muốn trao sách cho bạn khác, hỏi người phụ trách để cập nhật phiếu mượn. Phiếu mượn giúp xác định người đang giữ sách; giấy đánh dấu giúp ghi nhớ vị trí đang đọc."
+            }
+          ],
+          "type": "multiple-choice",
+          "answers": [
+            {
+              "text": "Phiếu mượn",
+              "correct": true,
+              "justification": "Nguồn mô tả vai trò này cho lựa chọn đúng.",
+              "evidence": [
+                {
+                  "sourceRef": "S2",
+                  "quote": "Khi đọc, giữ sách ở nơi sạch và khô, dùng giấy đánh dấu thay vì gấp góc trang. Không viết thêm vào trang sách dùng chung. Khi muốn trao sách cho bạn khác, hỏi người phụ trách để cập nhật phiếu mượn. Phiếu mượn giúp xác định người đang giữ sách; giấy đánh dấu giúp ghi nhớ vị trí đang đọc."
+                }
+              ]
+            },
+            {
+              "text": "Giấy đánh dấu",
+              "correct": false,
+              "justification": "Nguồn mô tả một vai trò hoặc trạng thái khác cho lựa chọn này.",
+              "evidence": [
+                {
+                  "sourceRef": "S2",
+                  "quote": "Khi đọc, giữ sách ở nơi sạch và khô, dùng giấy đánh dấu thay vì gấp góc trang. Không viết thêm vào trang sách dùng chung. Khi muốn trao sách cho bạn khác, hỏi người phụ trách để cập nhật phiếu mượn. Phiếu mượn giúp xác định người đang giữ sách; giấy đánh dấu giúp ghi nhớ vị trí đang đọc."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "purpose": "Kiểm tra hiểu quy tắc trong nguồn.",
+          "outcomeIds": [
+            "O1"
+          ],
+          "bloomLevel": 2,
+          "type": "text",
+          "segments": [
+            {
+              "text": "Khi trả sách, mang sách và phiếu mượn đến người phụ trách để kiểm tra. Báo rõ nếu có trang bị hỏng trong thời gian mượn. Người phụ trách ghi nhận việc trả trên phiếu rồi cất sách về vị trí quy định. Bài ôn tập này không đặt thời hạn mượn hoặc khoản phạt vì nguồn không cung cấp các thông tin đó.",
+              "evidence": [
+                {
+                  "sourceRef": "S3",
+                  "quote": "Khi trả sách, mang sách và phiếu mượn đến người phụ trách để kiểm tra. Báo rõ nếu có trang bị hỏng trong thời gian mượn. Người phụ trách ghi nhận việc trả trên phiếu rồi cất sách về vị trí quy định. Bài ôn tập này không đặt thời hạn mượn hoặc khoản phạt vì nguồn không cung cấp các thông tin đó."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

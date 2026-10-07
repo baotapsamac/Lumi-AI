@@ -1,0 +1,22 @@
+{
+  "title": "An toàn thông tin cơ bản trong học tập",
+  "durationMinutes": 35,
+  "preset": "theory",
+  "learningOutcomes": [
+    {
+      "id": "O1",
+      "type": "knowledge",
+      "text": "Phân biệt các nhóm thông tin và các khái niệm bảo vệ thông tin trong nguồn."
+    },
+    {
+      "id": "O2",
+      "type": "skill",
+      "text": "Nhận biết và lựa chọn thao tác kiểm tra thông điệp đáng ngờ theo nguồn."
+    },
+    {
+      "id": "O3",
+      "type": "autonomy",
+      "text": "Lựa chọn cách chia sẻ và báo sự cố có trách nhiệm theo nguồn."
+    }
+  ]
+}

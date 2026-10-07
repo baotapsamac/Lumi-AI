@@ -1,0 +1,12 @@
+{
+  "title": "Ôn quy tắc mượn sách của lớp",
+  "durationMinutes": 20,
+  "preset": "review",
+  "learningOutcomes": [
+    {
+      "id": "O1",
+      "type": "knowledge",
+      "text": "Nhận biết các quy tắc được nêu trong nguồn."
+    }
+  ]
+}
