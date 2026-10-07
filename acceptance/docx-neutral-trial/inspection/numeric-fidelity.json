@@ -1,0 +1,35 @@
+{
+  "scope": "Neutral synthetic typography tokens; human interpretation required",
+  "aiStatus": "NOT EXECUTED",
+  "humanReview": "NOT REVIEWED",
+  "values": [
+    {
+      "token": "≥ 2",
+      "sourceRefs": [
+        "S4"
+      ],
+      "aiUsage": null
+    },
+    {
+      "token": "≤ 4,5",
+      "sourceRefs": [
+        "S4"
+      ],
+      "aiUsage": null
+    },
+    {
+      "token": "1/8",
+      "sourceRefs": [
+        "S4"
+      ],
+      "aiUsage": null
+    },
+    {
+      "token": "30°",
+      "sourceRefs": [
+        "S4"
+      ],
+      "aiUsage": null
+    }
+  ]
+}

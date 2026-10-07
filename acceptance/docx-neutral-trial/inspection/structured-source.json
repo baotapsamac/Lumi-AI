@@ -1,0 +1,1760 @@
+{
+  "schemaVersion": "1.0",
+  "format": "docx",
+  "fileName": "source-neutral-sample.docx",
+  "elements": [
+    {
+      "kind": "paragraph",
+      "elementIndex": 0,
+      "text": "Fixture trung tính: kiểm tra cấu trúc học liệu lớp học.",
+      "style": null,
+      "list": null
+    },
+    {
+      "kind": "table",
+      "tableIndex": 0,
+      "elementIndex": 1
+    }
+  ],
+  "tables": [
+    {
+      "tableIndex": 0,
+      "elementIndex": 1,
+      "columnCount": 4,
+      "rows": [
+        {
+          "rowIndex": 0,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "TT",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "TT",
+              "resolvedText": "TT"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Nội dung kiểm tra",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Nội dung kiểm tra",
+              "resolvedText": "Nội dung kiểm tra"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Yêu cầu kỹ thuật",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Yêu cầu kỹ thuật",
+              "resolvedText": "Yêu cầu kỹ thuật"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Phương pháp kiểm tra",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Phương pháp kiểm tra",
+              "resolvedText": "Phương pháp kiểm tra"
+            }
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 1,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 4
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 1,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 4
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "I. Kiểm tra học liệu lớp học",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "I. Kiểm tra học liệu lớp học",
+              "resolvedText": "I. Kiểm tra học liệu lớp học"
+            }
+          ],
+          "role": "section"
+        },
+        {
+          "rowIndex": 2,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "3.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "3.",
+              "resolvedText": "3."
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Tài liệu giấy",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Tài liệu giấy",
+              "resolvedText": "Tài liệu giấy"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "role": "group"
+        },
+        {
+          "rowIndex": 3,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "restart",
+              "paragraphs": [
+                {
+                  "text": "a",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "a",
+              "resolvedText": "a"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Bìa sách",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Bìa sách",
+              "resolvedText": "Bìa sách"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Tên sách đọc được.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Tên sách đọc được.",
+              "resolvedText": "Tên sách đọc được."
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Đọc tên trên bìa.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Đọc tên trên bìa.",
+              "resolvedText": "Đọc tên trên bìa."
+            }
+          ],
+          "role": "item"
+        },
+        {
+          "rowIndex": 4,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "a"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Trang sách",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Trang sách",
+              "resolvedText": "Trang sách"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Các trang có số thứ tự.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Các trang có số thứ tự.",
+              "resolvedText": "Các trang có số thứ tự."
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Đọc số trên trang đầu.",
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Đối chiếu số trên trang tiếp theo.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Đọc số trên trang đầu.\nĐối chiếu số trên trang tiếp theo.",
+              "resolvedText": "Đọc số trên trang đầu.\nĐối chiếu số trên trang tiếp theo."
+            }
+          ],
+          "role": "item"
+        },
+        {
+          "rowIndex": 5,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "role": "empty"
+        },
+        {
+          "rowIndex": 6,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "4.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "4.",
+              "resolvedText": "4."
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Bảng thông tin",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Bảng thông tin",
+              "resolvedText": "Bảng thông tin"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "role": "group"
+        },
+        {
+          "rowIndex": 7,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Danh sách lớp",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Danh sách lớp",
+              "resolvedText": "Danh sách lớp"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Tên các mục đọc được.",
+                  "style": null,
+                  "list": {
+                    "numId": "1",
+                    "level": "0"
+                  }
+                },
+                {
+                  "text": "Các mục nằm trong cùng danh sách.",
+                  "style": null,
+                  "list": {
+                    "numId": "1",
+                    "level": "0"
+                  }
+                }
+              ],
+              "text": "Tên các mục đọc được.\nCác mục nằm trong cùng danh sách.",
+              "resolvedText": "Tên các mục đọc được.\nCác mục nằm trong cùng danh sách."
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Đọc từng mục.",
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Đối chiếu với tiêu đề danh sách.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Đọc từng mục.\nĐối chiếu với tiêu đề danh sách.",
+              "resolvedText": "Đọc từng mục.\nĐối chiếu với tiêu đề danh sách."
+            }
+          ],
+          "role": "item"
+        },
+        {
+          "rowIndex": 8,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Ký hiệu minh họa",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Ký hiệu minh họa",
+              "resolvedText": "Ký hiệu minh họa"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Dữ liệu thử kiểu chữ: ≥ 2; ≤ 4,5; 1/8; 30°.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Dữ liệu thử kiểu chữ: ≥ 2; ≤ 4,5; 1/8; 30°.",
+              "resolvedText": "Dữ liệu thử kiểu chữ: ≥ 2; ≤ 4,5; 1/8; 30°."
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Đối chiếu đúng chuỗi ký tự trong ô; không diễn giải thành tiêu chuẩn kỹ thuật.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Đối chiếu đúng chuỗi ký tự trong ô; không diễn giải thành tiêu chuẩn kỹ thuật.",
+              "resolvedText": "Đối chiếu đúng chuỗi ký tự trong ô; không diễn giải thành tiêu chuẩn kỹ thuật."
+            }
+          ],
+          "role": "item"
+        },
+        {
+          "rowIndex": 9,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "5.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "5.",
+              "resolvedText": "5."
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Sổ theo dõi",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Sổ theo dõi",
+              "resolvedText": "Sổ theo dõi"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "role": "group"
+        },
+        {
+          "rowIndex": 10,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Tiêu đề cột",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Tiêu đề cột",
+              "resolvedText": "Tiêu đề cột"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Tiêu đề giữ nguyên tiếng Việt.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Tiêu đề giữ nguyên tiếng Việt.",
+              "resolvedText": "Tiêu đề giữ nguyên tiếng Việt."
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Đọc và đối chiếu tiêu đề.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Đọc và đối chiếu tiêu đề.",
+              "resolvedText": "Đọc và đối chiếu tiêu đề."
+            }
+          ],
+          "role": "item"
+        },
+        {
+          "rowIndex": 11,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Ghi chú",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Ghi chú",
+              "resolvedText": "Ghi chú"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Đọc ghi chú nếu có.",
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Đọc ghi chú nếu có.",
+              "resolvedText": "Đọc ghi chú nếu có."
+            }
+          ],
+          "role": "item"
+        }
+      ],
+      "hierarchy": [
+        {
+          "title": "I. Kiểm tra học liệu lớp học",
+          "rowIndex": 1,
+          "groups": [
+            {
+              "title": "Tài liệu giấy",
+              "ordinal": "3.",
+              "rowIndex": 2,
+              "items": [
+                {
+                  "title": "Bìa sách",
+                  "rowIndex": 3
+                },
+                {
+                  "title": "Trang sách",
+                  "rowIndex": 4
+                }
+              ]
+            },
+            {
+              "title": "Bảng thông tin",
+              "ordinal": "4.",
+              "rowIndex": 6,
+              "items": [
+                {
+                  "title": "Danh sách lớp",
+                  "rowIndex": 7
+                },
+                {
+                  "title": "Ký hiệu minh họa",
+                  "rowIndex": 8
+                }
+              ]
+            },
+            {
+              "title": "Sổ theo dõi",
+              "ordinal": "5.",
+              "rowIndex": 9,
+              "items": [
+                {
+                  "title": "Tiêu đề cột",
+                  "rowIndex": 10
+                },
+                {
+                  "title": "Ghi chú",
+                  "rowIndex": 11
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "associations": [
+        {
+          "rowIndex": 3,
+          "section": "I. Kiểm tra học liệu lớp học",
+          "group": "Tài liệu giấy",
+          "ordinal": "a",
+          "topic": "Bìa sách",
+          "requirement": "Tên sách đọc được.",
+          "method": "Đọc tên trên bìa.",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        },
+        {
+          "rowIndex": 4,
+          "section": "I. Kiểm tra học liệu lớp học",
+          "group": "Tài liệu giấy",
+          "ordinal": "a",
+          "topic": "Trang sách",
+          "requirement": "Các trang có số thứ tự.",
+          "method": "Đọc số trên trang đầu.\nĐối chiếu số trên trang tiếp theo.",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        },
+        {
+          "rowIndex": 7,
+          "section": "I. Kiểm tra học liệu lớp học",
+          "group": "Bảng thông tin",
+          "ordinal": "",
+          "topic": "Danh sách lớp",
+          "requirement": "Tên các mục đọc được.\nCác mục nằm trong cùng danh sách.",
+          "method": "Đọc từng mục.\nĐối chiếu với tiêu đề danh sách.",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        },
+        {
+          "rowIndex": 8,
+          "section": "I. Kiểm tra học liệu lớp học",
+          "group": "Bảng thông tin",
+          "ordinal": "",
+          "topic": "Ký hiệu minh họa",
+          "requirement": "Dữ liệu thử kiểu chữ: ≥ 2; ≤ 4,5; 1/8; 30°.",
+          "method": "Đối chiếu đúng chuỗi ký tự trong ô; không diễn giải thành tiêu chuẩn kỹ thuật.",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        },
+        {
+          "rowIndex": 10,
+          "section": "I. Kiểm tra học liệu lớp học",
+          "group": "Sổ theo dõi",
+          "ordinal": "",
+          "topic": "Tiêu đề cột",
+          "requirement": "Tiêu đề giữ nguyên tiếng Việt.",
+          "method": "Đọc và đối chiếu tiêu đề.",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        },
+        {
+          "rowIndex": 11,
+          "section": "I. Kiểm tra học liệu lớp học",
+          "group": "Sổ theo dõi",
+          "ordinal": "",
+          "topic": "Ghi chú",
+          "requirement": "",
+          "method": "Đọc ghi chú nếu có.",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

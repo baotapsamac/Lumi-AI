@@ -1,0 +1,495 @@
+{
+  "schemaVersion": "1.0",
+  "status": "parser-only; no AI execution",
+  "offsetUnit": "UTF-16 code units",
+  "segmentationScope": "table-associations-only",
+  "text": "I. Kiểm tra học liệu lớp học\nTài liệu giấy\nNội dung kiểm tra: Bìa sách\nYêu cầu kỹ thuật: Tên sách đọc được.\nPhương pháp kiểm tra: Đọc tên trên bìa.\n\nI. Kiểm tra học liệu lớp học\nTài liệu giấy\nNội dung kiểm tra: Trang sách\nYêu cầu kỹ thuật: Các trang có số thứ tự.\nPhương pháp kiểm tra: Đọc số trên trang đầu.\nĐối chiếu số trên trang tiếp theo.\n\nI. Kiểm tra học liệu lớp học\nBảng thông tin\nNội dung kiểm tra: Danh sách lớp\nYêu cầu kỹ thuật: Tên các mục đọc được.\nCác mục nằm trong cùng danh sách.\nPhương pháp kiểm tra: Đọc từng mục.\nĐối chiếu với tiêu đề danh sách.\n\nI. Kiểm tra học liệu lớp học\nBảng thông tin\nNội dung kiểm tra: Ký hiệu minh họa\nYêu cầu kỹ thuật: Dữ liệu thử kiểu chữ: ≥ 2; ≤ 4,5; 1/8; 30°.\nPhương pháp kiểm tra: Đối chiếu đúng chuỗi ký tự trong ô; không diễn giải thành tiêu chuẩn kỹ thuật.\n\nI. Kiểm tra học liệu lớp học\nSổ theo dõi\nNội dung kiểm tra: Tiêu đề cột\nYêu cầu kỹ thuật: Tiêu đề giữ nguyên tiếng Việt.\nPhương pháp kiểm tra: Đọc và đối chiếu tiêu đề.\n\nI. Kiểm tra học liệu lớp học\nSổ theo dõi\nNội dung kiểm tra: Ghi chú\nYêu cầu kỹ thuật: \nPhương pháp kiểm tra: Đọc ghi chú nếu có.",
+  "segments": [
+    {
+      "id": "S1",
+      "text": "I. Kiểm tra học liệu lớp học\nTài liệu giấy\nNội dung kiểm tra: Bìa sách\nYêu cầu kỹ thuật: Tên sách đọc được.\nPhương pháp kiểm tra: Đọc tên trên bìa.",
+      "start": 0,
+      "end": 147,
+      "origin": {
+        "fileName": "source-neutral-sample.docx",
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "I. Kiểm tra học liệu lớp học",
+        "Tài liệu giấy",
+        "Bìa sách"
+      ],
+      "association": {
+        "topic": "Bìa sách",
+        "requirement": "Tên sách đọc được.",
+        "method": "Đọc tên trên bìa."
+      }
+    },
+    {
+      "id": "S2",
+      "text": "I. Kiểm tra học liệu lớp học\nTài liệu giấy\nNội dung kiểm tra: Trang sách\nYêu cầu kỹ thuật: Các trang có số thứ tự.\nPhương pháp kiểm tra: Đọc số trên trang đầu.\nĐối chiếu số trên trang tiếp theo.",
+      "start": 149,
+      "end": 343,
+      "origin": {
+        "fileName": "source-neutral-sample.docx",
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "I. Kiểm tra học liệu lớp học",
+        "Tài liệu giấy",
+        "Trang sách"
+      ],
+      "association": {
+        "topic": "Trang sách",
+        "requirement": "Các trang có số thứ tự.",
+        "method": "Đọc số trên trang đầu.\nĐối chiếu số trên trang tiếp theo."
+      }
+    },
+    {
+      "id": "S3",
+      "text": "I. Kiểm tra học liệu lớp học\nBảng thông tin\nNội dung kiểm tra: Danh sách lớp\nYêu cầu kỹ thuật: Tên các mục đọc được.\nCác mục nằm trong cùng danh sách.\nPhương pháp kiểm tra: Đọc từng mục.\nĐối chiếu với tiêu đề danh sách.",
+      "start": 345,
+      "end": 564,
+      "origin": {
+        "fileName": "source-neutral-sample.docx",
+        "tableIndex": 0,
+        "rowIndex": 7,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "I. Kiểm tra học liệu lớp học",
+        "Bảng thông tin",
+        "Danh sách lớp"
+      ],
+      "association": {
+        "topic": "Danh sách lớp",
+        "requirement": "Tên các mục đọc được.\nCác mục nằm trong cùng danh sách.",
+        "method": "Đọc từng mục.\nĐối chiếu với tiêu đề danh sách."
+      }
+    },
+    {
+      "id": "S4",
+      "text": "I. Kiểm tra học liệu lớp học\nBảng thông tin\nNội dung kiểm tra: Ký hiệu minh họa\nYêu cầu kỹ thuật: Dữ liệu thử kiểu chữ: ≥ 2; ≤ 4,5; 1/8; 30°.\nPhương pháp kiểm tra: Đối chiếu đúng chuỗi ký tự trong ô; không diễn giải thành tiêu chuẩn kỹ thuật.",
+      "start": 566,
+      "end": 808,
+      "origin": {
+        "fileName": "source-neutral-sample.docx",
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "I. Kiểm tra học liệu lớp học",
+        "Bảng thông tin",
+        "Ký hiệu minh họa"
+      ],
+      "association": {
+        "topic": "Ký hiệu minh họa",
+        "requirement": "Dữ liệu thử kiểu chữ: ≥ 2; ≤ 4,5; 1/8; 30°.",
+        "method": "Đối chiếu đúng chuỗi ký tự trong ô; không diễn giải thành tiêu chuẩn kỹ thuật."
+      }
+    },
+    {
+      "id": "S5",
+      "text": "I. Kiểm tra học liệu lớp học\nSổ theo dõi\nNội dung kiểm tra: Tiêu đề cột\nYêu cầu kỹ thuật: Tiêu đề giữ nguyên tiếng Việt.\nPhương pháp kiểm tra: Đọc và đối chiếu tiêu đề.",
+      "start": 810,
+      "end": 978,
+      "origin": {
+        "fileName": "source-neutral-sample.docx",
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "I. Kiểm tra học liệu lớp học",
+        "Sổ theo dõi",
+        "Tiêu đề cột"
+      ],
+      "association": {
+        "topic": "Tiêu đề cột",
+        "requirement": "Tiêu đề giữ nguyên tiếng Việt.",
+        "method": "Đọc và đối chiếu tiêu đề."
+      }
+    },
+    {
+      "id": "S6",
+      "text": "I. Kiểm tra học liệu lớp học\nSổ theo dõi\nNội dung kiểm tra: Ghi chú\nYêu cầu kỹ thuật: \nPhương pháp kiểm tra: Đọc ghi chú nếu có.",
+      "start": 980,
+      "end": 1108,
+      "origin": {
+        "fileName": "source-neutral-sample.docx",
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "I. Kiểm tra học liệu lớp học",
+        "Sổ theo dõi",
+        "Ghi chú"
+      ],
+      "association": {
+        "topic": "Ghi chú",
+        "requirement": "",
+        "method": "Đọc ghi chú nếu có."
+      }
+    }
+  ]
+}
