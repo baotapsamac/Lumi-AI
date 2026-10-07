@@ -1,4 +1,4 @@
-import { strToU8, unzipSync, zipSync } from 'fflate';
+import { strToU8, zipSync, unzipSync } from 'fflate';
 
 export type MaterializedAnswer = {
   text: string;
