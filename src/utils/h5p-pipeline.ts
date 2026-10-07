@@ -302,7 +302,7 @@ function validatePlan(plan: MaterializedH5PPlan): PipelineCheck[] {
   return checks;
 }
 
-function validatePackageFiles(
+export function validatePackageFiles(
   files: Record<string, Uint8Array>,
   plan: MaterializedH5PPlan,
 ): PipelineCheck[] {
@@ -318,22 +318,94 @@ function validatePackageFiles(
     .filter((dir) => !Object.keys(files).some((path) => path.startsWith(`${dir}/`)));
   add('PK-03', 'All declared H5P dependencies embedded', missing.length === 0, missing);
 
+  const decoder = new TextDecoder();
+  const identityProblems: unknown[] = [];
+  const assetProblems: unknown[] = [];
+  for (const dependency of DEPENDENCIES) {
+    const dir = `${dependency.machineName}-${dependency.majorVersion}.${dependency.minorVersion}`;
+    const libraryPath = `${dir}/library.json`;
+    if (!files[libraryPath]) {
+      identityProblems.push({ dependency: dir, problem: 'library.json missing' });
+      continue;
+    }
+    try {
+      const library = JSON.parse(decoder.decode(files[libraryPath])) as {
+        machineName?: string;
+        majorVersion?: number;
+        minorVersion?: number;
+        preloadedJs?: Array<{ path?: string }>;
+        preloadedCss?: Array<{ path?: string }>;
+      };
+      if (
+        library.machineName !== dependency.machineName ||
+        library.majorVersion !== dependency.majorVersion ||
+        library.minorVersion !== dependency.minorVersion
+      ) {
+        identityProblems.push({
+          dependency: dir,
+          actual: [library.machineName, library.majorVersion, library.minorVersion],
+        });
+      }
+      for (const asset of [...(library.preloadedJs || []), ...(library.preloadedCss || [])]) {
+        if (asset.path && !files[`${dir}/${asset.path}`]) {
+          assetProblems.push({ dependency: dir, asset: asset.path });
+        }
+      }
+    } catch (error) {
+      identityProblems.push({ dependency: dir, problem: String(error) });
+    }
+  }
+  add('PK-04', 'Embedded library identities match declared versions', identityProblems.length === 0, identityProblems);
+  add('PK-05', 'Declared direct JS/CSS assets are embedded', assetProblems.length === 0, assetProblems);
+
   const questionCount = plan.chapters.reduce(
     (sum, chapter) =>
       sum + chapter.items.reduce((n, item) => n + (item.type === 'multiple-choice' ? item.items.length : 0), 0),
     0,
   );
-  add('PK-04', 'Generated question inventory is non-empty when assessments exist', questionCount > 0, questionCount, 'FAIL');
+  const hasAssessment = plan.chapters.some((chapter) =>
+    chapter.items.some((item) => item.type === 'multiple-choice'),
+  );
+  add(
+    'PK-06',
+    'Question inventory matches assessment presence',
+    !hasAssessment || questionCount > 0,
+    questionCount,
+    'FAIL',
+  );
 
   const germanTokens = ['Überprüfen', 'Lösung anzeigen', 'Wiederholen', 'Nächste Seite', 'Vorherige Seite'];
   const serialized = new TextDecoder().decode(files['content/content.json']);
   const germanHits = germanTokens.filter((token) => serialized.includes(token));
   checks.push({
-    id: 'PK-05',
+    id: 'PK-07',
     name: 'No known German UI remnants',
     result: germanHits.length === 0 ? 'PASS' : 'FAIL',
     evidence: germanHits,
   });
+
+  let parsedH5P: { language?: string; defaultLanguage?: string } | null = null;
+  let parsedContent: { chapters?: unknown[] } | null = null;
+  try {
+    parsedH5P = JSON.parse(decoder.decode(files['h5p.json']));
+    parsedContent = JSON.parse(decoder.decode(files['content/content.json']));
+  } catch {
+    // PK-01/PK-02 and the checks below will fail cleanly.
+  }
+  add(
+    'PK-08',
+    'Package language is Vietnamese',
+    parsedH5P?.language === 'vi' && parsedH5P?.defaultLanguage === 'vi',
+    parsedH5P,
+    'FAIL',
+  );
+  add(
+    'PK-09',
+    'Generated chapter count matches materialized plan',
+    parsedContent?.chapters?.length === plan.chapters.length,
+    { expected: plan.chapters.length, actual: parsedContent?.chapters?.length },
+    'FAIL',
+  );
 
   return checks;
 }
