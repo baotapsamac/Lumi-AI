@@ -1,0 +1,933 @@
+{
+  "schemaVersion": "1.0",
+  "status": "PARSER_SUCCESS",
+  "offsetUnit": "UTF-16 code units",
+  "segmentationScope": "document-logical-units",
+  "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]\n\nDanh mục thiết bị — Khay lưu trữ [1]\nDanh mục thiết bị — Số lượng tồn [2]\nDanh mục thiết bị — Ghi nhận vị trí kho [3]\nDanh mục thiết bị — So sánh phiếu bàn giao [4]\n\nDanh mục thiết bị — Mã tài sản [5]\n\nDanh mục thiết bị — Khay lưu trữ [6]\nDanh mục thiết bị — Số lượng tồn [7]\n\n\n\nDanh mục thiết bị — Mã tài sản [10]\nDanh mục thiết bị — Khay lưu trữ [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X\nDanh mục thiết bị — Số lượng tồn [12]\nDanh mục thiết bị — Ghi nhận vị trí kho [13]\n\nDanh mục thiết bị — Mã tài sản [10]\nDanh mục thiết bị — Mã tài sản [15]\nDanh mục thiết bị — Khay lưu trữ [16]\nDanh mục thiết bị — Số lượng tồn [17]\nDanh mục thiết bị — Ghi nhận vị trí kho [18]\n\nDanh mục thiết bị — Ghi nhận vị trí kho [23]\nDanh mục thiết bị — So sánh phiếu bàn giao [24]\n\n\n\n\nDanh mục thiết bị — Ghi nhận vị trí kho [28]\nDanh mục thiết bị — 2:0 α β γ\nDanh mục thiết bị — 2:1 α β γ\nDanh mục thiết bị — 2:2 α β γ\nDanh mục thiết bị — 3:0 α β γ\nDanh mục thiết bị — 3:1 α β γ\nDanh mục thiết bị — 3:2 α β γ\nDanh mục thiết bị — 3:3 α β γ\n\n\nDanh mục thiết bị — So sánh phiếu bàn giao [34]\nDanh mục thiết bị — Mã tài sản [35]\nDanh mục thiết bị — Khay lưu trữ [36]\n\nDanh mục thiết bị — Số lượng tồn [37]\nDanh mục thiết bị — Ghi nhận vị trí kho [38]\n\n\n\n\nDanh mục thiết bị — Số lượng tồn [42]\nDanh mục thiết bị — Ghi nhận vị trí kho [43]\nDanh mục thiết bị — So sánh phiếu bàn giao [44]\n\n\nDanh mục thiết bị — Khay lưu trữ [46]\n\nDanh mục thiết bị — Ghi nhận vị trí kho [48]",
+  "segments": [
+    {
+      "id": "S1",
+      "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+      "start": 0,
+      "end": 77,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 0
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "paragraph",
+      "paragraph": {
+        "kind": "paragraph",
+        "elementIndex": 0,
+        "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+        "headingLevel": 0,
+        "style": null,
+        "list": null,
+        "hierarchy": [
+          {
+            "level": 0,
+            "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+            "elementIndex": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "S2",
+      "text": "Danh mục thiết bị — Khay lưu trữ [1]\nDanh mục thiết bị — Số lượng tồn [2]\nDanh mục thiết bị — Ghi nhận vị trí kho [3]\nDanh mục thiết bị — So sánh phiếu bàn giao [4]",
+      "start": 79,
+      "end": 243,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "table-row",
+      "role": "header"
+    },
+    {
+      "id": "S3",
+      "text": "Danh mục thiết bị — Mã tài sản [5]",
+      "start": 245,
+      "end": 279,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 1,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 1,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 4
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 1,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 4
+          }
+        ]
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "table-row",
+      "role": "section"
+    },
+    {
+      "id": "S4",
+      "text": "Danh mục thiết bị — Khay lưu trữ [6]\nDanh mục thiết bị — Số lượng tồn [7]\n\n",
+      "start": 281,
+      "end": 356,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 2,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "table-row",
+      "role": "group"
+    },
+    {
+      "id": "S5",
+      "text": "Danh mục thiết bị — Mã tài sản [10]\nDanh mục thiết bị — Khay lưu trữ [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X\nDanh mục thiết bị — Số lượng tồn [12]\nDanh mục thiết bị — Ghi nhận vị trí kho [13]",
+      "start": 358,
+      "end": 566,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        },
+        "Danh mục thiết bị — Mã tài sản [5]",
+        "Danh mục thiết bị — Số lượng tồn [7]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "Danh mục thiết bị — Mã tài sản [10]",
+        "topic": "Danh mục thiết bị — Khay lưu trữ [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X",
+        "requirement": "Danh mục thiết bị — Số lượng tồn [12]",
+        "method": "Danh mục thiết bị — Ghi nhận vị trí kho [13]"
+      }
+    },
+    {
+      "id": "S6",
+      "text": "Danh mục thiết bị — Mã tài sản [10]\nDanh mục thiết bị — Mã tài sản [15]\nDanh mục thiết bị — Khay lưu trữ [16]\nDanh mục thiết bị — Số lượng tồn [17]\nDanh mục thiết bị — Ghi nhận vị trí kho [18]",
+      "start": 568,
+      "end": 760,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        },
+        "Danh mục thiết bị — Mã tài sản [5]",
+        "Danh mục thiết bị — Số lượng tồn [7]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "Danh mục thiết bị — Mã tài sản [10]",
+        "topic": "Danh mục thiết bị — Mã tài sản [15]",
+        "requirement": "Danh mục thiết bị — Khay lưu trữ [16]",
+        "method": "Danh mục thiết bị — Số lượng tồn [17]\nDanh mục thiết bị — Ghi nhận vị trí kho [18]"
+      }
+    },
+    {
+      "id": "S7",
+      "text": "Danh mục thiết bị — Ghi nhận vị trí kho [23]\nDanh mục thiết bị — So sánh phiếu bàn giao [24]\n\n",
+      "start": 762,
+      "end": 856,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "table-row",
+      "role": "group"
+    },
+    {
+      "id": "S8",
+      "text": "\nDanh mục thiết bị — Ghi nhận vị trí kho [28]\nDanh mục thiết bị — 2:0 α β γ\nDanh mục thiết bị — 2:1 α β γ\nDanh mục thiết bị — 2:2 α β γ\nDanh mục thiết bị — 3:0 α β γ\nDanh mục thiết bị — 3:1 α β γ\nDanh mục thiết bị — 3:2 α β γ\nDanh mục thiết bị — 3:3 α β γ",
+      "start": 858,
+      "end": 1113,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 7,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        },
+        "Danh mục thiết bị — Mã tài sản [5]",
+        "Danh mục thiết bị — So sánh phiếu bàn giao [24]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "",
+        "topic": "Danh mục thiết bị — Ghi nhận vị trí kho [28]",
+        "requirement": "Danh mục thiết bị — 2:0 α β γ\nDanh mục thiết bị — 2:1 α β γ\nDanh mục thiết bị — 2:2 α β γ",
+        "method": "Danh mục thiết bị — 3:0 α β γ\nDanh mục thiết bị — 3:1 α β γ\nDanh mục thiết bị — 3:2 α β γ\nDanh mục thiết bị — 3:3 α β γ"
+      }
+    },
+    {
+      "id": "S9",
+      "text": "\nDanh mục thiết bị — So sánh phiếu bàn giao [34]\nDanh mục thiết bị — Mã tài sản [35]\nDanh mục thiết bị — Khay lưu trữ [36]",
+      "start": 1115,
+      "end": 1237,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        },
+        "Danh mục thiết bị — Mã tài sản [5]",
+        "Danh mục thiết bị — So sánh phiếu bàn giao [24]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "",
+        "topic": "Danh mục thiết bị — So sánh phiếu bàn giao [34]",
+        "requirement": "Danh mục thiết bị — Mã tài sản [35]",
+        "method": "Danh mục thiết bị — Khay lưu trữ [36]"
+      }
+    },
+    {
+      "id": "S10",
+      "text": "Danh mục thiết bị — Số lượng tồn [37]\nDanh mục thiết bị — Ghi nhận vị trí kho [38]\n\n",
+      "start": 1239,
+      "end": 1323,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "table-row",
+      "role": "group"
+    },
+    {
+      "id": "S11",
+      "text": "\nDanh mục thiết bị — Số lượng tồn [42]\nDanh mục thiết bị — Ghi nhận vị trí kho [43]\nDanh mục thiết bị — So sánh phiếu bàn giao [44]",
+      "start": 1325,
+      "end": 1456,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        },
+        "Danh mục thiết bị — Mã tài sản [5]",
+        "Danh mục thiết bị — Ghi nhận vị trí kho [38]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "",
+        "topic": "Danh mục thiết bị — Số lượng tồn [42]",
+        "requirement": "Danh mục thiết bị — Ghi nhận vị trí kho [43]",
+        "method": "Danh mục thiết bị — So sánh phiếu bàn giao [44]"
+      }
+    },
+    {
+      "id": "S12",
+      "text": "\nDanh mục thiết bị — Khay lưu trữ [46]\n\nDanh mục thiết bị — Ghi nhận vị trí kho [48]",
+      "start": 1458,
+      "end": 1542,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Danh mục thiết bị — Mã tài sản [0]",
+          "elementIndex": 0
+        },
+        "Danh mục thiết bị — Mã tài sản [5]",
+        "Danh mục thiết bị — Ghi nhận vị trí kho [38]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "",
+        "topic": "Danh mục thiết bị — Khay lưu trữ [46]",
+        "requirement": "",
+        "method": "Danh mục thiết bị — Ghi nhận vị trí kho [48]"
+      }
+    }
+  ]
+}

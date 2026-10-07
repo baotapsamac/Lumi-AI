@@ -1,0 +1,933 @@
+{
+  "schemaVersion": "1.0",
+  "status": "PARSER_SUCCESS",
+  "offsetUnit": "UTF-16 code units",
+  "segmentationScope": "document-logical-units",
+  "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]\n\nHồ sơ phòng thí nghiệm — Mã biểu mẫu [1]\nHồ sơ phòng thí nghiệm — Tên người lập [2]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [3]\nHồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [4]\n\nHồ sơ phòng thí nghiệm — Ngày ghi sổ [5]\n\nHồ sơ phòng thí nghiệm — Mã biểu mẫu [6]\nHồ sơ phòng thí nghiệm — Tên người lập [7]\n\n\n\nHồ sơ phòng thí nghiệm — Ngày ghi sổ [10]\nHồ sơ phòng thí nghiệm — Mã biểu mẫu [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X\nHồ sơ phòng thí nghiệm — Tên người lập [12]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [13]\n\nHồ sơ phòng thí nghiệm — Ngày ghi sổ [10]\nHồ sơ phòng thí nghiệm — Ngày ghi sổ [15]\nHồ sơ phòng thí nghiệm — Mã biểu mẫu [16]\nHồ sơ phòng thí nghiệm — Tên người lập [17]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [18]\n\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [23]\nHồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [24]\n\n\n\n\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [28]\nHồ sơ phòng thí nghiệm — 2:0 α β γ\nHồ sơ phòng thí nghiệm — 2:1 α β γ\nHồ sơ phòng thí nghiệm — 2:2 α β γ\nHồ sơ phòng thí nghiệm — 3:0 α β γ\nHồ sơ phòng thí nghiệm — 3:1 α β γ\nHồ sơ phòng thí nghiệm — 3:2 α β γ\nHồ sơ phòng thí nghiệm — 3:3 α β γ\n\n\nHồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [34]\nHồ sơ phòng thí nghiệm — Ngày ghi sổ [35]\nHồ sơ phòng thí nghiệm — Mã biểu mẫu [36]\n\nHồ sơ phòng thí nghiệm — Tên người lập [37]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [38]\n\n\n\n\nHồ sơ phòng thí nghiệm — Tên người lập [42]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [43]\nHồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [44]\n\n\nHồ sơ phòng thí nghiệm — Mã biểu mẫu [46]\n\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [48]",
+  "segments": [
+    {
+      "id": "S1",
+      "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+      "start": 0,
+      "end": 83,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 0
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "paragraph",
+      "paragraph": {
+        "kind": "paragraph",
+        "elementIndex": 0,
+        "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+        "headingLevel": 0,
+        "style": null,
+        "list": null,
+        "hierarchy": [
+          {
+            "level": 0,
+            "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+            "elementIndex": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "S2",
+      "text": "Hồ sơ phòng thí nghiệm — Mã biểu mẫu [1]\nHồ sơ phòng thí nghiệm — Tên người lập [2]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [3]\nHồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [4]",
+      "start": 85,
+      "end": 266,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "table-row",
+      "role": "header"
+    },
+    {
+      "id": "S3",
+      "text": "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [5]",
+      "start": 268,
+      "end": 308,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 1,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 1,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 4
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 1,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 4
+          }
+        ]
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "table-row",
+      "role": "section"
+    },
+    {
+      "id": "S4",
+      "text": "Hồ sơ phòng thí nghiệm — Mã biểu mẫu [6]\nHồ sơ phòng thí nghiệm — Tên người lập [7]\n\n",
+      "start": 310,
+      "end": 395,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 2,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "table-row",
+      "role": "group"
+    },
+    {
+      "id": "S5",
+      "text": "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [10]\nHồ sơ phòng thí nghiệm — Mã biểu mẫu [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X\nHồ sơ phòng thí nghiệm — Tên người lập [12]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [13]",
+      "start": 397,
+      "end": 624,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        },
+        "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [5]",
+        "Hồ sơ phòng thí nghiệm — Tên người lập [7]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [10]",
+        "topic": "Hồ sơ phòng thí nghiệm — Mã biểu mẫu [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X",
+        "requirement": "Hồ sơ phòng thí nghiệm — Tên người lập [12]",
+        "method": "Hồ sơ phòng thí nghiệm — Xem trang nhật ký [13]"
+      }
+    },
+    {
+      "id": "S6",
+      "text": "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [10]\nHồ sơ phòng thí nghiệm — Ngày ghi sổ [15]\nHồ sơ phòng thí nghiệm — Mã biểu mẫu [16]\nHồ sơ phòng thí nghiệm — Tên người lập [17]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [18]",
+      "start": 626,
+      "end": 843,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        },
+        "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [5]",
+        "Hồ sơ phòng thí nghiệm — Tên người lập [7]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [10]",
+        "topic": "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [15]",
+        "requirement": "Hồ sơ phòng thí nghiệm — Mã biểu mẫu [16]",
+        "method": "Hồ sơ phòng thí nghiệm — Tên người lập [17]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [18]"
+      }
+    },
+    {
+      "id": "S7",
+      "text": "Hồ sơ phòng thí nghiệm — Xem trang nhật ký [23]\nHồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [24]\n\n",
+      "start": 845,
+      "end": 946,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "table-row",
+      "role": "group"
+    },
+    {
+      "id": "S8",
+      "text": "\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [28]\nHồ sơ phòng thí nghiệm — 2:0 α β γ\nHồ sơ phòng thí nghiệm — 2:1 α β γ\nHồ sơ phòng thí nghiệm — 2:2 α β γ\nHồ sơ phòng thí nghiệm — 3:0 α β γ\nHồ sơ phòng thí nghiệm — 3:1 α β γ\nHồ sơ phòng thí nghiệm — 3:2 α β γ\nHồ sơ phòng thí nghiệm — 3:3 α β γ",
+      "start": 948,
+      "end": 1241,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 7,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        },
+        "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [5]",
+        "Hồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [24]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "",
+        "topic": "Hồ sơ phòng thí nghiệm — Xem trang nhật ký [28]",
+        "requirement": "Hồ sơ phòng thí nghiệm — 2:0 α β γ\nHồ sơ phòng thí nghiệm — 2:1 α β γ\nHồ sơ phòng thí nghiệm — 2:2 α β γ",
+        "method": "Hồ sơ phòng thí nghiệm — 3:0 α β γ\nHồ sơ phòng thí nghiệm — 3:1 α β γ\nHồ sơ phòng thí nghiệm — 3:2 α β γ\nHồ sơ phòng thí nghiệm — 3:3 α β γ"
+      }
+    },
+    {
+      "id": "S9",
+      "text": "\nHồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [34]\nHồ sơ phòng thí nghiệm — Ngày ghi sổ [35]\nHồ sơ phòng thí nghiệm — Mã biểu mẫu [36]",
+      "start": 1243,
+      "end": 1379,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        },
+        "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [5]",
+        "Hồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [24]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "",
+        "topic": "Hồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [34]",
+        "requirement": "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [35]",
+        "method": "Hồ sơ phòng thí nghiệm — Mã biểu mẫu [36]"
+      }
+    },
+    {
+      "id": "S10",
+      "text": "Hồ sơ phòng thí nghiệm — Tên người lập [37]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [38]\n\n",
+      "start": 1381,
+      "end": 1474,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        }
+      ],
+      "kind": "table-row",
+      "role": "group"
+    },
+    {
+      "id": "S11",
+      "text": "\nHồ sơ phòng thí nghiệm — Tên người lập [42]\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [43]\nHồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [44]",
+      "start": 1476,
+      "end": 1620,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        },
+        "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [5]",
+        "Hồ sơ phòng thí nghiệm — Xem trang nhật ký [38]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "",
+        "topic": "Hồ sơ phòng thí nghiệm — Tên người lập [42]",
+        "requirement": "Hồ sơ phòng thí nghiệm — Xem trang nhật ký [43]",
+        "method": "Hồ sơ phòng thí nghiệm — Kiểm tra chữ ký hồ sơ [44]"
+      }
+    },
+    {
+      "id": "S12",
+      "text": "\nHồ sơ phòng thí nghiệm — Mã biểu mẫu [46]\n\nHồ sơ phòng thí nghiệm — Xem trang nhật ký [48]",
+      "start": 1622,
+      "end": 1713,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Hồ sơ phòng thí nghiệm — Ngày ghi sổ [0]",
+          "elementIndex": 0
+        },
+        "Hồ sơ phòng thí nghiệm — Ngày ghi sổ [5]",
+        "Hồ sơ phòng thí nghiệm — Xem trang nhật ký [38]"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "",
+        "topic": "Hồ sơ phòng thí nghiệm — Mã biểu mẫu [46]",
+        "requirement": "",
+        "method": "Hồ sơ phòng thí nghiệm — Xem trang nhật ký [48]"
+      }
+    }
+  ]
+}

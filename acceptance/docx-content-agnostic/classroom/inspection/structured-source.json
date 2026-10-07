@@ -1,0 +1,1915 @@
+{
+  "schemaVersion": "1.0",
+  "format": "docx",
+  "fileName": "source.docx",
+  "elements": [
+    {
+      "kind": "paragraph",
+      "elementIndex": 0,
+      "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Học liệu lớp học — Hộp bút màu [0]",
+      "headingLevel": 0,
+      "style": null,
+      "list": null,
+      "hierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Học liệu lớp học — Hộp bút màu [0]",
+          "elementIndex": 0
+        }
+      ]
+    },
+    {
+      "kind": "table",
+      "tableIndex": 0,
+      "elementIndex": 1
+    }
+  ],
+  "tables": [
+    {
+      "tableIndex": 0,
+      "elementIndex": 1,
+      "columnCount": 4,
+      "rows": [
+        {
+          "rowIndex": 0,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Trang mục lục [1]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Trang mục lục [1]",
+              "resolvedText": "Học liệu lớp học — Trang mục lục [1]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Nhãn vở học tập [2]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Nhãn vở học tập [2]",
+              "resolvedText": "Học liệu lớp học — Nhãn vở học tập [2]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đọc tên học liệu [3]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đọc tên học liệu [3]",
+              "resolvedText": "Học liệu lớp học — Đọc tên học liệu [3]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đối chiếu danh sách lớp [4]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đối chiếu danh sách lớp [4]",
+              "resolvedText": "Học liệu lớp học — Đối chiếu danh sách lớp [4]"
+            }
+          ],
+          "header": false,
+          "role": "header"
+        },
+        {
+          "rowIndex": 1,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 1,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 4
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 1,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 4
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Hộp bút màu [5]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Hộp bút màu [5]",
+              "resolvedText": "Học liệu lớp học — Hộp bút màu [5]"
+            }
+          ],
+          "header": false,
+          "role": "section"
+        },
+        {
+          "rowIndex": 2,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Trang mục lục [6]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Trang mục lục [6]",
+              "resolvedText": "Học liệu lớp học — Trang mục lục [6]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Nhãn vở học tập [7]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Nhãn vở học tập [7]",
+              "resolvedText": "Học liệu lớp học — Nhãn vở học tập [7]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "header": false,
+          "role": "group"
+        },
+        {
+          "rowIndex": 3,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "restart",
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Hộp bút màu [10]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Hộp bút màu [10]",
+              "resolvedText": "Học liệu lớp học — Hộp bút màu [10]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Trang mục lục [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Trang mục lục [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X",
+              "resolvedText": "Học liệu lớp học — Trang mục lục [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Nhãn vở học tập [12]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Nhãn vở học tập [12]",
+              "resolvedText": "Học liệu lớp học — Nhãn vở học tập [12]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đọc tên học liệu [13]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đọc tên học liệu [13]",
+              "resolvedText": "Học liệu lớp học — Đọc tên học liệu [13]"
+            }
+          ],
+          "header": false,
+          "role": "item"
+        },
+        {
+          "rowIndex": 4,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "Học liệu lớp học — Hộp bút màu [10]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Hộp bút màu [15]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Hộp bút màu [15]",
+              "resolvedText": "Học liệu lớp học — Hộp bút màu [15]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Trang mục lục [16]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Trang mục lục [16]",
+              "resolvedText": "Học liệu lớp học — Trang mục lục [16]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Nhãn vở học tập [17]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Học liệu lớp học — Đọc tên học liệu [18]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Nhãn vở học tập [17]\nHọc liệu lớp học — Đọc tên học liệu [18]",
+              "resolvedText": "Học liệu lớp học — Nhãn vở học tập [17]\nHọc liệu lớp học — Đọc tên học liệu [18]"
+            }
+          ],
+          "header": false,
+          "role": "item"
+        },
+        {
+          "rowIndex": 5,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "header": false,
+          "role": "empty"
+        },
+        {
+          "rowIndex": 6,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đọc tên học liệu [23]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đọc tên học liệu [23]",
+              "resolvedText": "Học liệu lớp học — Đọc tên học liệu [23]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đối chiếu danh sách lớp [24]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đối chiếu danh sách lớp [24]",
+              "resolvedText": "Học liệu lớp học — Đối chiếu danh sách lớp [24]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "header": false,
+          "role": "group"
+        },
+        {
+          "rowIndex": 7,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đọc tên học liệu [28]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đọc tên học liệu [28]",
+              "resolvedText": "Học liệu lớp học — Đọc tên học liệu [28]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — 2:0 α β γ",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": {
+                    "numId": "1",
+                    "level": "0",
+                    "definition": {
+                      "format": "bullet",
+                      "levelText": "•",
+                      "start": "1"
+                    }
+                  }
+                },
+                {
+                  "text": "Học liệu lớp học — 2:1 α β γ",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": {
+                    "numId": "1",
+                    "level": "0",
+                    "definition": {
+                      "format": "bullet",
+                      "levelText": "•",
+                      "start": "1"
+                    }
+                  }
+                },
+                {
+                  "text": "Học liệu lớp học — 2:2 α β γ",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": {
+                    "numId": "1",
+                    "level": "0",
+                    "definition": {
+                      "format": "bullet",
+                      "levelText": "•",
+                      "start": "1"
+                    }
+                  }
+                }
+              ],
+              "text": "Học liệu lớp học — 2:0 α β γ\nHọc liệu lớp học — 2:1 α β γ\nHọc liệu lớp học — 2:2 α β γ",
+              "resolvedText": "Học liệu lớp học — 2:0 α β γ\nHọc liệu lớp học — 2:1 α β γ\nHọc liệu lớp học — 2:2 α β γ"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — 3:0 α β γ",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": {
+                    "numId": "2",
+                    "level": "0",
+                    "definition": {
+                      "format": "decimal",
+                      "levelText": "%1.",
+                      "start": "1"
+                    }
+                  }
+                },
+                {
+                  "text": "Học liệu lớp học — 3:1 α β γ",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": {
+                    "numId": "2",
+                    "level": "0",
+                    "definition": {
+                      "format": "decimal",
+                      "levelText": "%1.",
+                      "start": "1"
+                    }
+                  }
+                },
+                {
+                  "text": "Học liệu lớp học — 3:2 α β γ",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": {
+                    "numId": "2",
+                    "level": "0",
+                    "definition": {
+                      "format": "decimal",
+                      "levelText": "%1.",
+                      "start": "1"
+                    }
+                  }
+                },
+                {
+                  "text": "Học liệu lớp học — 3:3 α β γ",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": {
+                    "numId": "2",
+                    "level": "0",
+                    "definition": {
+                      "format": "decimal",
+                      "levelText": "%1.",
+                      "start": "1"
+                    }
+                  }
+                }
+              ],
+              "text": "Học liệu lớp học — 3:0 α β γ\nHọc liệu lớp học — 3:1 α β γ\nHọc liệu lớp học — 3:2 α β γ\nHọc liệu lớp học — 3:3 α β γ",
+              "resolvedText": "Học liệu lớp học — 3:0 α β γ\nHọc liệu lớp học — 3:1 α β γ\nHọc liệu lớp học — 3:2 α β γ\nHọc liệu lớp học — 3:3 α β γ"
+            }
+          ],
+          "header": false,
+          "role": "item"
+        },
+        {
+          "rowIndex": 8,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đối chiếu danh sách lớp [34]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đối chiếu danh sách lớp [34]",
+              "resolvedText": "Học liệu lớp học — Đối chiếu danh sách lớp [34]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Hộp bút màu [35]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Hộp bút màu [35]",
+              "resolvedText": "Học liệu lớp học — Hộp bút màu [35]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Trang mục lục [36]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Trang mục lục [36]",
+              "resolvedText": "Học liệu lớp học — Trang mục lục [36]"
+            }
+          ],
+          "header": false,
+          "role": "item"
+        },
+        {
+          "rowIndex": 9,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Nhãn vở học tập [37]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Nhãn vở học tập [37]",
+              "resolvedText": "Học liệu lớp học — Nhãn vở học tập [37]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đọc tên học liệu [38]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đọc tên học liệu [38]",
+              "resolvedText": "Học liệu lớp học — Đọc tên học liệu [38]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "header": false,
+          "role": "group"
+        },
+        {
+          "rowIndex": 10,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Nhãn vở học tập [42]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Nhãn vở học tập [42]",
+              "resolvedText": "Học liệu lớp học — Nhãn vở học tập [42]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đọc tên học liệu [43]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đọc tên học liệu [43]",
+              "resolvedText": "Học liệu lớp học — Đọc tên học liệu [43]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đối chiếu danh sách lớp [44]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đối chiếu danh sách lớp [44]",
+              "resolvedText": "Học liệu lớp học — Đối chiếu danh sách lớp [44]"
+            }
+          ],
+          "header": false,
+          "role": "item"
+        },
+        {
+          "rowIndex": 11,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Trang mục lục [46]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Trang mục lục [46]",
+              "resolvedText": "Học liệu lớp học — Trang mục lục [46]"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Học liệu lớp học — Đọc tên học liệu [48]",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Học liệu lớp học — Đọc tên học liệu [48]",
+              "resolvedText": "Học liệu lớp học — Đọc tên học liệu [48]"
+            }
+          ],
+          "header": false,
+          "role": "item"
+        }
+      ],
+      "hierarchy": [
+        {
+          "title": "Học liệu lớp học — Hộp bút màu [5]",
+          "rowIndex": 1,
+          "groups": [
+            {
+              "title": "Học liệu lớp học — Nhãn vở học tập [7]",
+              "ordinal": "Học liệu lớp học — Trang mục lục [6]",
+              "rowIndex": 2,
+              "items": [
+                {
+                  "title": "Học liệu lớp học — Trang mục lục [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X",
+                  "rowIndex": 3
+                },
+                {
+                  "title": "Học liệu lớp học — Hộp bút màu [15]",
+                  "rowIndex": 4
+                }
+              ]
+            },
+            {
+              "title": "Học liệu lớp học — Đối chiếu danh sách lớp [24]",
+              "ordinal": "Học liệu lớp học — Đọc tên học liệu [23]",
+              "rowIndex": 6,
+              "items": [
+                {
+                  "title": "Học liệu lớp học — Đọc tên học liệu [28]",
+                  "rowIndex": 7
+                },
+                {
+                  "title": "Học liệu lớp học — Đối chiếu danh sách lớp [34]",
+                  "rowIndex": 8
+                }
+              ]
+            },
+            {
+              "title": "Học liệu lớp học — Đọc tên học liệu [38]",
+              "ordinal": "Học liệu lớp học — Nhãn vở học tập [37]",
+              "rowIndex": 9,
+              "items": [
+                {
+                  "title": "Học liệu lớp học — Nhãn vở học tập [42]",
+                  "rowIndex": 10
+                },
+                {
+                  "title": "Học liệu lớp học — Trang mục lục [46]",
+                  "rowIndex": 11
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "associations": [
+        {
+          "rowIndex": 3,
+          "section": "Học liệu lớp học — Hộp bút màu [5]",
+          "group": "Học liệu lớp học — Nhãn vở học tập [7]",
+          "ordinal": "Học liệu lớp học — Hộp bút màu [10]",
+          "topic": "Học liệu lớp học — Trang mục lục [11] ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° Mục A.1 Nội dung X",
+          "requirement": "Học liệu lớp học — Nhãn vở học tập [12]",
+          "method": "Học liệu lớp học — Đọc tên học liệu [13]",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        },
+        {
+          "rowIndex": 4,
+          "section": "Học liệu lớp học — Hộp bút màu [5]",
+          "group": "Học liệu lớp học — Nhãn vở học tập [7]",
+          "ordinal": "Học liệu lớp học — Hộp bút màu [10]",
+          "topic": "Học liệu lớp học — Hộp bút màu [15]",
+          "requirement": "Học liệu lớp học — Trang mục lục [16]",
+          "method": "Học liệu lớp học — Nhãn vở học tập [17]\nHọc liệu lớp học — Đọc tên học liệu [18]",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        },
+        {
+          "rowIndex": 7,
+          "section": "Học liệu lớp học — Hộp bút màu [5]",
+          "group": "Học liệu lớp học — Đối chiếu danh sách lớp [24]",
+          "ordinal": "",
+          "topic": "Học liệu lớp học — Đọc tên học liệu [28]",
+          "requirement": "Học liệu lớp học — 2:0 α β γ\nHọc liệu lớp học — 2:1 α β γ\nHọc liệu lớp học — 2:2 α β γ",
+          "method": "Học liệu lớp học — 3:0 α β γ\nHọc liệu lớp học — 3:1 α β γ\nHọc liệu lớp học — 3:2 α β γ\nHọc liệu lớp học — 3:3 α β γ",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        },
+        {
+          "rowIndex": 8,
+          "section": "Học liệu lớp học — Hộp bút màu [5]",
+          "group": "Học liệu lớp học — Đối chiếu danh sách lớp [24]",
+          "ordinal": "",
+          "topic": "Học liệu lớp học — Đối chiếu danh sách lớp [34]",
+          "requirement": "Học liệu lớp học — Hộp bút màu [35]",
+          "method": "Học liệu lớp học — Trang mục lục [36]",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 8,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        },
+        {
+          "rowIndex": 10,
+          "section": "Học liệu lớp học — Hộp bút màu [5]",
+          "group": "Học liệu lớp học — Đọc tên học liệu [38]",
+          "ordinal": "",
+          "topic": "Học liệu lớp học — Nhãn vở học tập [42]",
+          "requirement": "Học liệu lớp học — Đọc tên học liệu [43]",
+          "method": "Học liệu lớp học — Đối chiếu danh sách lớp [44]",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        },
+        {
+          "rowIndex": 11,
+          "section": "Học liệu lớp học — Hộp bút màu [5]",
+          "group": "Học liệu lớp học — Đọc tên học liệu [38]",
+          "ordinal": "",
+          "topic": "Học liệu lớp học — Trang mục lục [46]",
+          "requirement": "",
+          "method": "Học liệu lớp học — Đọc tên học liệu [48]",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            }
+          }
+        }
+      ],
+      "headingHierarchy": [
+        {
+          "level": 0,
+          "title": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Học liệu lớp học — Hộp bút màu [0]",
+          "elementIndex": 0
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "parserStatus": "PARSER_SUCCESS",
+  "layoutPolicy": {
+    "fourColumnFields": [
+      "ordinal",
+      "topic",
+      "requirement",
+      "method"
+    ],
+    "headerRows": 1,
+    "hierarchy": "layout-only; not semantic"
+  }
+}

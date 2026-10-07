@@ -1,0 +1,35 @@
+{
+  "scope": "Typography inventory; human interpretation required",
+  "aiStatus": "AI_NOT_EXECUTED",
+  "humanReview": "NOT REVIEWED",
+  "values": [
+    {
+      "token": "1/10",
+      "sourceRefs": [
+        "S5"
+      ],
+      "aiUsage": null
+    },
+    {
+      "token": "45°",
+      "sourceRefs": [
+        "S5"
+      ],
+      "aiUsage": null
+    },
+    {
+      "token": "≤ 3,0",
+      "sourceRefs": [
+        "S5"
+      ],
+      "aiUsage": null
+    },
+    {
+      "token": "≥ 1",
+      "sourceRefs": [
+        "S5"
+      ],
+      "aiUsage": null
+    }
+  ]
+}
