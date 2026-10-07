@@ -1,0 +1,784 @@
+{
+  "schemaVersion": "1.0",
+  "parserStatus": "PARSER_FAILED",
+  "acceptanceDecision": "FAIL",
+  "aiStatus": "AI_NOT_EXECUTED",
+  "humanReview": "NOT REVIEWED",
+  "sourceFileName": "KTKT cối 60.docx",
+  "sourceSha256": "d1b1b56aa537bcaad60980e2d72aa2db0f3e6e4c31c2d289b3fb182a2fc1a7cb",
+  "scope": "Literal OOXML typography inventory only; no interpretation, correction or normalization",
+  "sourceSegmentVerification": "NOT_ASSESSED_PARSE_FAILED",
+  "values": [
+    {
+      "rawToken": "60",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 0
+      },
+      "xmlTextNodeIndex": 23,
+      "startInTextNode": 0,
+      "endInTextNode": 2,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 50%",
+      "categories": [
+        "percentage-like"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 45,
+      "endInTextNode": 49,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "3",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "4",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "≥1mm",
+      "categories": [
+        "comparison-or-symbol-like",
+        "measurement-like"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 53,
+      "endInTextNode": 57,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 45",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 43,
+      "endInTextNode": 46,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "xmlTextNodeIndex": 8,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "xmlTextNodeIndex": 10,
+      "startInTextNode": 114,
+      "endInTextNode": 116,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "xmlTextNodeIndex": 10,
+      "startInTextNode": 182,
+      "endInTextNode": 184,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "5",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 3,0",
+      "categories": [
+        "decimal-comma-like"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 8,
+      "startInTextNode": 0,
+      "endInTextNode": 4,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "1/10",
+      "categories": [
+        "fraction-like"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 13,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 8,
+      "startInTextNode": 0,
+      "endInTextNode": 4,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 1 ",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 13,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 69,
+      "endInTextNode": 72,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 1 ",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 13,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 99,
+      "endInTextNode": 102,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 2 ",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 13,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 236,
+      "endInTextNode": 239,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "6",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 2,0",
+      "categories": [
+        "decimal-comma-like"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 15,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 8,
+      "startInTextNode": 0,
+      "endInTextNode": 4,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "1/10",
+      "categories": [
+        "fraction-like"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 17,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 8,
+      "startInTextNode": 0,
+      "endInTextNode": 4,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 20m",
+      "categories": [
+        "measurement-like"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 17,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 29,
+      "endInTextNode": 33,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 1 ",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 17,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 110,
+      "endInTextNode": 113,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 1 ",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 17,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 140,
+      "endInTextNode": 143,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 2 ",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 17,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 304,
+      "endInTextNode": 307,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "7",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 18,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "8",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 19,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 5,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "9",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 20,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "10",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 21,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 2,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 1 ",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 25,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 15,
+      "endInTextNode": 18,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 1,6÷2,0mm",
+      "categories": [
+        "decimal-comma-like",
+        "range-like",
+        "measurement-like"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 25,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 1,
+      "endInTextNode": 11,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": " 61,25mm",
+      "categories": [
+        "decimal-comma-like",
+        "measurement-like"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 26,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 9,
+      "startInTextNode": 0,
+      "endInTextNode": 8,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "xmlTextNodeIndex": 4,
+      "startInTextNode": 0,
+      "endInTextNode": 1,
+      "sourceSegment": null,
+      "preserved": null,
+      "verificationStatus": "NOT_ASSESSED_PARSE_FAILED"
+    }
+  ],
+  "fontDependentSymbols": [
+    {
+      "font": "Symbol",
+      "char": "F0A3",
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "nodeIndex": 6
+    },
+    {
+      "font": "Symbol",
+      "char": "F0A3",
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 15,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "nodeIndex": 6
+    },
+    {
+      "font": "Symbol",
+      "char": "F0A3",
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 26,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "nodeIndex": 7
+    }
+  ]
+}

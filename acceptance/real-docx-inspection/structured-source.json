@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "parserStatus": "PARSER_FAILED",
+  "acceptanceDecision": "FAIL",
+  "aiStatus": "AI_NOT_EXECUTED",
+  "humanReview": "NOT REVIEWED",
+  "sourceFileName": "KTKT cối 60.docx",
+  "sourceSha256": "d1b1b56aa537bcaad60980e2d72aa2db0f3e6e4c31c2d289b3fb182a2fc1a7cb",
+  "artifactStatus": "NOT_PRODUCED",
+  "document": null,
+  "reason": "Production parser rejected a font-dependent symbol; not a parsed document."
+}

@@ -1,0 +1,5853 @@
+{
+  "schemaVersion": "1.0",
+  "parserStatus": "PARSER_FAILED",
+  "acceptanceDecision": "FAIL",
+  "aiStatus": "AI_NOT_EXECUTED",
+  "humanReview": "NOT REVIEWED",
+  "sourceFileName": "KTKT cối 60.docx",
+  "sourceSha256": "d1b1b56aa537bcaad60980e2d72aa2db0f3e6e4c31c2d289b3fb182a2fc1a7cb",
+  "productionError": {
+    "code": "UNSUPPORTED_PARAGRAPH_NODE",
+    "message": "Images, objects, tracked changes, symbols or note references require review"
+  },
+  "auditMethod": "Independent raw OOXML metadata inspection, not production parser output",
+  "summary": {
+    "tablesDetected": 1,
+    "physicalRows": 36,
+    "physicalCells": 168,
+    "physicalParagraphs": 179,
+    "multiParagraphCells": 6,
+    "paragraphsWithNumberingMetadata": 0,
+    "logicalAssociations": null,
+    "segments": null,
+    "sectionsReconstructed": null,
+    "groupsReconstructed": null,
+    "continuationRowsDetected": 21,
+    "continuationRowsAssociated": null,
+    "continuationRowsUnresolved": 21,
+    "sourceMergeAnchorsVerified": 60,
+    "sourceOrphanMergesDetected": 0,
+    "unprojectedRows": null,
+    "textLossCount": null,
+    "textLossAudit": "NOT_ASSESSED_PARSE_FAILED",
+    "sourceSymbols": 3,
+    "numericLiteralOccurrences": 33,
+    "listLikeTextParagraphs": 9,
+    "bodyParagraphs": 3,
+    "verticalMergeRestarts": 16,
+    "verticalMergeContinuations": 44,
+    "headerContinuationCandidates": 1,
+    "dataContinuationCandidates": 20
+  },
+  "tables": [
+    {
+      "tableIndex": 0,
+      "elementIndex": 1,
+      "gridColumns": 5,
+      "physicalRows": 36,
+      "physicalCells": 168,
+      "horizontalSpanCells": 10,
+      "verticalMergeCells": 60
+    }
+  ],
+  "unsupportedSymbols": [
+    {
+      "font": "Symbol",
+      "char": "F0A3",
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "nodeIndex": 6
+    },
+    {
+      "font": "Symbol",
+      "char": "F0A3",
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 15,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "nodeIndex": 6
+    },
+    {
+      "font": "Symbol",
+      "char": "F0A3",
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 26,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "nodeIndex": 7
+    }
+  ],
+  "continuationCandidates": [
+    {
+      "tableIndex": 0,
+      "rowIndex": 1,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "HEADER_CONTINUATION"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 6,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 7,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 9,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 11,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 12,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 13,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 15,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 16,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 17,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 24,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 25,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 26,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 27,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 29,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 30,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 31,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 32,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 33,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 34,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 35,
+      "ordinalMerge": "continue",
+      "mergeAnchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "classification": "STRUCTURAL_CONTINUATION_CANDIDATE"
+    }
+  ],
+  "multiParagraphCells": [
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1
+      },
+      "paragraphCount": 3
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1
+      },
+      "paragraphCount": 2
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 13,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1
+      },
+      "paragraphCount": 2
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 15,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1
+      },
+      "paragraphCount": 2
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 17,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1
+      },
+      "paragraphCount": 2
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 25,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1
+      },
+      "paragraphCount": 3
+    }
+  ],
+  "warnings": [
+    {
+      "code": "FIVE_COLUMN_GRID_NOT_PROJECTED",
+      "detail": "Existing four-column projection does not reconstruct this split-topic layout."
+    }
+  ],
+  "rowStructureAudit": [
+    {
+      "tableIndex": 0,
+      "rowIndex": 0,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 1,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 1,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 1,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 1,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 1,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 2,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 3
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 3
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 2,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 2,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": true,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 3,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 4,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 5,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 6,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 7,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 8,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 9,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 3
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 2
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 10,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 11,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 12,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 13,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 2
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 14,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 15,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 15,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 15,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 15,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 15,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 15,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 15,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 2
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 15,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 15,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 16,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 16,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 16,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 16,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 16,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 16,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 16,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 16,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 16,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 17,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 17,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 17,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 14,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 17,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 17,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 2
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 17,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 17,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 17,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 17,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 18,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 18,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 18,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 18,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 18,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 18,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 18,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 18,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 18,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 19,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 19,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 19,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 19,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 19,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 19,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 19,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 19,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 19,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 20,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 20,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 20,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 20,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 20,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 20,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 20,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 20,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 20,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 21,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 21,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 21,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 21,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 21,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 21,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 21,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 21,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 21,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": true,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 22,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 22,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 22,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 22,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 3
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 22,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 3
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 22,
+            "cellIndex": 2,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 22,
+            "cellIndex": 2,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": true,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 23,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 24,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 24,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 24,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 24,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 24,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 24,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 24,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 24,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 24,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 25,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 25,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 25,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 25,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 25,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 25,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 25,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 3
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 25,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 25,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 26,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 26,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 26,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 26,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 26,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 26,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 26,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 26,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 26,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 27,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 27,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 27,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 23,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 27,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 27,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 27,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 27,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 27,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 27,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 28,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "restart",
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 29,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 29,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 29,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 29,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 29,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 29,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 29,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 29,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 29,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 30,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 30,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 30,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 30,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 30,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 30,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 30,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 30,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 30,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 31,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 31,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 31,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 31,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 31,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 31,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 31,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 31,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 31,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 32,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 32,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 32,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 32,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 32,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 32,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 32,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 32,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 32,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 33,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 33,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 33,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 33,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 33,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 33,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 33,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 33,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 33,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 34,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 34,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 34,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 34,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 34,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 34,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 34,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 34,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 34,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    },
+    {
+      "tableIndex": 0,
+      "rowIndex": 35,
+      "cells": [
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 35,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 35,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 28,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "verticalMerge": "continue",
+          "blank": true,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 35,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 35,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 35,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 35,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        },
+        {
+          "origin": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 35,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "anchor": {
+            "fileName": "KTKT cối 60.docx",
+            "elementIndex": 1,
+            "tableIndex": 0,
+            "rowIndex": 35,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          },
+          "verticalMerge": null,
+          "blank": false,
+          "paragraphCount": 1
+        }
+      ]
+    }
+  ],
+  "mergeAnchorAudit": [
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 2
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 2
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 1,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 1,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 2
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 2
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 1,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 1,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 7,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 7,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 12,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 12,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 13,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 13,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 15,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 15,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 16,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 16,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 17,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 17,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 14,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 24,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 24,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 25,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 25,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 26,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 26,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 27,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 27,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 23,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "restart"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 29,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 29,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 30,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 30,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 31,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 31,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 32,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 32,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 33,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 33,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 34,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 34,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 35,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    },
+    {
+      "origin": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 35,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "anchor": {
+        "fileName": "KTKT cối 60.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 28,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1
+      },
+      "mode": "continue"
+    }
+  ],
+  "sourceOrphanMerges": [],
+  "literalSymbolCounts": {
+    "≥": 1,
+    "≤": 0,
+    "%": 2,
+    "÷": 1,
+    "/": 2,
+    "°": 0,
+    ",": 79,
+    ".": 22,
+    "£": 0
+  }
+}
