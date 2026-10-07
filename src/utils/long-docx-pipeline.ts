@@ -28,7 +28,6 @@ export type LongDocxOptions = {
 
 type GeneratedChunk = {
   title?: string;
-  source_text?: string;
   questions?: Array<{
     question?: string;
     selection_mode?: 'single' | 'multiple';
@@ -126,6 +125,7 @@ export async function extractDocxSections(
     }
     if (headingLike && buffer.length === 0) {
       heading = paragraph.text;
+      headingLevel = Number(paragraph.style.match(/[1-6]$/)?.[0] || 1);
       continue;
     }
 
