@@ -14,6 +14,7 @@ export type DocxSection = {
   text: string;
   paragraphCount: number;
   blocks: SourceBlock[];
+  headingLevel?: number;
 };
 
 export type LongDocxOptions = {
@@ -87,6 +88,7 @@ export async function extractDocxSections(
   let buffer: string[] = [];
   let paragraphCount = 0;
   let blockOrdinal = 0;
+  let headingLevel = 1;
 
   const flush = () => {
     const text = buffer.join('\n\n').trim();
@@ -96,6 +98,7 @@ export async function extractDocxSections(
       heading,
       text,
       paragraphCount,
+      headingLevel,
       blocks: buffer.map((value, index) => ({
         id: `SOURCE-${String(blockOrdinal - buffer.length + index + 1).padStart(5, '0')}`,
         type: 'paragraph' as const,
@@ -118,6 +121,7 @@ export async function extractDocxSections(
     if (headingLike && buffer.length > 0) {
       flush();
       heading = paragraph.text;
+      headingLevel = Number(paragraph.style.match(/[1-6]$/)?.[0] || 1);
       continue;
     }
     if (headingLike && buffer.length === 0) {
