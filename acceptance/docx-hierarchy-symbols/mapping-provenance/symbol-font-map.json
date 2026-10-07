@@ -1,0 +1,775 @@
+{
+  "schemaVersion": "1.0",
+  "encoding": "Standard PDF SymbolEncoding",
+  "encodingSource": {
+    "implementation": "ReportLab",
+    "version": "4.4.9",
+    "module": "reportlab.pdfbase._fontdata_enc_symbol",
+    "sha256": "93335536e0c5c6d80dd5994d050f33940e8e1fc3a828cbfba13b6101616cb372",
+    "reference": "ISO 32000-1:2008 Annex D, Symbol Set and Encoding"
+  },
+  "glyphSource": {
+    "publisher": "Adobe",
+    "table": "Adobe Glyph List 2.0",
+    "url": "https://github.com/adobe-type-tools/agl-aglfn/blob/master/glyphlist.txt",
+    "sha256": "a3b2f61ced9f3644cc0d4ecde5c59df34ca286c689d9484a43a710a81c466789"
+  },
+  "mappings": {
+    "20": {
+      "glyphName": "space",
+      "unicode": " "
+    },
+    "21": {
+      "glyphName": "exclam",
+      "unicode": "!"
+    },
+    "22": {
+      "glyphName": "universal",
+      "unicode": "∀"
+    },
+    "23": {
+      "glyphName": "numbersign",
+      "unicode": "#"
+    },
+    "24": {
+      "glyphName": "existential",
+      "unicode": "∃"
+    },
+    "25": {
+      "glyphName": "percent",
+      "unicode": "%"
+    },
+    "26": {
+      "glyphName": "ampersand",
+      "unicode": "&"
+    },
+    "27": {
+      "glyphName": "suchthat",
+      "unicode": "∋"
+    },
+    "28": {
+      "glyphName": "parenleft",
+      "unicode": "("
+    },
+    "29": {
+      "glyphName": "parenright",
+      "unicode": ")"
+    },
+    "2A": {
+      "glyphName": "asteriskmath",
+      "unicode": "∗"
+    },
+    "2B": {
+      "glyphName": "plus",
+      "unicode": "+"
+    },
+    "2C": {
+      "glyphName": "comma",
+      "unicode": ","
+    },
+    "2D": {
+      "glyphName": "minus",
+      "unicode": "−"
+    },
+    "2E": {
+      "glyphName": "period",
+      "unicode": "."
+    },
+    "2F": {
+      "glyphName": "slash",
+      "unicode": "/"
+    },
+    "30": {
+      "glyphName": "zero",
+      "unicode": "0"
+    },
+    "31": {
+      "glyphName": "one",
+      "unicode": "1"
+    },
+    "32": {
+      "glyphName": "two",
+      "unicode": "2"
+    },
+    "33": {
+      "glyphName": "three",
+      "unicode": "3"
+    },
+    "34": {
+      "glyphName": "four",
+      "unicode": "4"
+    },
+    "35": {
+      "glyphName": "five",
+      "unicode": "5"
+    },
+    "36": {
+      "glyphName": "six",
+      "unicode": "6"
+    },
+    "37": {
+      "glyphName": "seven",
+      "unicode": "7"
+    },
+    "38": {
+      "glyphName": "eight",
+      "unicode": "8"
+    },
+    "39": {
+      "glyphName": "nine",
+      "unicode": "9"
+    },
+    "3A": {
+      "glyphName": "colon",
+      "unicode": ":"
+    },
+    "3B": {
+      "glyphName": "semicolon",
+      "unicode": ";"
+    },
+    "3C": {
+      "glyphName": "less",
+      "unicode": "<"
+    },
+    "3D": {
+      "glyphName": "equal",
+      "unicode": "="
+    },
+    "3E": {
+      "glyphName": "greater",
+      "unicode": ">"
+    },
+    "3F": {
+      "glyphName": "question",
+      "unicode": "?"
+    },
+    "40": {
+      "glyphName": "congruent",
+      "unicode": "≅"
+    },
+    "41": {
+      "glyphName": "Alpha",
+      "unicode": "Α"
+    },
+    "42": {
+      "glyphName": "Beta",
+      "unicode": "Β"
+    },
+    "43": {
+      "glyphName": "Chi",
+      "unicode": "Χ"
+    },
+    "44": {
+      "glyphName": "Delta",
+      "unicode": "∆"
+    },
+    "45": {
+      "glyphName": "Epsilon",
+      "unicode": "Ε"
+    },
+    "46": {
+      "glyphName": "Phi",
+      "unicode": "Φ"
+    },
+    "47": {
+      "glyphName": "Gamma",
+      "unicode": "Γ"
+    },
+    "48": {
+      "glyphName": "Eta",
+      "unicode": "Η"
+    },
+    "49": {
+      "glyphName": "Iota",
+      "unicode": "Ι"
+    },
+    "4A": {
+      "glyphName": "theta1",
+      "unicode": "ϑ"
+    },
+    "4B": {
+      "glyphName": "Kappa",
+      "unicode": "Κ"
+    },
+    "4C": {
+      "glyphName": "Lambda",
+      "unicode": "Λ"
+    },
+    "4D": {
+      "glyphName": "Mu",
+      "unicode": "Μ"
+    },
+    "4E": {
+      "glyphName": "Nu",
+      "unicode": "Ν"
+    },
+    "4F": {
+      "glyphName": "Omicron",
+      "unicode": "Ο"
+    },
+    "50": {
+      "glyphName": "Pi",
+      "unicode": "Π"
+    },
+    "51": {
+      "glyphName": "Theta",
+      "unicode": "Θ"
+    },
+    "52": {
+      "glyphName": "Rho",
+      "unicode": "Ρ"
+    },
+    "53": {
+      "glyphName": "Sigma",
+      "unicode": "Σ"
+    },
+    "54": {
+      "glyphName": "Tau",
+      "unicode": "Τ"
+    },
+    "55": {
+      "glyphName": "Upsilon",
+      "unicode": "Υ"
+    },
+    "56": {
+      "glyphName": "sigma1",
+      "unicode": "ς"
+    },
+    "57": {
+      "glyphName": "Omega",
+      "unicode": "Ω"
+    },
+    "58": {
+      "glyphName": "Xi",
+      "unicode": "Ξ"
+    },
+    "59": {
+      "glyphName": "Psi",
+      "unicode": "Ψ"
+    },
+    "5A": {
+      "glyphName": "Zeta",
+      "unicode": "Ζ"
+    },
+    "5B": {
+      "glyphName": "bracketleft",
+      "unicode": "["
+    },
+    "5C": {
+      "glyphName": "therefore",
+      "unicode": "∴"
+    },
+    "5D": {
+      "glyphName": "bracketright",
+      "unicode": "]"
+    },
+    "5E": {
+      "glyphName": "perpendicular",
+      "unicode": "⊥"
+    },
+    "5F": {
+      "glyphName": "underscore",
+      "unicode": "_"
+    },
+    "60": {
+      "glyphName": "radicalex",
+      "unicode": ""
+    },
+    "61": {
+      "glyphName": "alpha",
+      "unicode": "α"
+    },
+    "62": {
+      "glyphName": "beta",
+      "unicode": "β"
+    },
+    "63": {
+      "glyphName": "chi",
+      "unicode": "χ"
+    },
+    "64": {
+      "glyphName": "delta",
+      "unicode": "δ"
+    },
+    "65": {
+      "glyphName": "epsilon",
+      "unicode": "ε"
+    },
+    "66": {
+      "glyphName": "phi",
+      "unicode": "φ"
+    },
+    "67": {
+      "glyphName": "gamma",
+      "unicode": "γ"
+    },
+    "68": {
+      "glyphName": "eta",
+      "unicode": "η"
+    },
+    "69": {
+      "glyphName": "iota",
+      "unicode": "ι"
+    },
+    "6A": {
+      "glyphName": "phi1",
+      "unicode": "ϕ"
+    },
+    "6B": {
+      "glyphName": "kappa",
+      "unicode": "κ"
+    },
+    "6C": {
+      "glyphName": "lambda",
+      "unicode": "λ"
+    },
+    "6D": {
+      "glyphName": "mu",
+      "unicode": "µ"
+    },
+    "6E": {
+      "glyphName": "nu",
+      "unicode": "ν"
+    },
+    "6F": {
+      "glyphName": "omicron",
+      "unicode": "ο"
+    },
+    "70": {
+      "glyphName": "pi",
+      "unicode": "π"
+    },
+    "71": {
+      "glyphName": "theta",
+      "unicode": "θ"
+    },
+    "72": {
+      "glyphName": "rho",
+      "unicode": "ρ"
+    },
+    "73": {
+      "glyphName": "sigma",
+      "unicode": "σ"
+    },
+    "74": {
+      "glyphName": "tau",
+      "unicode": "τ"
+    },
+    "75": {
+      "glyphName": "upsilon",
+      "unicode": "υ"
+    },
+    "76": {
+      "glyphName": "omega1",
+      "unicode": "ϖ"
+    },
+    "77": {
+      "glyphName": "omega",
+      "unicode": "ω"
+    },
+    "78": {
+      "glyphName": "xi",
+      "unicode": "ξ"
+    },
+    "79": {
+      "glyphName": "psi",
+      "unicode": "ψ"
+    },
+    "7A": {
+      "glyphName": "zeta",
+      "unicode": "ζ"
+    },
+    "7B": {
+      "glyphName": "braceleft",
+      "unicode": "{"
+    },
+    "7C": {
+      "glyphName": "bar",
+      "unicode": "|"
+    },
+    "7D": {
+      "glyphName": "braceright",
+      "unicode": "}"
+    },
+    "7E": {
+      "glyphName": "similar",
+      "unicode": "∼"
+    },
+    "A0": {
+      "glyphName": "Euro",
+      "unicode": "€"
+    },
+    "A1": {
+      "glyphName": "Upsilon1",
+      "unicode": "ϒ"
+    },
+    "A2": {
+      "glyphName": "minute",
+      "unicode": "′"
+    },
+    "A3": {
+      "glyphName": "lessequal",
+      "unicode": "≤"
+    },
+    "A4": {
+      "glyphName": "fraction",
+      "unicode": "⁄"
+    },
+    "A5": {
+      "glyphName": "infinity",
+      "unicode": "∞"
+    },
+    "A6": {
+      "glyphName": "florin",
+      "unicode": "ƒ"
+    },
+    "A7": {
+      "glyphName": "club",
+      "unicode": "♣"
+    },
+    "A8": {
+      "glyphName": "diamond",
+      "unicode": "♦"
+    },
+    "A9": {
+      "glyphName": "heart",
+      "unicode": "♥"
+    },
+    "AA": {
+      "glyphName": "spade",
+      "unicode": "♠"
+    },
+    "AB": {
+      "glyphName": "arrowboth",
+      "unicode": "↔"
+    },
+    "AC": {
+      "glyphName": "arrowleft",
+      "unicode": "←"
+    },
+    "AD": {
+      "glyphName": "arrowup",
+      "unicode": "↑"
+    },
+    "AE": {
+      "glyphName": "arrowright",
+      "unicode": "→"
+    },
+    "AF": {
+      "glyphName": "arrowdown",
+      "unicode": "↓"
+    },
+    "B0": {
+      "glyphName": "degree",
+      "unicode": "°"
+    },
+    "B1": {
+      "glyphName": "plusminus",
+      "unicode": "±"
+    },
+    "B2": {
+      "glyphName": "second",
+      "unicode": "″"
+    },
+    "B3": {
+      "glyphName": "greaterequal",
+      "unicode": "≥"
+    },
+    "B4": {
+      "glyphName": "multiply",
+      "unicode": "×"
+    },
+    "B5": {
+      "glyphName": "proportional",
+      "unicode": "∝"
+    },
+    "B6": {
+      "glyphName": "partialdiff",
+      "unicode": "∂"
+    },
+    "B7": {
+      "glyphName": "bullet",
+      "unicode": "•"
+    },
+    "B8": {
+      "glyphName": "divide",
+      "unicode": "÷"
+    },
+    "B9": {
+      "glyphName": "notequal",
+      "unicode": "≠"
+    },
+    "BA": {
+      "glyphName": "equivalence",
+      "unicode": "≡"
+    },
+    "BB": {
+      "glyphName": "approxequal",
+      "unicode": "≈"
+    },
+    "BC": {
+      "glyphName": "ellipsis",
+      "unicode": "…"
+    },
+    "BD": {
+      "glyphName": "arrowvertex",
+      "unicode": ""
+    },
+    "BE": {
+      "glyphName": "arrowhorizex",
+      "unicode": ""
+    },
+    "BF": {
+      "glyphName": "carriagereturn",
+      "unicode": "↵"
+    },
+    "C0": {
+      "glyphName": "aleph",
+      "unicode": "ℵ"
+    },
+    "C1": {
+      "glyphName": "Ifraktur",
+      "unicode": "ℑ"
+    },
+    "C2": {
+      "glyphName": "Rfraktur",
+      "unicode": "ℜ"
+    },
+    "C3": {
+      "glyphName": "weierstrass",
+      "unicode": "℘"
+    },
+    "C4": {
+      "glyphName": "circlemultiply",
+      "unicode": "⊗"
+    },
+    "C5": {
+      "glyphName": "circleplus",
+      "unicode": "⊕"
+    },
+    "C6": {
+      "glyphName": "emptyset",
+      "unicode": "∅"
+    },
+    "C7": {
+      "glyphName": "intersection",
+      "unicode": "∩"
+    },
+    "C8": {
+      "glyphName": "union",
+      "unicode": "∪"
+    },
+    "C9": {
+      "glyphName": "propersuperset",
+      "unicode": "⊃"
+    },
+    "CA": {
+      "glyphName": "reflexsuperset",
+      "unicode": "⊇"
+    },
+    "CB": {
+      "glyphName": "notsubset",
+      "unicode": "⊄"
+    },
+    "CC": {
+      "glyphName": "propersubset",
+      "unicode": "⊂"
+    },
+    "CD": {
+      "glyphName": "reflexsubset",
+      "unicode": "⊆"
+    },
+    "CE": {
+      "glyphName": "element",
+      "unicode": "∈"
+    },
+    "CF": {
+      "glyphName": "notelement",
+      "unicode": "∉"
+    },
+    "D0": {
+      "glyphName": "angle",
+      "unicode": "∠"
+    },
+    "D1": {
+      "glyphName": "gradient",
+      "unicode": "∇"
+    },
+    "D2": {
+      "glyphName": "registerserif",
+      "unicode": ""
+    },
+    "D3": {
+      "glyphName": "copyrightserif",
+      "unicode": ""
+    },
+    "D4": {
+      "glyphName": "trademarkserif",
+      "unicode": ""
+    },
+    "D5": {
+      "glyphName": "product",
+      "unicode": "∏"
+    },
+    "D6": {
+      "glyphName": "radical",
+      "unicode": "√"
+    },
+    "D7": {
+      "glyphName": "dotmath",
+      "unicode": "⋅"
+    },
+    "D8": {
+      "glyphName": "logicalnot",
+      "unicode": "¬"
+    },
+    "D9": {
+      "glyphName": "logicaland",
+      "unicode": "∧"
+    },
+    "DA": {
+      "glyphName": "logicalor",
+      "unicode": "∨"
+    },
+    "DB": {
+      "glyphName": "arrowdblboth",
+      "unicode": "⇔"
+    },
+    "DC": {
+      "glyphName": "arrowdblleft",
+      "unicode": "⇐"
+    },
+    "DD": {
+      "glyphName": "arrowdblup",
+      "unicode": "⇑"
+    },
+    "DE": {
+      "glyphName": "arrowdblright",
+      "unicode": "⇒"
+    },
+    "DF": {
+      "glyphName": "arrowdbldown",
+      "unicode": "⇓"
+    },
+    "E0": {
+      "glyphName": "lozenge",
+      "unicode": "◊"
+    },
+    "E1": {
+      "glyphName": "angleleft",
+      "unicode": "〈"
+    },
+    "E2": {
+      "glyphName": "registersans",
+      "unicode": ""
+    },
+    "E3": {
+      "glyphName": "copyrightsans",
+      "unicode": ""
+    },
+    "E4": {
+      "glyphName": "trademarksans",
+      "unicode": ""
+    },
+    "E5": {
+      "glyphName": "summation",
+      "unicode": "∑"
+    },
+    "E6": {
+      "glyphName": "parenlefttp",
+      "unicode": ""
+    },
+    "E7": {
+      "glyphName": "parenleftex",
+      "unicode": ""
+    },
+    "E8": {
+      "glyphName": "parenleftbt",
+      "unicode": ""
+    },
+    "E9": {
+      "glyphName": "bracketlefttp",
+      "unicode": ""
+    },
+    "EA": {
+      "glyphName": "bracketleftex",
+      "unicode": ""
+    },
+    "EB": {
+      "glyphName": "bracketleftbt",
+      "unicode": ""
+    },
+    "EC": {
+      "glyphName": "bracelefttp",
+      "unicode": ""
+    },
+    "ED": {
+      "glyphName": "braceleftmid",
+      "unicode": ""
+    },
+    "EE": {
+      "glyphName": "braceleftbt",
+      "unicode": ""
+    },
+    "EF": {
+      "glyphName": "braceex",
+      "unicode": ""
+    },
+    "F1": {
+      "glyphName": "angleright",
+      "unicode": "〉"
+    },
+    "F2": {
+      "glyphName": "integral",
+      "unicode": "∫"
+    },
+    "F3": {
+      "glyphName": "integraltp",
+      "unicode": "⌠"
+    },
+    "F4": {
+      "glyphName": "integralex",
+      "unicode": ""
+    },
+    "F5": {
+      "glyphName": "integralbt",
+      "unicode": "⌡"
+    },
+    "F6": {
+      "glyphName": "parenrighttp",
+      "unicode": ""
+    },
+    "F7": {
+      "glyphName": "parenrightex",
+      "unicode": ""
+    },
+    "F8": {
+      "glyphName": "parenrightbt",
+      "unicode": ""
+    },
+    "F9": {
+      "glyphName": "bracketrighttp",
+      "unicode": ""
+    },
+    "FA": {
+      "glyphName": "bracketrightex",
+      "unicode": ""
+    },
+    "FB": {
+      "glyphName": "bracketrightbt",
+      "unicode": ""
+    },
+    "FC": {
+      "glyphName": "bracerighttp",
+      "unicode": ""
+    },
+    "FD": {
+      "glyphName": "bracerightmid",
+      "unicode": ""
+    },
+    "FE": {
+      "glyphName": "bracerightbt",
+      "unicode": ""
+    }
+  }
+}

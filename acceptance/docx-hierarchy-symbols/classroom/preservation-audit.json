@@ -1,0 +1,25 @@
+{
+  "parserStatus": "PARSER_SUCCESS",
+  "acceptanceDecision": "PASS",
+  "sourceFileName": "source.docx",
+  "sourceSha256": "7f6c415cd46b9b5e5dd405a4a89d0f8b75eba56d798b61b77072eb514a30a5a8",
+  "aiStatus": "AI_NOT_EXECUTED",
+  "humanReview": "NOT REVIEWED",
+  "checks": {
+    "physicalParagraphs": 70,
+    "physicalParagraphEquality": true,
+    "symbols": 1,
+    "symbolMetadataEquality": true,
+    "physicalCellOriginChecks": 59,
+    "sectionBoundaryChecks": 9,
+    "rowSegmentCoverageChecks": 13,
+    "logicalAssociations": 9,
+    "requirementMethodOriginChecks": 18,
+    "segments": 14,
+    "numericOccurrences": 99,
+    "textLossCount": 0
+  },
+  "warnings": [],
+  "errors": [],
+  "scope": "Deterministic structure/typography only; no semantic accuracy or visual rendering claim"
+}

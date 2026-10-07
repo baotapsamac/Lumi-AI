@@ -1,0 +1,2061 @@
+{
+  "scope": "Literal typography inventory only; no normalization or semantic accuracy claim",
+  "aiStatus": "AI_NOT_EXECUTED",
+  "humanReview": "NOT REVIEWED",
+  "values": [
+    {
+      "token": "1/10",
+      "sourceRefs": [
+        "S4",
+        "S11"
+      ],
+      "aiUsage": null
+    },
+    {
+      "token": "45°",
+      "sourceRefs": [
+        "S4",
+        "S11"
+      ],
+      "aiUsage": null
+    },
+    {
+      "token": "≤ 2",
+      "sourceRefs": [
+        "S5"
+      ],
+      "aiUsage": null
+    },
+    {
+      "token": "≤ 3,0",
+      "sourceRefs": [
+        "S4",
+        "S11"
+      ],
+      "aiUsage": null
+    },
+    {
+      "token": "≥ 1",
+      "sourceRefs": [
+        "S4",
+        "S11"
+      ],
+      "aiUsage": null
+    }
+  ],
+  "offsetUnit": "UTF-16 code units",
+  "occurrences": [
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 9,
+      "endInParagraph": 10,
+      "sourceSegment": "S2",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 2,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 9,
+      "endInParagraph": 10,
+      "sourceSegment": "S2",
+      "preserved": true
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 9,
+      "endInParagraph": 10,
+      "sourceSegment": "S2",
+      "preserved": true
+    },
+    {
+      "rawToken": "3",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 9,
+      "endInParagraph": 10,
+      "sourceSegment": "S2",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 2,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 24,
+      "endInParagraph": 25,
+      "sourceSegment": "S3",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 2,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 3,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 16,
+      "endInParagraph": 17,
+      "sourceSegment": "S3",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 2,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 20,
+      "endInParagraph": 21,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "123",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 29,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "≥ 1",
+      "categories": [
+        "comparison-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 36,
+      "endInParagraph": 39,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "≤ 3,0",
+      "categories": [
+        "comparison-like",
+        "decimal-comma-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 40,
+      "endInParagraph": 45,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "1/10",
+      "categories": [
+        "fraction-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 46,
+      "endInParagraph": 50,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "45°",
+      "categories": [
+        "degree-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 51,
+      "endInParagraph": 54,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "450",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 55,
+      "endInParagraph": 58,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 20,
+      "endInParagraph": 21,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "123",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 29,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "≥ 1",
+      "categories": [
+        "comparison-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 36,
+      "endInParagraph": 39,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "≤ 3,0",
+      "categories": [
+        "comparison-like",
+        "decimal-comma-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 40,
+      "endInParagraph": 45,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "1/10",
+      "categories": [
+        "fraction-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 46,
+      "endInParagraph": 50,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "45°",
+      "categories": [
+        "degree-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 51,
+      "endInParagraph": 54,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "450",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 55,
+      "endInParagraph": 58,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 20,
+      "endInParagraph": 21,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "123",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 29,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "≥ 1",
+      "categories": [
+        "comparison-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 36,
+      "endInParagraph": 39,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "≤ 3,0",
+      "categories": [
+        "comparison-like",
+        "decimal-comma-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 40,
+      "endInParagraph": 45,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "1/10",
+      "categories": [
+        "fraction-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 46,
+      "endInParagraph": 50,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "45°",
+      "categories": [
+        "degree-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 51,
+      "endInParagraph": 54,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "450",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 55,
+      "endInParagraph": 58,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "3",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 3
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S4",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S5",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 14,
+      "endInParagraph": 15,
+      "sourceSegment": "S5",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 16,
+      "endInParagraph": 17,
+      "sourceSegment": "S5",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 27,
+      "sourceSegment": "S5",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 28,
+      "endInParagraph": 29,
+      "sourceSegment": "S5",
+      "preserved": true
+    },
+    {
+      "rawToken": "≤ 2",
+      "categories": [
+        "comparison-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 29,
+      "endInParagraph": 32,
+      "sourceSegment": "S5",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 21,
+      "endInParagraph": 22,
+      "sourceSegment": "S5",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 23,
+      "endInParagraph": 24,
+      "sourceSegment": "S5",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 14,
+      "endInParagraph": 15,
+      "sourceSegment": "S6",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 16,
+      "endInParagraph": 17,
+      "sourceSegment": "S6",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 27,
+      "sourceSegment": "S6",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 28,
+      "endInParagraph": 29,
+      "sourceSegment": "S6",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 21,
+      "endInParagraph": 22,
+      "sourceSegment": "S6",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 23,
+      "endInParagraph": 24,
+      "sourceSegment": "S6",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 14,
+      "endInParagraph": 15,
+      "sourceSegment": "S7",
+      "preserved": true
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 16,
+      "endInParagraph": 17,
+      "sourceSegment": "S7",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 27,
+      "sourceSegment": "S7",
+      "preserved": true
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 28,
+      "endInParagraph": 29,
+      "sourceSegment": "S7",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 21,
+      "endInParagraph": 22,
+      "sourceSegment": "S7",
+      "preserved": true
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 23,
+      "endInParagraph": 24,
+      "sourceSegment": "S7",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 7,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 2,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 21,
+      "endInParagraph": 22,
+      "sourceSegment": "S8",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 17,
+      "endInParagraph": 18,
+      "sourceSegment": "S9",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 2,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 17,
+      "endInParagraph": 18,
+      "sourceSegment": "S9",
+      "preserved": true
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 17,
+      "endInParagraph": 18,
+      "sourceSegment": "S9",
+      "preserved": true
+    },
+    {
+      "rawToken": "3",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 17,
+      "endInParagraph": 18,
+      "sourceSegment": "S9",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cellIndex": 0,
+        "columnStart": 0,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 24,
+      "endInParagraph": 25,
+      "sourceSegment": "S10",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 3,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 16,
+      "endInParagraph": 17,
+      "sourceSegment": "S10",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 2,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 20,
+      "endInParagraph": 21,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "123",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 29,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "≥ 1",
+      "categories": [
+        "comparison-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 36,
+      "endInParagraph": 39,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "≤ 3,0",
+      "categories": [
+        "comparison-like",
+        "decimal-comma-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 40,
+      "endInParagraph": 45,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "1/10",
+      "categories": [
+        "fraction-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 46,
+      "endInParagraph": 50,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "45°",
+      "categories": [
+        "degree-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 51,
+      "endInParagraph": 54,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "450",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 55,
+      "endInParagraph": 58,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 20,
+      "endInParagraph": 21,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "123",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 29,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "≥ 1",
+      "categories": [
+        "comparison-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 36,
+      "endInParagraph": 39,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "≤ 3,0",
+      "categories": [
+        "comparison-like",
+        "decimal-comma-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 40,
+      "endInParagraph": 45,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "1/10",
+      "categories": [
+        "fraction-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 46,
+      "endInParagraph": 50,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "45°",
+      "categories": [
+        "degree-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 51,
+      "endInParagraph": 54,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "450",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 55,
+      "endInParagraph": 58,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 20,
+      "endInParagraph": 21,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "123",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 29,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "≥ 1",
+      "categories": [
+        "comparison-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 36,
+      "endInParagraph": 39,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "≤ 3,0",
+      "categories": [
+        "comparison-like",
+        "decimal-comma-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 40,
+      "endInParagraph": 45,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "1/10",
+      "categories": [
+        "fraction-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 46,
+      "endInParagraph": 50,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "45°",
+      "categories": [
+        "degree-like"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 51,
+      "endInParagraph": 54,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "450",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 2,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 55,
+      "endInParagraph": 58,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 1
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "2",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 2
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "3",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cellIndex": 3,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 3
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S11",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 15,
+      "endInParagraph": 16,
+      "sourceSegment": "S12",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 14,
+      "endInParagraph": 15,
+      "sourceSegment": "S12",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 16,
+      "endInParagraph": 17,
+      "sourceSegment": "S12",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 27,
+      "sourceSegment": "S12",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 28,
+      "endInParagraph": 29,
+      "sourceSegment": "S12",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 21,
+      "endInParagraph": 22,
+      "sourceSegment": "S12",
+      "preserved": true
+    },
+    {
+      "rawToken": "0",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 23,
+      "endInParagraph": 24,
+      "sourceSegment": "S12",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 12,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 14,
+      "endInParagraph": 15,
+      "sourceSegment": "S13",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 12,
+        "cellIndex": 2,
+        "columnStart": 2,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 16,
+      "endInParagraph": 17,
+      "sourceSegment": "S13",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 12,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 26,
+      "endInParagraph": 27,
+      "sourceSegment": "S13",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 12,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 28,
+      "endInParagraph": 29,
+      "sourceSegment": "S13",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 12,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 21,
+      "endInParagraph": 22,
+      "sourceSegment": "S13",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 12,
+        "cellIndex": 4,
+        "columnStart": 4,
+        "columnSpan": 1,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 23,
+      "endInParagraph": 24,
+      "sourceSegment": "S13",
+      "preserved": true
+    },
+    {
+      "rawToken": "1",
+      "categories": [
+        "numeric-literal"
+      ],
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 13,
+        "cellIndex": 1,
+        "columnStart": 1,
+        "columnSpan": 2,
+        "paragraphIndex": 0
+      },
+      "startInParagraph": 21,
+      "endInParagraph": 22,
+      "sourceSegment": "S14",
+      "preserved": true
+    }
+  ],
+  "symbols": [
+    {
+      "font": "Symbol",
+      "charCode": "F0A3",
+      "resolvedUnicode": "≤",
+      "resolutionStatus": "mapped",
+      "glyphName": "lessequal",
+      "representation": "≤",
+      "mappingSource": "PDF SymbolEncoding + Adobe Glyph List 2.0",
+      "textStart": 29,
+      "textEnd": 30,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cellIndex": 3,
+        "columnStart": 3,
+        "columnSpan": 1,
+        "paragraphIndex": 0,
+        "nodeIndex": 4
+      },
+      "sourceSegment": "S5",
+      "preserved": true
+    }
+  ]
+}

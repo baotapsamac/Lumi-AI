@@ -1,0 +1,81 @@
+{
+  "parserStatus": "PARSER_SUCCESS",
+  "aiStatus": "AI_NOT_EXECUTED",
+  "humanReview": "NOT REVIEWED",
+  "tableCount": 1,
+  "segmentCount": 38,
+  "warnings": [],
+  "layoutPolicy": {
+    "fourColumnFields": [
+      "ordinal",
+      "topic",
+      "requirement",
+      "method"
+    ],
+    "headerRows": 1,
+    "hierarchy": "layout-only; not semantic"
+  },
+  "typography": {
+    "scope": "Typography inventory; human interpretation required",
+    "aiStatus": "AI_NOT_EXECUTED",
+    "humanReview": "NOT REVIEWED",
+    "values": [
+      {
+        "token": "1/10",
+        "sourceRefs": [
+          "S14",
+          "S18"
+        ],
+        "aiUsage": null
+      },
+      {
+        "token": "≤ 2,0",
+        "sourceRefs": [
+          "S16"
+        ],
+        "aiUsage": null
+      },
+      {
+        "token": "≤ 3,0",
+        "sourceRefs": [
+          "S12"
+        ],
+        "aiUsage": null
+      },
+      {
+        "token": "≤ 61,25",
+        "sourceRefs": [
+          "S27"
+        ],
+        "aiUsage": null
+      },
+      {
+        "token": "≥1",
+        "sourceRefs": [
+          "S9"
+        ],
+        "aiUsage": null
+      }
+    ]
+  },
+  "acceptanceDecision": "PASS",
+  "summary": {
+    "physicalRows": 36,
+    "physicalCells": 168,
+    "physicalParagraphs": 179,
+    "sections": 2,
+    "parents": 6,
+    "simpleItems": 6,
+    "childItems": 26,
+    "logicalAssociations": 32,
+    "segments": 38,
+    "continuationRowsDetected": 21,
+    "continuationRowsAssociated": 20,
+    "headerContinuations": 1,
+    "continuationRowsUnresolved": 0,
+    "mappedSymbols": 3,
+    "unresolvedSymbols": 0,
+    "textLossCount": 0,
+    "errors": []
+  }
+}

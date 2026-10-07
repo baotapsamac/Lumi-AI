@@ -1,0 +1,1311 @@
+{
+  "schemaVersion": "1.0",
+  "status": "PARSER_SUCCESS",
+  "offsetUnit": "UTF-16 code units",
+  "segmentationScope": "document-logical-units",
+  "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Inventory\n\nInventory H0\nInventory H1\nInventory H2\nInventory H3\n\nInventory section ordinal 0\nInventory section 0\n\n\nopaque ordinal\nInventory simple 0\n\nInventory requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory method 0\nInventory method 1\nInventory method 2\nInventory method 3\n\nparent ordinal\nInventory parent 0\nInventory child 0:0\nInventory requirement child 0:0≤ 2\nInventory method child 0:0\n\nparent ordinal\nInventory parent 0\nInventory child 0:1\nInventory requirement child 0:1\nInventory method child 0:1\n\nparent ordinal\nInventory parent 0\nInventory child 0:2\nInventory requirement child 0:2\nInventory method child 0:2\n\nempty ordinal\nInventory empty fields 0\n\n\n\n\nInventory repeated 0\nInventory repeated 1\nInventory repeated 2\nInventory repeated 3\n\nInventory section ordinal 1\nInventory section 1\n\n\nopaque ordinal\nInventory simple 1\n\nInventory requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory method 0\nInventory method 1\nInventory method 2\nInventory method 3\n\nparent ordinal\nInventory parent 1\nInventory child 1:0\nInventory requirement child 1:0\nInventory method child 1:0\n\nparent ordinal\nInventory parent 1\nInventory child 1:1\nInventory requirement child 1:1\nInventory method child 1:1\n\nempty ordinal\nInventory empty fields 1\n\n\n",
+  "segments": [
+    {
+      "id": "S1",
+      "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Inventory",
+      "start": 0,
+      "end": 52,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 0
+      },
+      "hierarchy": [],
+      "kind": "paragraph",
+      "paragraph": {
+        "kind": "paragraph",
+        "elementIndex": 0,
+        "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Inventory",
+        "headingLevel": null,
+        "style": null,
+        "list": null,
+        "hierarchy": []
+      }
+    },
+    {
+      "id": "S2",
+      "text": "Inventory H0\nInventory H1\nInventory H2\nInventory H3",
+      "start": 54,
+      "end": 105,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 0,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [],
+      "kind": "table-row",
+      "role": "header"
+    },
+    {
+      "id": "S3",
+      "text": "Inventory section ordinal 0\nInventory section 0\n",
+      "start": 107,
+      "end": 155,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 2,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 3
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 2,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 3
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 2,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [],
+      "kind": "table-row",
+      "role": "section"
+    },
+    {
+      "id": "S4",
+      "text": "opaque ordinal\nInventory simple 0\n\nInventory requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory method 0\nInventory method 1\nInventory method 2\nInventory method 3",
+      "start": 157,
+      "end": 456,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 3,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "subtopic": null,
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "subtopic": null,
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 3,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "Inventory section 0"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "opaque ordinal",
+        "topic": "Inventory simple 0",
+        "subtopic": null,
+        "requirement": "Inventory requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+        "method": "Inventory method 0\nInventory method 1\nInventory method 2\nInventory method 3"
+      },
+      "hierarchyOrigins": [
+        {
+          "tableIndex": 0,
+          "rowIndex": 2,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 3
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 3,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 2
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "text": "parent ordinal\nInventory parent 0\nInventory child 0:0\nInventory requirement child 0:0≤ 2\nInventory method child 0:0",
+      "start": 458,
+      "end": 573,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 4,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "subtopic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "subtopic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "Inventory section 0",
+        "Inventory parent 0"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "parent ordinal",
+        "topic": "Inventory parent 0",
+        "subtopic": "Inventory child 0:0",
+        "requirement": "Inventory requirement child 0:0≤ 2",
+        "method": "Inventory method child 0:0"
+      },
+      "hierarchyOrigins": [
+        {
+          "tableIndex": 0,
+          "rowIndex": 2,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 3
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 4,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 1
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 4,
+          "cellIndex": 2,
+          "columnStart": 2,
+          "columnSpan": 1
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "text": "parent ordinal\nInventory parent 0\nInventory child 0:1\nInventory requirement child 0:1\nInventory method child 0:1",
+      "start": 575,
+      "end": 687,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 5,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "subtopic": {
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "subtopic": {
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 5,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "Inventory section 0",
+        "Inventory parent 0"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "parent ordinal",
+        "topic": "Inventory parent 0",
+        "subtopic": "Inventory child 0:1",
+        "requirement": "Inventory requirement child 0:1",
+        "method": "Inventory method child 0:1"
+      },
+      "hierarchyOrigins": [
+        {
+          "tableIndex": 0,
+          "rowIndex": 2,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 3
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 4,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 1
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 5,
+          "cellIndex": 2,
+          "columnStart": 2,
+          "columnSpan": 1
+        }
+      ]
+    },
+    {
+      "id": "S7",
+      "text": "parent ordinal\nInventory parent 0\nInventory child 0:2\nInventory requirement child 0:2\nInventory method child 0:2",
+      "start": 689,
+      "end": 801,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 6,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "subtopic": {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 4,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "subtopic": {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 6,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "Inventory section 0",
+        "Inventory parent 0"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "parent ordinal",
+        "topic": "Inventory parent 0",
+        "subtopic": "Inventory child 0:2",
+        "requirement": "Inventory requirement child 0:2",
+        "method": "Inventory method child 0:2"
+      },
+      "hierarchyOrigins": [
+        {
+          "tableIndex": 0,
+          "rowIndex": 2,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 3
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 4,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 1
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 6,
+          "cellIndex": 2,
+          "columnStart": 2,
+          "columnSpan": 1
+        }
+      ]
+    },
+    {
+      "id": "S8",
+      "text": "empty ordinal\nInventory empty fields 0\n\n\n",
+      "start": 803,
+      "end": 844,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 7,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "subtopic": null,
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "subtopic": null,
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 7,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "Inventory section 0"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "empty ordinal",
+        "topic": "Inventory empty fields 0",
+        "subtopic": null,
+        "requirement": "",
+        "method": ""
+      },
+      "hierarchyOrigins": [
+        {
+          "tableIndex": 0,
+          "rowIndex": 2,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 3
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 7,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 2
+        }
+      ]
+    },
+    {
+      "id": "S9",
+      "text": "Inventory repeated 0\nInventory repeated 1\nInventory repeated 2\nInventory repeated 3",
+      "start": 846,
+      "end": 929,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 8,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 8,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [],
+      "kind": "table-row",
+      "role": "header"
+    },
+    {
+      "id": "S10",
+      "text": "Inventory section ordinal 1\nInventory section 1\n",
+      "start": 931,
+      "end": 979,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 9,
+        "cells": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 3
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 2,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        ],
+        "anchors": [
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 3
+          },
+          {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 2,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        ]
+      },
+      "hierarchy": [],
+      "kind": "table-row",
+      "role": "section"
+    },
+    {
+      "id": "S11",
+      "text": "opaque ordinal\nInventory simple 1\n\nInventory requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory method 0\nInventory method 1\nInventory method 2\nInventory method 3",
+      "start": 981,
+      "end": 1280,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 10,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "subtopic": null,
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "subtopic": null,
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 10,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "Inventory section 1"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "opaque ordinal",
+        "topic": "Inventory simple 1",
+        "subtopic": null,
+        "requirement": "Inventory requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nInventory requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+        "method": "Inventory method 0\nInventory method 1\nInventory method 2\nInventory method 3"
+      },
+      "hierarchyOrigins": [
+        {
+          "tableIndex": 0,
+          "rowIndex": 9,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 3
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 10,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 2
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "text": "parent ordinal\nInventory parent 1\nInventory child 1:0\nInventory requirement child 1:0\nInventory method child 1:0",
+      "start": 1282,
+      "end": 1394,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 11,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "subtopic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "subtopic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "Inventory section 1",
+        "Inventory parent 1"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "parent ordinal",
+        "topic": "Inventory parent 1",
+        "subtopic": "Inventory child 1:0",
+        "requirement": "Inventory requirement child 1:0",
+        "method": "Inventory method child 1:0"
+      },
+      "hierarchyOrigins": [
+        {
+          "tableIndex": 0,
+          "rowIndex": 9,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 3
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 11,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 1
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 11,
+          "cellIndex": 2,
+          "columnStart": 2,
+          "columnSpan": 1
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "text": "parent ordinal\nInventory parent 1\nInventory child 1:1\nInventory requirement child 1:1\nInventory method child 1:1",
+      "start": 1396,
+      "end": 1508,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 12,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "subtopic": {
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 11,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 1
+          },
+          "subtopic": {
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 2,
+            "columnStart": 2,
+            "columnSpan": 1
+          },
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 3,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 12,
+            "cellIndex": 4,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "Inventory section 1",
+        "Inventory parent 1"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "parent ordinal",
+        "topic": "Inventory parent 1",
+        "subtopic": "Inventory child 1:1",
+        "requirement": "Inventory requirement child 1:1",
+        "method": "Inventory method child 1:1"
+      },
+      "hierarchyOrigins": [
+        {
+          "tableIndex": 0,
+          "rowIndex": 9,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 3
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 11,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 1
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 12,
+          "cellIndex": 2,
+          "columnStart": 2,
+          "columnSpan": 1
+        }
+      ]
+    },
+    {
+      "id": "S14",
+      "text": "empty ordinal\nInventory empty fields 1\n\n\n",
+      "start": 1510,
+      "end": 1551,
+      "origin": {
+        "fileName": "source.docx",
+        "elementIndex": 1,
+        "tableIndex": 0,
+        "rowIndex": 13,
+        "cells": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "subtopic": null,
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        },
+        "anchors": {
+          "ordinal": {
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 0,
+            "columnStart": 0,
+            "columnSpan": 1
+          },
+          "topic": {
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 2
+          },
+          "subtopic": null,
+          "requirement": {
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 2,
+            "columnStart": 3,
+            "columnSpan": 1
+          },
+          "method": {
+            "tableIndex": 0,
+            "rowIndex": 13,
+            "cellIndex": 3,
+            "columnStart": 4,
+            "columnSpan": 1
+          }
+        }
+      },
+      "hierarchy": [
+        "Inventory section 1"
+      ],
+      "kind": "table-association",
+      "association": {
+        "ordinal": "empty ordinal",
+        "topic": "Inventory empty fields 1",
+        "subtopic": null,
+        "requirement": "",
+        "method": ""
+      },
+      "hierarchyOrigins": [
+        {
+          "tableIndex": 0,
+          "rowIndex": 9,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 3
+        },
+        {
+          "tableIndex": 0,
+          "rowIndex": 13,
+          "cellIndex": 1,
+          "columnStart": 1,
+          "columnSpan": 2
+        }
+      ]
+    }
+  ]
+}

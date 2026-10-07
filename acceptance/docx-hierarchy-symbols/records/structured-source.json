@@ -1,0 +1,2914 @@
+{
+  "schemaVersion": "1.0",
+  "format": "docx",
+  "fileName": "source.docx",
+  "elements": [
+    {
+      "kind": "paragraph",
+      "elementIndex": 0,
+      "text": "TEST FIXTURE — SYNTHETIC NEUTRAL CONTENT — Records",
+      "headingLevel": null,
+      "style": null,
+      "list": null,
+      "hierarchy": []
+    },
+    {
+      "kind": "table",
+      "tableIndex": 0,
+      "elementIndex": 1
+    }
+  ],
+  "tables": [
+    {
+      "tableIndex": 0,
+      "elementIndex": 1,
+      "columnCount": 5,
+      "rows": [
+        {
+          "rowIndex": 0,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "restart",
+              "paragraphs": [
+                {
+                  "text": "Records H0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records H0",
+              "resolvedText": "Records H0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "verticalMerge": "restart",
+              "paragraphs": [
+                {
+                  "text": "Records H1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records H1",
+              "resolvedText": "Records H1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": "restart",
+              "paragraphs": [
+                {
+                  "text": "Records H2",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records H2",
+              "resolvedText": "Records H2"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": "restart",
+              "paragraphs": [
+                {
+                  "text": "Records H3",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records H3",
+              "resolvedText": "Records H3"
+            }
+          ],
+          "header": true,
+          "role": "header"
+        },
+        {
+          "rowIndex": 1,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 1,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "Records H0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 1,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "Records H1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 1,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "Records H2"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 1,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 0,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "Records H3"
+            }
+          ],
+          "header": false,
+          "role": "header-continuation"
+        },
+        {
+          "rowIndex": 2,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records section ordinal 0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records section ordinal 0",
+              "resolvedText": "Records section ordinal 0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 3
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 3
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records section 0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records section 0",
+              "resolvedText": "Records section 0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 2,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 2,
+                "cellIndex": 2,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "header": false,
+          "role": "section"
+        },
+        {
+          "rowIndex": 3,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "opaque ordinal",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "opaque ordinal",
+              "resolvedText": "opaque ordinal"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records simple 0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records simple 0",
+              "resolvedText": "Records simple 0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Records requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Records requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+              "resolvedText": "Records requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records method 0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Records method 1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Records method 2",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Records method 3",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records method 0\nRecords method 1\nRecords method 2\nRecords method 3",
+              "resolvedText": "Records method 0\nRecords method 1\nRecords method 2\nRecords method 3"
+            }
+          ],
+          "header": false,
+          "role": "item"
+        },
+        {
+          "rowIndex": 4,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "restart",
+              "paragraphs": [
+                {
+                  "text": "parent ordinal",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "parent ordinal",
+              "resolvedText": "parent ordinal"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": "restart",
+              "paragraphs": [
+                {
+                  "text": "Records parent 0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records parent 0",
+              "resolvedText": "Records parent 0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records child 0:0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records child 0:0",
+              "resolvedText": "Records child 0:0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records requirement child 0:0≤ 2",
+                  "symbols": [
+                    {
+                      "font": "Symbol",
+                      "charCode": "F0A3",
+                      "resolvedUnicode": "≤",
+                      "resolutionStatus": "mapped",
+                      "glyphName": "lessequal",
+                      "representation": "≤",
+                      "mappingSource": "PDF SymbolEncoding + Adobe Glyph List 2.0",
+                      "textStart": 29,
+                      "textEnd": 30,
+                      "origin": {
+                        "fileName": "source.docx",
+                        "elementIndex": 1,
+                        "tableIndex": 0,
+                        "rowIndex": 4,
+                        "cellIndex": 3,
+                        "columnStart": 3,
+                        "columnSpan": 1,
+                        "paragraphIndex": 0,
+                        "nodeIndex": 4
+                      }
+                    }
+                  ],
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records requirement child 0:0≤ 2",
+              "resolvedText": "Records requirement child 0:0≤ 2"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 4,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 4,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records method child 0:0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records method child 0:0",
+              "resolvedText": "Records method child 0:0"
+            }
+          ],
+          "header": false,
+          "role": "hierarchical-item"
+        },
+        {
+          "rowIndex": 5,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "parent ordinal"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "Records parent 0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records child 0:1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records child 0:1",
+              "resolvedText": "Records child 0:1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records requirement child 0:1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records requirement child 0:1",
+              "resolvedText": "Records requirement child 0:1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 4,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 5,
+                "cellIndex": 4,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records method child 0:1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records method child 0:1",
+              "resolvedText": "Records method child 0:1"
+            }
+          ],
+          "header": false,
+          "role": "hierarchical-item"
+        },
+        {
+          "rowIndex": 6,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "parent ordinal"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "Records parent 0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records child 0:2",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records child 0:2",
+              "resolvedText": "Records child 0:2"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records requirement child 0:2",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records requirement child 0:2",
+              "resolvedText": "Records requirement child 0:2"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 4,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 6,
+                "cellIndex": 4,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records method child 0:2",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records method child 0:2",
+              "resolvedText": "Records method child 0:2"
+            }
+          ],
+          "header": false,
+          "role": "hierarchical-item"
+        },
+        {
+          "rowIndex": 7,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "empty ordinal",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "empty ordinal",
+              "resolvedText": "empty ordinal"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records empty fields 0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records empty fields 0",
+              "resolvedText": "Records empty fields 0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "header": false,
+          "role": "item"
+        },
+        {
+          "rowIndex": 8,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records repeated 0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records repeated 0",
+              "resolvedText": "Records repeated 0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records repeated 1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records repeated 1",
+              "resolvedText": "Records repeated 1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records repeated 2",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records repeated 2",
+              "resolvedText": "Records repeated 2"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 8,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records repeated 3",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records repeated 3",
+              "resolvedText": "Records repeated 3"
+            }
+          ],
+          "header": true,
+          "role": "header"
+        },
+        {
+          "rowIndex": 9,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records section ordinal 1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records section ordinal 1",
+              "resolvedText": "Records section ordinal 1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 3
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 3
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records section 1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records section 1",
+              "resolvedText": "Records section 1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 2,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 9,
+                "cellIndex": 2,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "header": false,
+          "role": "section"
+        },
+        {
+          "rowIndex": 10,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "opaque ordinal",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "opaque ordinal",
+              "resolvedText": "opaque ordinal"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records simple 1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records simple 1",
+              "resolvedText": "Records simple 1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Records requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Records requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+              "resolvedText": "Records requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records method 0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Records method 1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Records method 2",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                },
+                {
+                  "text": "Records method 3",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records method 0\nRecords method 1\nRecords method 2\nRecords method 3",
+              "resolvedText": "Records method 0\nRecords method 1\nRecords method 2\nRecords method 3"
+            }
+          ],
+          "header": false,
+          "role": "item"
+        },
+        {
+          "rowIndex": 11,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "restart",
+              "paragraphs": [
+                {
+                  "text": "parent ordinal",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "parent ordinal",
+              "resolvedText": "parent ordinal"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": "restart",
+              "paragraphs": [
+                {
+                  "text": "Records parent 1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records parent 1",
+              "resolvedText": "Records parent 1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records child 1:0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records child 1:0",
+              "resolvedText": "Records child 1:0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records requirement child 1:0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records requirement child 1:0",
+              "resolvedText": "Records requirement child 1:0"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 4,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 4,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records method child 1:0",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records method child 1:0",
+              "resolvedText": "Records method child 1:0"
+            }
+          ],
+          "header": false,
+          "role": "hierarchical-item"
+        },
+        {
+          "rowIndex": 12,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 12,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "parent ordinal"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 12,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "verticalMerge": "continue",
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": "Records parent 1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 12,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 12,
+                "cellIndex": 2,
+                "columnStart": 2,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records child 1:1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records child 1:1",
+              "resolvedText": "Records child 1:1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 12,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 12,
+                "cellIndex": 3,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records requirement child 1:1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records requirement child 1:1",
+              "resolvedText": "Records requirement child 1:1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 12,
+                "cellIndex": 4,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 12,
+                "cellIndex": 4,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records method child 1:1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records method child 1:1",
+              "resolvedText": "Records method child 1:1"
+            }
+          ],
+          "header": false,
+          "role": "hierarchical-item"
+        },
+        {
+          "rowIndex": 13,
+          "cells": [
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 13,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 13,
+                "cellIndex": 0,
+                "columnStart": 0,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "empty ordinal",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "empty ordinal",
+              "resolvedText": "empty ordinal"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 13,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 13,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "Records empty fields 1",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "Records empty fields 1",
+              "resolvedText": "Records empty fields 1"
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 13,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 13,
+                "cellIndex": 2,
+                "columnStart": 3,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            },
+            {
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 13,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "anchor": {
+                "tableIndex": 0,
+                "rowIndex": 13,
+                "cellIndex": 3,
+                "columnStart": 4,
+                "columnSpan": 1
+              },
+              "verticalMerge": null,
+              "paragraphs": [
+                {
+                  "text": "",
+                  "headingLevel": null,
+                  "style": null,
+                  "list": null
+                }
+              ],
+              "text": "",
+              "resolvedText": ""
+            }
+          ],
+          "header": false,
+          "role": "item"
+        }
+      ],
+      "projection": {
+        "kind": "split-content-region",
+        "headerSpans": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "fields": [
+          "ordinal",
+          "topic",
+          "subtopic",
+          "requirement",
+          "method"
+        ],
+        "contentColumns": [
+          1,
+          2
+        ]
+      },
+      "hierarchy": [
+        {
+          "title": "Records section 0",
+          "ordinal": "Records section ordinal 0",
+          "rowIndex": 2,
+          "origin": {
+            "tableIndex": 0,
+            "rowIndex": 2,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 3
+          },
+          "items": [
+            {
+              "kind": "item",
+              "title": "Records simple 0",
+              "ordinal": "opaque ordinal",
+              "rowIndex": 3,
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 3,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "children": []
+            },
+            {
+              "kind": "parent",
+              "title": "Records parent 0",
+              "ordinal": "parent ordinal",
+              "rowIndex": 4,
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 4,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "children": [
+                {
+                  "kind": "item",
+                  "title": "Records child 0:0",
+                  "ordinal": "parent ordinal",
+                  "rowIndex": 4,
+                  "origin": {
+                    "tableIndex": 0,
+                    "rowIndex": 4,
+                    "cellIndex": 2,
+                    "columnStart": 2,
+                    "columnSpan": 1
+                  },
+                  "children": []
+                },
+                {
+                  "kind": "item",
+                  "title": "Records child 0:1",
+                  "ordinal": "parent ordinal",
+                  "rowIndex": 5,
+                  "origin": {
+                    "tableIndex": 0,
+                    "rowIndex": 5,
+                    "cellIndex": 2,
+                    "columnStart": 2,
+                    "columnSpan": 1
+                  },
+                  "children": []
+                },
+                {
+                  "kind": "item",
+                  "title": "Records child 0:2",
+                  "ordinal": "parent ordinal",
+                  "rowIndex": 6,
+                  "origin": {
+                    "tableIndex": 0,
+                    "rowIndex": 6,
+                    "cellIndex": 2,
+                    "columnStart": 2,
+                    "columnSpan": 1
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "kind": "item",
+              "title": "Records empty fields 0",
+              "ordinal": "empty ordinal",
+              "rowIndex": 7,
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 7,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "Records section 1",
+          "ordinal": "Records section ordinal 1",
+          "rowIndex": 9,
+          "origin": {
+            "tableIndex": 0,
+            "rowIndex": 9,
+            "cellIndex": 1,
+            "columnStart": 1,
+            "columnSpan": 3
+          },
+          "items": [
+            {
+              "kind": "item",
+              "title": "Records simple 1",
+              "ordinal": "opaque ordinal",
+              "rowIndex": 10,
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 10,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "children": []
+            },
+            {
+              "kind": "parent",
+              "title": "Records parent 1",
+              "ordinal": "parent ordinal",
+              "rowIndex": 11,
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 11,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 1
+              },
+              "children": [
+                {
+                  "kind": "item",
+                  "title": "Records child 1:0",
+                  "ordinal": "parent ordinal",
+                  "rowIndex": 11,
+                  "origin": {
+                    "tableIndex": 0,
+                    "rowIndex": 11,
+                    "cellIndex": 2,
+                    "columnStart": 2,
+                    "columnSpan": 1
+                  },
+                  "children": []
+                },
+                {
+                  "kind": "item",
+                  "title": "Records child 1:1",
+                  "ordinal": "parent ordinal",
+                  "rowIndex": 12,
+                  "origin": {
+                    "tableIndex": 0,
+                    "rowIndex": 12,
+                    "cellIndex": 2,
+                    "columnStart": 2,
+                    "columnSpan": 1
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "kind": "item",
+              "title": "Records empty fields 1",
+              "ordinal": "empty ordinal",
+              "rowIndex": 13,
+              "origin": {
+                "tableIndex": 0,
+                "rowIndex": 13,
+                "cellIndex": 1,
+                "columnStart": 1,
+                "columnSpan": 2
+              },
+              "children": []
+            }
+          ]
+        }
+      ],
+      "unsectionedItems": [],
+      "associations": [
+        {
+          "rowIndex": 3,
+          "section": "Records section 0",
+          "group": null,
+          "ordinal": "opaque ordinal",
+          "topic": "Records simple 0",
+          "subtopic": null,
+          "requirement": "Records requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+          "method": "Records method 0\nRecords method 1\nRecords method 2\nRecords method 3",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            },
+            "subtopic": null,
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 2,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 3,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            },
+            "subtopic": null,
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 2,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 3,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "hierarchyOrigins": [
+            {
+              "tableIndex": 0,
+              "rowIndex": 2,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 3
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 3,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            }
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "section": "Records section 0",
+          "group": "Records parent 0",
+          "ordinal": "parent ordinal",
+          "topic": "Records parent 0",
+          "subtopic": "Records child 0:0",
+          "requirement": "Records requirement child 0:0≤ 2",
+          "method": "Records method child 0:0",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "subtopic": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 4,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "subtopic": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 4,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "hierarchyOrigins": [
+            {
+              "tableIndex": 0,
+              "rowIndex": 2,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 3
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            }
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "section": "Records section 0",
+          "group": "Records parent 0",
+          "ordinal": "parent ordinal",
+          "topic": "Records parent 0",
+          "subtopic": "Records child 0:1",
+          "requirement": "Records requirement child 0:1",
+          "method": "Records method child 0:1",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 5,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 5,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "subtopic": {
+              "tableIndex": 0,
+              "rowIndex": 5,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 5,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 5,
+              "cellIndex": 4,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "subtopic": {
+              "tableIndex": 0,
+              "rowIndex": 5,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 5,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 5,
+              "cellIndex": 4,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "hierarchyOrigins": [
+            {
+              "tableIndex": 0,
+              "rowIndex": 2,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 3
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 5,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            }
+          ]
+        },
+        {
+          "rowIndex": 6,
+          "section": "Records section 0",
+          "group": "Records parent 0",
+          "ordinal": "parent ordinal",
+          "topic": "Records parent 0",
+          "subtopic": "Records child 0:2",
+          "requirement": "Records requirement child 0:2",
+          "method": "Records method child 0:2",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 6,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 6,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "subtopic": {
+              "tableIndex": 0,
+              "rowIndex": 6,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 6,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 6,
+              "cellIndex": 4,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "subtopic": {
+              "tableIndex": 0,
+              "rowIndex": 6,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 6,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 6,
+              "cellIndex": 4,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "hierarchyOrigins": [
+            {
+              "tableIndex": 0,
+              "rowIndex": 2,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 3
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 4,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 6,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            }
+          ]
+        },
+        {
+          "rowIndex": 7,
+          "section": "Records section 0",
+          "group": null,
+          "ordinal": "empty ordinal",
+          "topic": "Records empty fields 0",
+          "subtopic": null,
+          "requirement": "",
+          "method": "",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            },
+            "subtopic": null,
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 2,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 3,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            },
+            "subtopic": null,
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 2,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 3,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "hierarchyOrigins": [
+            {
+              "tableIndex": 0,
+              "rowIndex": 2,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 3
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 7,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            }
+          ]
+        },
+        {
+          "rowIndex": 10,
+          "section": "Records section 1",
+          "group": null,
+          "ordinal": "opaque ordinal",
+          "topic": "Records simple 1",
+          "subtopic": null,
+          "requirement": "Records requirement 0 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 1 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £\nRecords requirement 2 ABC-123 α β γ ≥ 1 ≤ 3,0 1/10 45° 450 £",
+          "method": "Records method 0\nRecords method 1\nRecords method 2\nRecords method 3",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            },
+            "subtopic": null,
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 2,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 3,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            },
+            "subtopic": null,
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 2,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 3,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "hierarchyOrigins": [
+            {
+              "tableIndex": 0,
+              "rowIndex": 9,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 3
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 10,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            }
+          ]
+        },
+        {
+          "rowIndex": 11,
+          "section": "Records section 1",
+          "group": "Records parent 1",
+          "ordinal": "parent ordinal",
+          "topic": "Records parent 1",
+          "subtopic": "Records child 1:0",
+          "requirement": "Records requirement child 1:0",
+          "method": "Records method child 1:0",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "subtopic": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 4,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "subtopic": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 4,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "hierarchyOrigins": [
+            {
+              "tableIndex": 0,
+              "rowIndex": 9,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 3
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            }
+          ]
+        },
+        {
+          "rowIndex": 12,
+          "section": "Records section 1",
+          "group": "Records parent 1",
+          "ordinal": "parent ordinal",
+          "topic": "Records parent 1",
+          "subtopic": "Records child 1:1",
+          "requirement": "Records requirement child 1:1",
+          "method": "Records method child 1:1",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 12,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 12,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "subtopic": {
+              "tableIndex": 0,
+              "rowIndex": 12,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 12,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 12,
+              "cellIndex": 4,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            "subtopic": {
+              "tableIndex": 0,
+              "rowIndex": 12,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            },
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 12,
+              "cellIndex": 3,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 12,
+              "cellIndex": 4,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "hierarchyOrigins": [
+            {
+              "tableIndex": 0,
+              "rowIndex": 9,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 3
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 11,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 1
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 12,
+              "cellIndex": 2,
+              "columnStart": 2,
+              "columnSpan": 1
+            }
+          ]
+        },
+        {
+          "rowIndex": 13,
+          "section": "Records section 1",
+          "group": null,
+          "ordinal": "empty ordinal",
+          "topic": "Records empty fields 1",
+          "subtopic": null,
+          "requirement": "",
+          "method": "",
+          "cells": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            },
+            "subtopic": null,
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "cellIndex": 2,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "cellIndex": 3,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "anchors": {
+            "ordinal": {
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "cellIndex": 0,
+              "columnStart": 0,
+              "columnSpan": 1
+            },
+            "topic": {
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            },
+            "subtopic": null,
+            "requirement": {
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "cellIndex": 2,
+              "columnStart": 3,
+              "columnSpan": 1
+            },
+            "method": {
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "cellIndex": 3,
+              "columnStart": 4,
+              "columnSpan": 1
+            }
+          },
+          "hierarchyOrigins": [
+            {
+              "tableIndex": 0,
+              "rowIndex": 9,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 3
+            },
+            {
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "cellIndex": 1,
+              "columnStart": 1,
+              "columnSpan": 2
+            }
+          ]
+        }
+      ],
+      "headingHierarchy": []
+    }
+  ],
+  "warnings": [],
+  "parserStatus": "PARSER_SUCCESS",
+  "layoutPolicy": {
+    "fourColumnFields": [
+      "ordinal",
+      "topic",
+      "requirement",
+      "method"
+    ],
+    "headerRows": 1,
+    "hierarchy": "layout-only; not semantic"
+  }
+}

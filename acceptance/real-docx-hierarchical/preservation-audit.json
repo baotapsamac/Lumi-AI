@@ -1,0 +1,25 @@
+{
+  "parserStatus": "PARSER_SUCCESS",
+  "acceptanceDecision": "PASS",
+  "sourceFileName": "KTKT cối 60.docx",
+  "sourceSha256": "d1b1b56aa537bcaad60980e2d72aa2db0f3e6e4c31c2d289b3fb182a2fc1a7cb",
+  "aiStatus": "AI_NOT_EXECUTED",
+  "humanReview": "NOT REVIEWED",
+  "checks": {
+    "physicalParagraphs": 179,
+    "physicalParagraphEquality": true,
+    "symbols": 3,
+    "symbolMetadataEquality": true,
+    "physicalCellOriginChecks": 168,
+    "sectionBoundaryChecks": 32,
+    "rowSegmentCoverageChecks": 35,
+    "logicalAssociations": 32,
+    "requirementMethodOriginChecks": 64,
+    "segments": 38,
+    "numericOccurrences": 32,
+    "textLossCount": 0
+  },
+  "warnings": [],
+  "errors": [],
+  "scope": "Deterministic structure/typography only; no semantic accuracy or visual rendering claim"
+}
