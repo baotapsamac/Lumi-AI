@@ -56,7 +56,7 @@ import { runMaterializedH5PPipeline } from '../../utils/h5p-pipeline';
 import type { MaterializedH5PPlan } from '../../utils/h5p-pipeline';
 import { generateH5PPackage, downloadH5PPackage } from '../../utils/h5p-generator';
 import { generateMaterializedPlanFromDocx } from '../../utils/long-docx-pipeline';
-import { loadDocxProject, saveDocxProject, downloadProjectFile } from '../../utils/project-store';
+import { loadDocxProject, saveDocxProject, downloadProjectFile, importProjectFile } from '../../utils/project-store';
 
 import type { ContentType, CommandOption, GeneratingSkeleton } from './types';
 
@@ -548,6 +548,32 @@ function EditorPage() {
           }
         }}
       />
+
+      <Box sx={{ position: 'fixed', bottom: 16, left: 16, zIndex: 1200 }}>
+        <input
+          id="lumiai-open-project"
+          type="file"
+          accept=".json,.lumiai.json"
+          style={{ display: 'none' }}
+          onChange={async (event) => {
+            const file = event.target.files?.[0];
+            if (!file) return;
+            try {
+              const project = await importProjectFile(file);
+              saveDocxProject(project);
+              setDocxReviewPlan(project.plan);
+              setDocxReviewTitle(project.title);
+              setSnackbar({ open: true, message: 'Đã mở dự án Lumi-AI.', severity: 'success' });
+            } catch (error) {
+              setSnackbar({ open: true, message: error instanceof Error ? error.message : 'Không thể mở dự án.', severity: 'error' });
+            }
+            event.target.value = '';
+          }}
+        />
+        <Box component="label" htmlFor="lumiai-open-project" sx={{ cursor: 'pointer', bgcolor: 'background.paper', p: 1, borderRadius: 1, boxShadow: 2 }}>
+          Mở dự án Lumi-AI
+        </Box>
+      </Box>
 
       {/* System Prompt Dialog */}
       <SystemPromptDialog
