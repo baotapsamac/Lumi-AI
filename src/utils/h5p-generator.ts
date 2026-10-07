@@ -62,38 +62,38 @@ function makeMultiChoiceItem(item: MultipleChoiceContent) {
           showScorePoints: true,
         },
         UI: {
-          checkAnswerButton: 'Überprüfen',
-          submitAnswerButton: 'Absenden',
-          showSolutionButton: 'Lösung anzeigen',
-          tryAgainButton: 'Wiederholen',
-          tipsLabel: 'Hinweis anzeigen',
-          scoreBarLabel: 'Du hast :num von :total Punkten erreicht.',
-          tipAvailable: 'Hinweis verfügbar',
-          feedbackAvailable: 'Rückmeldung verfügbar',
-          readFeedback: 'Rückmeldung vorlesen',
-          wrongAnswer: 'Falsche Antwort',
-          correctAnswer: 'Richtige Antwort',
-          shouldCheck: 'Hätte gewählt werden müssen',
-          shouldNotCheck: 'Hätte nicht gewählt werden sollen',
-          noInput: 'Bitte antworte, bevor du die Lösung ansiehst',
+          checkAnswerButton: 'Kiểm tra',
+          submitAnswerButton: 'Gửi câu trả lời',
+          showSolutionButton: 'Hiển thị đáp án',
+          tryAgainButton: 'Làm lại',
+          tipsLabel: 'Hiển thị gợi ý',
+          scoreBarLabel: 'Bạn đạt :num trên :total điểm.',
+          tipAvailable: 'Có gợi ý',
+          feedbackAvailable: 'Có phản hồi',
+          readFeedback: 'Đọc phản hồi',
+          wrongAnswer: 'Câu trả lời sai',
+          correctAnswer: 'Câu trả lời đúng',
+          shouldCheck: 'Đáp án này cần được chọn',
+          shouldNotCheck: 'Đáp án này không nên được chọn',
+          noInput: 'Hãy trả lời trước khi xem đáp án',
           a11yCheck:
-            'Die Antworten überprüfen. Die Auswahlen werden als richtig, falsch oder fehlend markiert.',
+            'Kiểm tra câu trả lời. Các lựa chọn sẽ được đánh dấu đúng, sai hoặc còn thiếu.',
           a11yShowSolution:
-            'Die Lösung anzeigen. Die richtigen Lösungen werden in der Aufgabe angezeigt.',
+            'Hiển thị đáp án đúng của câu hỏi.',
           a11yRetry:
-            'Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet.',
+            'Làm lại câu hỏi. Các lựa chọn trước đó sẽ được đặt lại.',
         },
         confirmCheck: {
-          header: 'Beenden?',
-          body: 'Ganz sicher beenden?',
-          cancelLabel: 'Abbrechen',
-          confirmLabel: 'Beenden',
+          header: 'Hoàn tất?',
+          body: 'Bạn có chắc muốn kiểm tra câu trả lời?',
+          cancelLabel: 'Hủy',
+          confirmLabel: 'Kiểm tra',
         },
         confirmRetry: {
-          header: 'Wiederholen?',
-          body: 'Ganz sicher wiederholen?',
-          cancelLabel: 'Abbrechen',
-          confirmLabel: 'Bestätigen',
+          header: 'Làm lại?',
+          body: 'Bạn có chắc muốn làm lại câu hỏi?',
+          cancelLabel: 'Hủy',
+          confirmLabel: 'Làm lại',
         },
       },
       library: 'H5P.MultiChoice 1.16',
@@ -163,7 +163,7 @@ function contentItemToH5P(item: Content) {
 }
 
 function buildContentJson(title: string, content: Content[]) {
-  const chapterTitle = title.trim() || 'Seite 1';
+  const chapterTitle = title.trim() || 'Trang 1';
   return {
     showCoverPage: false,
     bookCover: { coverDescription: '<p style="text-align:center"></p>' },
@@ -192,50 +192,50 @@ function buildContentJson(title: string, content: Content[]) {
       displaySummary: true,
       enableRetry: true,
     },
-    read: 'Öffnen',
-    displayTOC: 'Inhaltsverzeichnis anzeigen',
-    hideTOC: 'Inhaltsverzeichnis ausblenden',
-    nextPage: 'Nächste Seite',
-    previousPage: 'Vorherige Seite',
-    chapterCompleted: 'Seite abgeschlossen!',
-    partCompleted: '@pages von @total Seiten abgeschlossen',
-    incompleteChapter: 'Unvollständige Seite',
-    navigateToTop: 'Nach oben springen',
-    markAsFinished: 'Ich habe diese Seite abgeschlossen',
-    fullscreen: 'Vollbild',
-    exitFullscreen: 'Vollbild beenden',
-    bookProgressSubtext: '@count von @total Seiten',
-    interactionsProgressSubtext: '@count von @total Interaktionen',
-    submitReport: 'Report absenden',
-    restartLabel: 'Neustart',
-    summaryHeader: 'Zusammenfassung',
-    allInteractions: 'Alle Interaktionen',
-    unansweredInteractions: 'Unbeantwortete Interaktionen',
+    read: 'Mở',
+    displayTOC: 'Hiển thị mục lục',
+    hideTOC: 'Ẩn mục lục',
+    nextPage: 'Trang tiếp theo',
+    previousPage: 'Trang trước',
+    chapterCompleted: 'Đã hoàn thành trang!',
+    partCompleted: '@pages trên @total trang đã hoàn thành',
+    incompleteChapter: 'Trang chưa hoàn thành',
+    navigateToTop: 'Lên đầu trang',
+    markAsFinished: 'Tôi đã hoàn thành trang này',
+    fullscreen: 'Toàn màn hình',
+    exitFullscreen: 'Thoát toàn màn hình',
+    bookProgressSubtext: '@count trên @total trang',
+    interactionsProgressSubtext: '@count trên @total tương tác',
+    submitReport: 'Gửi báo cáo',
+    restartLabel: 'Làm lại',
+    summaryHeader: 'Tổng kết',
+    allInteractions: 'Tất cả tương tác',
+    unansweredInteractions: 'Tương tác chưa trả lời',
     scoreText: '@score / @maxscore',
-    leftOutOfTotalCompleted: '@left von @max Interaktionen abgeschlossen',
-    noInteractions: 'Keine Interaktionen',
-    score: 'Punkte',
-    summaryAndSubmit: 'Zusammenfassung und Einsenden',
-    noChapterInteractionBoldText: 'Du hast noch keine Seiten bearbeitet.',
+    leftOutOfTotalCompleted: '@left trên @max tương tác đã hoàn thành',
+    noInteractions: 'Không có tương tác',
+    score: 'Điểm',
+    summaryAndSubmit: 'Tổng kết và gửi',
+    noChapterInteractionBoldText: 'Bạn chưa thực hiện nội dung nào.',
     noChapterInteractionText:
-      'Du musst wenigstens eine Seite bearbeiten, um die Zusammenfassung zu sehen.',
+      'Bạn cần thực hiện ít nhất một nội dung để xem tổng kết.',
     yourAnswersAreSubmittedForReview:
-      'Deine Antworten wurden zur Begutachtung versendet!',
-    bookProgress: 'Buchfortschritt',
-    interactionsProgress: 'Interaktionsfortschritt',
-    totalScoreLabel: 'Gesamtpunktzahl',
+      'Câu trả lời đã được gửi để xem xét!',
+    bookProgress: 'Tiến độ bài học',
+    interactionsProgress: 'Tiến độ tương tác',
+    totalScoreLabel: 'Tổng điểm',
     a11y: {
-      progress: 'Seite @page von @total.',
-      menu: 'Inhaltsverzeichnis ein- bzw. ausschalten',
+      progress: 'Trang @page trên @total.',
+      menu: 'Bật hoặc tắt mục lục',
     },
   };
 }
 
 function buildH5PJson(title: string) {
   return {
-    defaultLanguage: 'de',
+    defaultLanguage: 'vi',
     embedTypes: ['iframe'],
-    language: 'de',
+    language: 'vi',
     license: 'U',
     mainLibrary: 'H5P.InteractiveBook',
     preloadedDependencies: [
@@ -249,8 +249,8 @@ function buildH5PJson(title: string) {
       { machineName: 'H5P.Column', majorVersion: 1, minorVersion: 18 },
       { machineName: 'H5P.InteractiveBook', majorVersion: 1, minorVersion: 11 },
     ],
-    title: title.trim() || 'Interaktives Buch',
-    extraTitle: title.trim() || 'Interaktives Buch',
+    title: title.trim() || 'Bài học tương tác',
+    extraTitle: title.trim() || 'Bài học tương tác',
   };
 }
 
@@ -260,7 +260,7 @@ export async function generateH5PPackage(title: string, content: Content[]): Pro
   // Fetch the pre-built library zip (all H5P library folders, no content)
   const response = await fetch('/h5p/interactive-book-libraries.zip');
   if (!response.ok) {
-    throw new Error(`Bibliotheks-Paket konnte nicht geladen werden (${response.status})`);
+    throw new Error(`Không tải được gói thư viện H5P (${response.status})`);
   }
   const arrayBuffer = await response.arrayBuffer();
   const files = unzipSync(new Uint8Array(arrayBuffer));
