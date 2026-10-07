@@ -245,6 +245,11 @@ function normalizeQuestion(
     return null;
   }
 
+  const blockById = new Map(section.blocks.map((block) => [block.id, block.text] as const));
+  const answerIsSourceExtract = (answer: MaterializedAnswer) =>
+    (answer.source_ids || []).some((id) => (blockById.get(id) || '').includes(answer.text));
+  if (!answers.every(answerIsSourceExtract)) return null;
+
   const selectionMode =
     raw.selection_mode === 'multiple' || answers.filter((answer) => answer.correct).length > 1
       ? 'multiple'
