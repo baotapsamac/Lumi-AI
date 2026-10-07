@@ -25,7 +25,7 @@ export type LongDocxOptions = {
 
 type GeneratedChunk = {
   title?: string;
-  summary?: string;
+  source_text?: string;
   questions?: Array<{
     question?: string;
     selection_mode?: 'single' | 'multiple';
@@ -142,7 +142,7 @@ Không bổ sung kiến thức bên ngoài, không suy đoán dữ kiện còn t
 Hãy tạo đúng một JSON object, không có lời giải thích ngoài JSON:
 {
   "title": "tiêu đề ngắn",
-  "summary": "nội dung học tập tóm lược nhưng giữ đúng thuật ngữ và ý nghĩa nguồn",
+  "source_text": "chép NGUYÊN VĂN toàn bộ SOURCE, không sửa nội dung",
   "questions": [
     {
       "question": "câu hỏi chỉ dựa trên SOURCE",
@@ -155,12 +155,12 @@ Hãy tạo đúng một JSON object, không có lời giải thích ngoài JSON:
 }
 Yêu cầu:
 - Ngôn ngữ tiếng Việt.
-- Tối đa ${questionsPerChunk} câu hỏi.
-- Mỗi câu có 2-5 phương án và ít nhất một đáp án đúng.
+- Tối đa ${questionsPerChunk} câu hỏi; chất lượng quan trọng hơn số lượng.
+- Mỗi câu có 2-5 phương án và ít nhất một đáp án đúng.\n- Tất cả phương án phải lấy từ SOURCE; distractor là thông tin thật trong SOURCE nhưng sai trong ngữ cảnh câu hỏi, ưu tiên cùng loại ngữ nghĩa.\n- Nếu không đủ distractor chất lượng, thử cấu trúc Multiple Choice khác; vẫn không đủ thì bỏ câu hỏi.
 - Nếu SOURCE không đủ để tạo câu hỏi có đáp án chắc chắn, để questions=[].
 - Không tạo quy trình, thông số hoặc dữ kiện không xuất hiện trong SOURCE.
 - Nếu SOURCE mô tả thao tác với vũ khí, không chuyển phần thao tác đó thành hướng dẫn thực hành, checklist thao tác, tối ưu hóa quy trình hoặc câu hỏi yêu cầu người học thực hiện thao tác. Chỉ được tạo nội dung nhận biết/khái niệm/yêu cầu kỹ thuật/an toàn ở mức không hướng dẫn thao tác.
-- summary không được biến suy luận thành sự thật từ nguồn.
+- source_text phải giữ nguyên SOURCE; không tóm tắt, sửa chính tả, thuật ngữ, số liệu hay diễn đạt.
 
 SOURCE_ID: ${section.id}
 HEADING: ${section.heading}
@@ -257,8 +257,8 @@ export async function generateMaterializedPlanFromDocx(
       {
         id: `${section.id}-TEXT`,
         type: 'text',
-        content: generated.summary?.trim() || section.text,
-        materialization_mode: generated.summary?.trim() ? 'SOURCE_TRANSFORM' : 'SOURCE_EXTRACT',
+        content: section.text,
+        materialization_mode: 'SOURCE_EXTRACT',
       },
     ];
 
@@ -283,7 +283,7 @@ export async function generateMaterializedPlanFromDocx(
   return {
     sections,
     plan: {
-      materializer_version: '1.1.0-long-docx',
+      materializer_version: '2.0.0-source-first',
       lesson_id: `DOCX-${Date.now()}`,
       language: 'vi',
       status: 'PASS_WITH_WARNINGS',
