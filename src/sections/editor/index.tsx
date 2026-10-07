@@ -51,8 +51,8 @@ import { AIChatHandle } from './components/ai-chat-handle';
 import { AIChatDrawer } from './components/ai-chat-drawer';
 import { TurnIntoMenu } from './components/turn-into-menu';
 import { SystemPromptDialog } from './components/system-prompt-dialog';
-import { generateH5PPackage, downloadH5PPackage } from '../../utils/h5p-generator';
 import { runMaterializedH5PPipeline } from '../../utils/h5p-pipeline';
+import { generateH5PPackage, downloadH5PPackage } from '../../utils/h5p-generator';
 import { generateMaterializedPlanFromDocx } from '../../utils/long-docx-pipeline';
 
 import type { ContentType, CommandOption, GeneratingSkeleton } from './types';
