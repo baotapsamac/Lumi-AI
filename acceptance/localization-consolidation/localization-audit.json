@@ -1,0 +1,711 @@
+{
+  "locale": "vi",
+  "status": "automated-field-validation-pass; manual UI review pending",
+  "rootCause": "Historical mappers preserved German exporter strings and English bundled semantics defaults; prior harness-only adapter did not affect ordinary compiler exports",
+  "rows": [
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "read",
+      "semanticsDefault": "Read",
+      "originalMapperValue": "Öffnen",
+      "vietnamese": "Mở",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "displayTOC",
+      "semanticsDefault": "Display 'Table of contents'",
+      "originalMapperValue": "Inhaltsverzeichnis anzeigen",
+      "vietnamese": "Hiện mục lục",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "hideTOC",
+      "semanticsDefault": "Hide 'Table of contents'",
+      "originalMapperValue": "Inhaltsverzeichnis ausblenden",
+      "vietnamese": "Ẩn mục lục",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "nextPage",
+      "semanticsDefault": "Next page",
+      "originalMapperValue": "Nächste Seite",
+      "vietnamese": "Trang tiếp theo",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "previousPage",
+      "semanticsDefault": "Previous page",
+      "originalMapperValue": "Vorherige Seite",
+      "vietnamese": "Trang trước",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "chapterCompleted",
+      "semanticsDefault": "Page completed!",
+      "originalMapperValue": "Seite abgeschlossen!",
+      "vietnamese": "Đã hoàn thành trang!",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "partCompleted",
+      "semanticsDefault": "@pages of @total completed",
+      "originalMapperValue": "@pages von @total Seiten abgeschlossen",
+      "vietnamese": "Đã hoàn thành @pages trên @total trang",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "incompleteChapter",
+      "semanticsDefault": "Incomplete page",
+      "originalMapperValue": "Unvollständige Seite",
+      "vietnamese": "Trang chưa hoàn thành",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "navigateToTop",
+      "semanticsDefault": "Navigate to the top",
+      "originalMapperValue": "Nach oben springen",
+      "vietnamese": "Về đầu trang",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "markAsFinished",
+      "semanticsDefault": "I have finished this page",
+      "originalMapperValue": "Ich habe diese Seite abgeschlossen",
+      "vietnamese": "Tôi đã hoàn thành trang này",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "fullscreen",
+      "semanticsDefault": "Fullscreen",
+      "originalMapperValue": "Vollbild",
+      "vietnamese": "Toàn màn hình",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "exitFullscreen",
+      "semanticsDefault": "Exit fullscreen",
+      "originalMapperValue": "Vollbild beenden",
+      "vietnamese": "Thoát toàn màn hình",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "bookProgressSubtext",
+      "semanticsDefault": "@count of @total pages",
+      "originalMapperValue": "@count von @total Seiten",
+      "vietnamese": "@count trên @total trang",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "interactionsProgressSubtext",
+      "semanticsDefault": "@count of @total interactions",
+      "originalMapperValue": "@count von @total Interaktionen",
+      "vietnamese": "@count trên @total hoạt động",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "submitReport",
+      "semanticsDefault": "Submit Report",
+      "originalMapperValue": "Report absenden",
+      "vietnamese": "Gửi báo cáo",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "restartLabel",
+      "semanticsDefault": "Restart",
+      "originalMapperValue": "Neustart",
+      "vietnamese": "Làm lại",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "summaryHeader",
+      "semanticsDefault": "Summary",
+      "originalMapperValue": "Zusammenfassung",
+      "vietnamese": "Tổng kết bài tập",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "allInteractions",
+      "semanticsDefault": "All interactions",
+      "originalMapperValue": "Alle Interaktionen",
+      "vietnamese": "Tất cả hoạt động",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "unansweredInteractions",
+      "semanticsDefault": "Unanswered interactions",
+      "originalMapperValue": "Unbeantwortete Interaktionen",
+      "vietnamese": "Hoạt động chưa trả lời",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "scoreText",
+      "semanticsDefault": "@score / @maxscore",
+      "originalMapperValue": "@score / @maxscore",
+      "vietnamese": "@score / @maxscore",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "leftOutOfTotalCompleted",
+      "semanticsDefault": "@left of @max interactions completed",
+      "originalMapperValue": "@left von @max Interaktionen abgeschlossen",
+      "vietnamese": "Đã hoàn thành @left trên @max hoạt động",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "noInteractions",
+      "semanticsDefault": "No interactions",
+      "originalMapperValue": "Keine Interaktionen",
+      "vietnamese": "Chưa có hoạt động",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "score",
+      "semanticsDefault": "Score",
+      "originalMapperValue": "Punkte",
+      "vietnamese": "Điểm",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "summaryAndSubmit",
+      "semanticsDefault": "Summary &amp; submit",
+      "originalMapperValue": "Zusammenfassung und Einsenden",
+      "vietnamese": "Tổng kết và gửi",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "noChapterInteractionBoldText",
+      "semanticsDefault": "You have not interacted with any pages.",
+      "originalMapperValue": "Du hast noch keine Seiten bearbeitet.",
+      "vietnamese": "Bạn chưa hoàn thành trang nào.",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "noChapterInteractionText",
+      "semanticsDefault": "You have to interact with at least one page before you can see the summary.",
+      "originalMapperValue": "Du musst wenigstens eine Seite bearbeiten, um die Zusammenfassung zu sehen.",
+      "vietnamese": "Bạn cần thực hiện ít nhất một trang để xem tổng kết.",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "yourAnswersAreSubmittedForReview",
+      "semanticsDefault": "Your answers are submitted for review!",
+      "originalMapperValue": "Deine Antworten wurden zur Begutachtung versendet!",
+      "vietnamese": "Câu trả lời đã được gửi để đánh giá!",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "bookProgress",
+      "semanticsDefault": "Book progress",
+      "originalMapperValue": "Buchfortschritt",
+      "vietnamese": "Tiến độ bài học",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "interactionsProgress",
+      "semanticsDefault": "Interactions progress",
+      "originalMapperValue": "Interaktionsfortschritt",
+      "vietnamese": "Tiến độ hoạt động",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "totalScoreLabel",
+      "semanticsDefault": "Total score",
+      "originalMapperValue": "Gesamtpunktzahl",
+      "vietnamese": "Tổng điểm",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "a11y.progress",
+      "semanticsDefault": "Page @page of @total.",
+      "originalMapperValue": "Seite @page von @total.",
+      "vietnamese": "Trang @page trên @total.",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "InteractiveBook",
+      "distribution": "H5P.InteractiveBook-1.11",
+      "field": "a11y.menu",
+      "semanticsDefault": "Toggle navigation menu",
+      "originalMapperValue": "Inhaltsverzeichnis ein- bzw. ausschalten",
+      "vietnamese": "Bật hoặc tắt mục lục",
+      "mapper": "interactive-book.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.checkAnswerButton",
+      "semanticsDefault": "Check",
+      "originalMapperValue": "Überprüfen",
+      "vietnamese": "Kiểm tra",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.submitAnswerButton",
+      "semanticsDefault": "Submit",
+      "originalMapperValue": "Absenden",
+      "vietnamese": "Gửi câu trả lời",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.showSolutionButton",
+      "semanticsDefault": "Show solution",
+      "originalMapperValue": "Lösung anzeigen",
+      "vietnamese": "Xem đáp án",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.tryAgainButton",
+      "semanticsDefault": "Retry",
+      "originalMapperValue": "Wiederholen",
+      "vietnamese": "Làm lại",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.tipsLabel",
+      "semanticsDefault": "Show tip",
+      "originalMapperValue": "Hinweis anzeigen",
+      "vietnamese": "Xem gợi ý",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.scoreBarLabel",
+      "semanticsDefault": "You got :num out of :total points",
+      "originalMapperValue": "Du hast :num von :total Punkten erreicht.",
+      "vietnamese": "Bạn đạt :num trên :total điểm.",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.tipAvailable",
+      "semanticsDefault": "Tip available",
+      "originalMapperValue": "Hinweis verfügbar",
+      "vietnamese": "Có gợi ý",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.feedbackAvailable",
+      "semanticsDefault": "Feedback available",
+      "originalMapperValue": "Rückmeldung verfügbar",
+      "vietnamese": "Có phản hồi",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.readFeedback",
+      "semanticsDefault": "Read feedback",
+      "originalMapperValue": "Rückmeldung vorlesen",
+      "vietnamese": "Đọc phản hồi",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.wrongAnswer",
+      "semanticsDefault": "Wrong answer",
+      "originalMapperValue": "Falsche Antwort",
+      "vietnamese": "Đáp án sai",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.correctAnswer",
+      "semanticsDefault": "Correct answer",
+      "originalMapperValue": "Richtige Antwort",
+      "vietnamese": "Đáp án đúng",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.shouldCheck",
+      "semanticsDefault": "Should have been checked",
+      "originalMapperValue": "Hätte gewählt werden müssen",
+      "vietnamese": "Cần chọn",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.shouldNotCheck",
+      "semanticsDefault": "Should not have been checked",
+      "originalMapperValue": "Hätte nicht gewählt werden sollen",
+      "vietnamese": "Không nên chọn",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.noInput",
+      "semanticsDefault": "Please answer before viewing the solution",
+      "originalMapperValue": "Bitte antworte, bevor du die Lösung ansiehst",
+      "vietnamese": "Hãy trả lời trước khi xem đáp án",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.a11yCheck",
+      "semanticsDefault": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+      "originalMapperValue": "Die Antworten überprüfen. Die Auswahlen werden als richtig, falsch oder fehlend markiert.",
+      "vietnamese": "Kiểm tra câu trả lời. Các câu trả lời được đánh dấu đúng, sai hoặc chưa trả lời.",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.a11yShowSolution",
+      "semanticsDefault": "Show the solution. The task will be marked with its correct solution.",
+      "originalMapperValue": "Die Lösung anzeigen. Die richtigen Lösungen werden in der Aufgabe angezeigt.",
+      "vietnamese": "Xem đáp án đúng của câu hỏi.",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "UI.a11yRetry",
+      "semanticsDefault": "Retry the task. Reset all responses and start the task over again.",
+      "originalMapperValue": "Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet.",
+      "vietnamese": "Làm lại câu hỏi và đặt lại tất cả câu trả lời.",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "confirmCheck.header",
+      "semanticsDefault": "Finish ?",
+      "originalMapperValue": "Beenden?",
+      "vietnamese": "Kết thúc?",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "confirmCheck.body",
+      "semanticsDefault": "Are you sure you wish to finish ?",
+      "originalMapperValue": "Ganz sicher beenden?",
+      "vietnamese": "Bạn có chắc muốn kết thúc?",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "confirmCheck.cancelLabel",
+      "semanticsDefault": "Cancel",
+      "originalMapperValue": "Abbrechen",
+      "vietnamese": "Hủy",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "confirmCheck.confirmLabel",
+      "semanticsDefault": "Finish",
+      "originalMapperValue": "Beenden",
+      "vietnamese": "Kết thúc",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "confirmRetry.header",
+      "semanticsDefault": "Retry ?",
+      "originalMapperValue": "Wiederholen?",
+      "vietnamese": "Làm lại?",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "confirmRetry.body",
+      "semanticsDefault": "Are you sure you wish to retry ?",
+      "originalMapperValue": "Ganz sicher wiederholen?",
+      "vietnamese": "Bạn có chắc muốn làm lại?",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "confirmRetry.cancelLabel",
+      "semanticsDefault": "Cancel",
+      "originalMapperValue": "Abbrechen",
+      "vietnamese": "Hủy",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "MultiChoice",
+      "distribution": "H5P.MultiChoice-1.16",
+      "field": "confirmRetry.confirmLabel",
+      "semanticsDefault": "Confirm",
+      "originalMapperValue": "Bestätigen",
+      "vietnamese": "Xác nhận",
+      "mapper": "multi-choice.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.trueText",
+      "semanticsDefault": "True",
+      "originalMapperValue": "True",
+      "vietnamese": "Đúng",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.falseText",
+      "semanticsDefault": "False",
+      "originalMapperValue": "False",
+      "vietnamese": "Sai",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.score",
+      "semanticsDefault": "You got @score of @total points",
+      "originalMapperValue": "You got @score of @total points",
+      "vietnamese": "Bạn đạt @score trên @total điểm",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.checkAnswer",
+      "semanticsDefault": "Check",
+      "originalMapperValue": "Check",
+      "vietnamese": "Kiểm tra",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.submitAnswer",
+      "semanticsDefault": "Submit",
+      "originalMapperValue": "Submit",
+      "vietnamese": "Gửi câu trả lời",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.showSolutionButton",
+      "semanticsDefault": "Show solution",
+      "originalMapperValue": "Show solution",
+      "vietnamese": "Xem đáp án",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.tryAgain",
+      "semanticsDefault": "Retry",
+      "originalMapperValue": "Retry",
+      "vietnamese": "Làm lại",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.wrongAnswerMessage",
+      "semanticsDefault": "Wrong answer",
+      "originalMapperValue": "Wrong answer",
+      "vietnamese": "Đáp án sai",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.correctAnswerMessage",
+      "semanticsDefault": "Correct answer",
+      "originalMapperValue": "Correct answer",
+      "vietnamese": "Đáp án đúng",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.scoreBarLabel",
+      "semanticsDefault": "You got :num out of :total points",
+      "originalMapperValue": "You got :num out of :total points",
+      "vietnamese": "Bạn đạt :num trên :total điểm",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.a11yCheck",
+      "semanticsDefault": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+      "originalMapperValue": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+      "vietnamese": "Kiểm tra câu trả lời. Các câu trả lời được đánh dấu đúng, sai hoặc chưa trả lời.",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.a11yShowSolution",
+      "semanticsDefault": "Show the solution. The task will be marked with its correct solution.",
+      "originalMapperValue": "Show the solution. The task will be marked with its correct solution.",
+      "vietnamese": "Xem đáp án đúng của câu hỏi.",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "l10n.a11yRetry",
+      "semanticsDefault": "Retry the task. Reset all responses and start the task over again.",
+      "originalMapperValue": "Retry the task. Reset all responses and start the task over again.",
+      "vietnamese": "Làm lại câu hỏi và đặt lại tất cả câu trả lời.",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "confirmCheck.header",
+      "semanticsDefault": "Finish ?",
+      "originalMapperValue": "Finish ?",
+      "vietnamese": "Kết thúc?",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "confirmCheck.body",
+      "semanticsDefault": "Are you sure you wish to finish ?",
+      "originalMapperValue": "Are you sure you wish to finish ?",
+      "vietnamese": "Bạn có chắc muốn kết thúc?",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "confirmCheck.cancelLabel",
+      "semanticsDefault": "Cancel",
+      "originalMapperValue": "Cancel",
+      "vietnamese": "Hủy",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "confirmCheck.confirmLabel",
+      "semanticsDefault": "Finish",
+      "originalMapperValue": "Finish",
+      "vietnamese": "Kết thúc",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "confirmRetry.header",
+      "semanticsDefault": "Retry ?",
+      "originalMapperValue": "Retry ?",
+      "vietnamese": "Làm lại?",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "confirmRetry.body",
+      "semanticsDefault": "Are you sure you wish to retry ?",
+      "originalMapperValue": "Are you sure you wish to retry ?",
+      "vietnamese": "Bạn có chắc muốn làm lại?",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "confirmRetry.cancelLabel",
+      "semanticsDefault": "Cancel",
+      "originalMapperValue": "Cancel",
+      "vietnamese": "Hủy",
+      "mapper": "true-false.ts"
+    },
+    {
+      "component": "TrueFalse",
+      "distribution": "H5P.TrueFalse-1.8",
+      "field": "confirmRetry.confirmLabel",
+      "semanticsDefault": "Confirm",
+      "originalMapperValue": "Confirm",
+      "vietnamese": "Xác nhận",
+      "mapper": "true-false.ts"
+    }
+  ],
+  "accordion": "No configurable runtime text-label defaults in bundled semantics; panel content is user-authored",
+  "golden": "Original text-mcq.h5p retained unchanged; text-mcq-vi.h5p changes 81 audited leaf strings only"
+}

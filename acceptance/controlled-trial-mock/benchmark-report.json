@@ -1,0 +1,398 @@
+{
+  "schemaVersion": "1.0",
+  "provider": {
+    "provider": "fixed-mock",
+    "model": null,
+    "execution": "mock"
+  },
+  "caseCount": 1,
+  "aggregate": {
+    "schemaValidity": 1,
+    "qualityGatePassRate": 1,
+    "sourceGrounding": {
+      "numerator": 12,
+      "denominator": 12,
+      "ratio": 1
+    },
+    "learningOutcomeCoverage": {
+      "numerator": 3,
+      "denominator": 3,
+      "ratio": 1
+    },
+    "questionValidity": {
+      "numerator": 4,
+      "denominator": 4,
+      "ratio": 1
+    },
+    "duplicateRate": {
+      "duplicates": 0,
+      "total": 13,
+      "ratio": 0
+    },
+    "interactionBalancePassRate": 1,
+    "chapterStructurePassRate": 1
+  },
+  "metricScope": "Deterministic structural/reference/rule metrics only; schema-invalid cases have unavailable content metrics, never assumed zeros or perfect scores.",
+  "humanReviewStatus": "not-reviewed",
+  "humanReviewRubric": {
+    "scale": {
+      "min": 1,
+      "max": 5
+    },
+    "status": "not-reviewed",
+    "criteria": [
+      {
+        "id": "source-grounding",
+        "label": "Bám sát nguồn",
+        "one": "Nhiều ý không có căn cứ",
+        "five": "Các ý quan trọng đúng và có căn cứ"
+      },
+      {
+        "id": "lesson-structure",
+        "label": "Cấu trúc bài hợp lý",
+        "one": "Cần tổ chức lại toàn bộ",
+        "five": "Tiến trình rõ ràng, phù hợp nội dung"
+      },
+      {
+        "id": "outcome-alignment",
+        "label": "Phù hợp chuẩn đầu ra",
+        "one": "Không phục vụ chuẩn đầu ra",
+        "five": "Hoạt động phục vụ chuẩn đầu ra rõ ràng"
+      },
+      {
+        "id": "question-quality",
+        "label": "Câu hỏi có chất lượng",
+        "one": "Đáp án/distractors không phù hợp",
+        "five": "Câu hỏi rõ, có căn cứ và phân biệt tốt"
+      },
+      {
+        "id": "bloom-fit",
+        "label": "Mức Bloom phù hợp",
+        "one": "Sai mức yêu cầu",
+        "five": "Mức nhận thức phù hợp nguồn và yêu cầu"
+      },
+      {
+        "id": "interaction-fit",
+        "label": "Tương tác hợp lý",
+        "one": "Tùy tiện hoặc gây cản trở",
+        "five": "Tương tác giúp học đúng mục đích"
+      },
+      {
+        "id": "language-clarity",
+        "label": "Ngôn ngữ rõ ràng",
+        "one": "Khó hiểu, cần viết lại",
+        "five": "Rõ ràng, phù hợp người học"
+      },
+      {
+        "id": "editing-effort",
+        "label": "Editing Effort",
+        "one": "Phải sửa gần như toàn bộ",
+        "five": "Gần như dùng ngay"
+      }
+    ],
+    "instructions": "Giảng viên điền điểm 1–5, dẫn chứng và thời gian chỉnh sửa thực tế. Không suy điểm human review từ deterministic metrics."
+  },
+  "limitations": [
+    "No human-reviewed ground truth: no subject-matter accuracy score is calculated.",
+    "Valid source excerpts do not prove semantic entailment, actual Bloom level or pedagogical usefulness.",
+    "Editing Effort requires an instructor rating and observed editing time.",
+    "Mock results test the framework, not real AI performance."
+  ],
+  "cases": [
+    {
+      "decision": {
+        "status": "PASS WITH WARNINGS",
+        "blocking": [],
+        "nonBlocking": [
+          "semantic-grounding-human-review-required",
+          "instructional-quality-human-review-required",
+          "editing-effort-not-reviewed"
+        ],
+        "eligibleForCompilation": true
+      },
+      "durationMs": 9,
+      "blueprintSummary": {
+        "chapters": 3,
+        "activities": 12,
+        "interactionDistribution": {
+          "text": 7,
+          "accordion": 1,
+          "multiple-choice": 2,
+          "true-false": 2
+        },
+        "bloomDistribution": {
+          "2": 12
+        },
+        "outcomeIds": [
+          "O1",
+          "O2",
+          "O3"
+        ]
+      },
+      "questions": [
+        {
+          "path": "chapters[0].activities[2]",
+          "chapter": "Nhận diện và bảo vệ thông tin",
+          "type": "multiple-choice",
+          "question": "Theo nguồn, nhóm nào có thể được chia sẻ cho mọi người theo mục đích đã xác định?",
+          "bloomLevel": 2,
+          "learningOutcomes": [
+            {
+              "id": "O1",
+              "text": "Phân biệt các nhóm thông tin và các khái niệm bảo vệ thông tin trong nguồn."
+            }
+          ],
+          "correctAnswer": [
+            "Thông tin công khai"
+          ],
+          "distractors": [
+            "Thông tin cá nhân",
+            "Thông tin nội bộ"
+          ],
+          "sourceRefs": [
+            "S2",
+            "S3"
+          ],
+          "evidence": [
+            {
+              "sourceRef": "S2",
+              "quote": "Thông tin công khai có thể được chia sẻ cho mọi người theo mục đích đã xác định. Ví dụ trong bài học là thông báo lịch sinh hoạt chung của lớp. Khi đọc một thông báo công khai, người học vẫn cần kiểm tra người gửi và thời điểm thông báo để tránh dùng nội dung đã cũ."
+            }
+          ],
+          "optionReview": [
+            {
+              "text": "Thông tin công khai",
+              "correct": true,
+              "justification": "Nguồn mô tả nhóm này được chia sẻ cho mọi người theo mục đích đã xác định.",
+              "evidence": [
+                {
+                  "sourceRef": "S2",
+                  "quote": "Thông tin công khai có thể được chia sẻ cho mọi người theo mục đích đã xác định. Ví dụ trong bài học là thông báo lịch sinh hoạt chung của lớp. Khi đọc một thông báo công khai, người học vẫn cần kiểm tra người gửi và thời điểm thông báo để tránh dùng nội dung đã cũ."
+                }
+              ]
+            },
+            {
+              "text": "Thông tin cá nhân",
+              "correct": false,
+              "justification": "Nguồn yêu cầu có sự đồng ý phù hợp trước khi gửi lên kênh công khai.",
+              "evidence": [
+                {
+                  "sourceRef": "S3",
+                  "quote": "Thông tin cá nhân liên quan đến một người cụ thể, chẳng hạn tên và địa chỉ liên hệ. Thông tin nội bộ chỉ dành cho nhóm được phép tiếp cận, chẳng hạn ghi chú làm việc của nhóm học tập. Không gửi thông tin cá nhân hoặc nội bộ lên một kênh công khai khi chưa có sự đồng ý phù hợp."
+                }
+              ]
+            },
+            {
+              "text": "Thông tin nội bộ",
+              "correct": false,
+              "justification": "Nguồn giới hạn nhóm này cho người được phép tiếp cận.",
+              "evidence": [
+                {
+                  "sourceRef": "S3",
+                  "quote": "Thông tin cá nhân liên quan đến một người cụ thể, chẳng hạn tên và địa chỉ liên hệ. Thông tin nội bộ chỉ dành cho nhóm được phép tiếp cận, chẳng hạn ghi chú làm việc của nhóm học tập. Không gửi thông tin cá nhân hoặc nội bộ lên một kênh công khai khi chưa có sự đồng ý phù hợp."
+                }
+              ]
+            }
+          ],
+          "correctedStatement": null,
+          "justification": null,
+          "humanReviewStatus": "not-reviewed"
+        },
+        {
+          "path": "chapters[1].activities[1]",
+          "chapter": "Kiểm tra thông điệp và giữ bản sao",
+          "type": "multiple-choice",
+          "question": "Khái niệm nào chỉ việc tạo bản sao dữ liệu để khôi phục khi bản gốc gặp sự cố?",
+          "bloomLevel": 2,
+          "learningOutcomes": [
+            {
+              "id": "O2",
+              "text": "Nhận biết và lựa chọn thao tác kiểm tra thông điệp đáng ngờ theo nguồn."
+            }
+          ],
+          "correctAnswer": [
+            "Sao lưu"
+          ],
+          "distractors": [
+            "Phishing"
+          ],
+          "sourceRefs": [
+            "S6",
+            "S5"
+          ],
+          "evidence": [
+            {
+              "sourceRef": "S6",
+              "quote": "Sao lưu là tạo bản sao dữ liệu để có thể khôi phục khi bản gốc gặp sự cố. Người học nên giữ một bản sao riêng cho tài liệu học tập quan trọng và kiểm tra xem bản sao có mở được hay không. Sao lưu không thay thế việc giữ mật khẩu riêng và không chứng minh một thông điệp là đáng tin."
+            }
+          ],
+          "optionReview": [
+            {
+              "text": "Sao lưu",
+              "correct": true,
+              "justification": "Nguồn định nghĩa đây là tạo bản sao để khôi phục.",
+              "evidence": [
+                {
+                  "sourceRef": "S6",
+                  "quote": "Sao lưu là tạo bản sao dữ liệu để có thể khôi phục khi bản gốc gặp sự cố. Người học nên giữ một bản sao riêng cho tài liệu học tập quan trọng và kiểm tra xem bản sao có mở được hay không. Sao lưu không thay thế việc giữ mật khẩu riêng và không chứng minh một thông điệp là đáng tin."
+                }
+              ]
+            },
+            {
+              "text": "Phishing",
+              "correct": false,
+              "justification": "Nguồn mô tả đây là thông điệp giả mạo, không phải tạo bản sao.",
+              "evidence": [
+                {
+                  "sourceRef": "S5",
+                  "quote": "Phishing là hành vi dùng thông điệp giả mạo để dụ người nhận cung cấp thông tin hoặc thực hiện thao tác có hại. Dấu hiệu cần kiểm tra gồm người gửi lạ, lời thúc giục khẩn cấp và liên kết không phù hợp với nơi gửi. Một thông điệp có logo quen thuộc vẫn cần được kiểm tra bằng các dấu hiệu này."
+                }
+              ]
+            }
+          ],
+          "correctedStatement": null,
+          "justification": null,
+          "humanReviewStatus": "not-reviewed"
+        },
+        {
+          "path": "chapters[1].activities[3]",
+          "chapter": "Kiểm tra thông điệp và giữ bản sao",
+          "type": "true-false",
+          "question": "Có thể gửi mật khẩu hoặc mã xác minh để chứng minh mình là chủ tài khoản.",
+          "bloomLevel": 2,
+          "learningOutcomes": [
+            {
+              "id": "O2",
+              "text": "Nhận biết và lựa chọn thao tác kiểm tra thông điệp đáng ngờ theo nguồn."
+            }
+          ],
+          "correctAnswer": [
+            "Sai"
+          ],
+          "distractors": [],
+          "sourceRefs": [
+            "S7"
+          ],
+          "evidence": [
+            {
+              "sourceRef": "S7",
+              "quote": "Khi nhận thông điệp đáng ngờ, bước đầu là dừng thao tác theo yêu cầu trong thông điệp. Bước tiếp theo là kiểm tra người gửi và liên kết qua một kênh liên hệ đã biết. Nếu vẫn nghi ngờ, báo cho người phụ trách bằng kênh đã xác định. Không gửi mật khẩu hoặc mã xác minh để chứng minh mình là chủ tài khoản."
+            }
+          ],
+          "optionReview": [],
+          "correctedStatement": "Không gửi mật khẩu hoặc mã xác minh để chứng minh mình là chủ tài khoản.",
+          "justification": "Nhận định đảo ngược quy tắc không gửi mật khẩu hoặc mã xác minh trong nguồn.",
+          "humanReviewStatus": "not-reviewed"
+        },
+        {
+          "path": "chapters[2].activities[2]",
+          "chapter": "Chia sẻ có trách nhiệm",
+          "type": "true-false",
+          "question": "Báo sự cố sớm giúp nhóm có cơ hội kiểm tra và xử lý; không tự che giấu một lần gửi nhầm tài liệu.",
+          "bloomLevel": 2,
+          "learningOutcomes": [
+            {
+              "id": "O3",
+              "text": "Lựa chọn cách chia sẻ và báo sự cố có trách nhiệm theo nguồn."
+            }
+          ],
+          "correctAnswer": [
+            "Đúng"
+          ],
+          "distractors": [],
+          "sourceRefs": [
+            "S9"
+          ],
+          "evidence": [
+            {
+              "sourceRef": "S9",
+              "quote": "Người học chịu trách nhiệm giữ thông tin của mình và tôn trọng thông tin của người khác. Khi chưa chắc một yêu cầu chia sẻ có phù hợp hay không, hỏi người phụ trách trước khi thực hiện. Báo sự cố sớm giúp nhóm có cơ hội kiểm tra và xử lý; không tự che giấu một lần gửi nhầm tài liệu."
+            }
+          ],
+          "optionReview": [],
+          "correctedStatement": "Báo sự cố sớm giúp nhóm có cơ hội kiểm tra và xử lý; không tự che giấu một lần gửi nhầm tài liệu.",
+          "justification": "Nhận định trích nguyên văn quy tắc trách nhiệm của người học.",
+          "humanReviewStatus": "not-reviewed"
+        }
+      ],
+      "id": "single-lesson",
+      "source": "source.txt",
+      "preset": "theory",
+      "attempts": 1,
+      "attemptResults": [
+        {
+          "attempt": 1,
+          "stage": "quality",
+          "schemaValid": true,
+          "qualityPassed": true,
+          "errors": []
+        }
+      ],
+      "metrics": {
+        "schemaValid": true,
+        "qualityGatePassed": true,
+        "warnings": [],
+        "chapterCount": 3,
+        "blockCount": 12,
+        "questionCount": 4,
+        "interactionDistribution": {
+          "text": 7,
+          "accordion": 1,
+          "multiple-choice": 2,
+          "true-false": 2
+        },
+        "sourceGrounding": {
+          "valid": 12,
+          "total": 12,
+          "ratio": 1
+        },
+        "learningOutcomeCoverage": {
+          "covered": 3,
+          "total": 3,
+          "ratio": 1
+        },
+        "questionValidity": {
+          "valid": 4,
+          "total": 4,
+          "ratio": 1
+        },
+        "duplicateRate": {
+          "duplicates": 0,
+          "total": 13,
+          "ratio": 0
+        },
+        "interactionBalance": {
+          "passed": true,
+          "dominantRatio": 0.5833333333333334
+        },
+        "chapterStructure": {
+          "passed": true,
+          "chapterCharacters": [
+            1209,
+            1028,
+            666
+          ]
+        }
+      },
+      "humanReview": {
+        "status": "not-reviewed",
+        "scores": {
+          "source-grounding": null,
+          "lesson-structure": null,
+          "outcome-alignment": null,
+          "question-quality": null,
+          "bloom-fit": null,
+          "interaction-fit": null,
+          "language-clarity": null,
+          "editing-effort": null
+        },
+        "editingMinutes": null,
+        "notes": ""
+      }
+    }
+  ],
+  "configuration": {
+    "provider": "fixed-mock",
+    "maxAttempts": 2
+  }
+}

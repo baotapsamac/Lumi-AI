@@ -1,0 +1,17 @@
+An toàn thông tin cơ bản là việc bảo vệ thông tin khi học tập và làm việc trên thiết bị số. Bài học này tập trung vào ba mục tiêu: giữ bí mật thông tin, giữ thông tin chính xác và bảo đảm thông tin có thể sử dụng khi cần. Người học nên xác định loại thông tin trước khi lựa chọn cách chia sẻ.
+
+Thông tin công khai có thể được chia sẻ cho mọi người theo mục đích đã xác định. Ví dụ trong bài học là thông báo lịch sinh hoạt chung của lớp. Khi đọc một thông báo công khai, người học vẫn cần kiểm tra người gửi và thời điểm thông báo để tránh dùng nội dung đã cũ.
+
+Thông tin cá nhân liên quan đến một người cụ thể, chẳng hạn tên và địa chỉ liên hệ. Thông tin nội bộ chỉ dành cho nhóm được phép tiếp cận, chẳng hạn ghi chú làm việc của nhóm học tập. Không gửi thông tin cá nhân hoặc nội bộ lên một kênh công khai khi chưa có sự đồng ý phù hợp.
+
+Mật khẩu cần được giữ riêng và không chia sẻ cho người khác. Không ghi mật khẩu vào tài liệu dùng chung của lớp. Khi một dịch vụ cho phép xác thực hai bước, người dùng có thể bật thêm bước xác minh để tăng khả năng bảo vệ tài khoản. Không gửi mã xác minh cho người tự xưng là nhân viên hỗ trợ.
+
+Phishing là hành vi dùng thông điệp giả mạo để dụ người nhận cung cấp thông tin hoặc thực hiện thao tác có hại. Dấu hiệu cần kiểm tra gồm người gửi lạ, lời thúc giục khẩn cấp và liên kết không phù hợp với nơi gửi. Một thông điệp có logo quen thuộc vẫn cần được kiểm tra bằng các dấu hiệu này.
+
+Sao lưu là tạo bản sao dữ liệu để có thể khôi phục khi bản gốc gặp sự cố. Người học nên giữ một bản sao riêng cho tài liệu học tập quan trọng và kiểm tra xem bản sao có mở được hay không. Sao lưu không thay thế việc giữ mật khẩu riêng và không chứng minh một thông điệp là đáng tin.
+
+Khi nhận thông điệp đáng ngờ, bước đầu là dừng thao tác theo yêu cầu trong thông điệp. Bước tiếp theo là kiểm tra người gửi và liên kết qua một kênh liên hệ đã biết. Nếu vẫn nghi ngờ, báo cho người phụ trách bằng kênh đã xác định. Không gửi mật khẩu hoặc mã xác minh để chứng minh mình là chủ tài khoản.
+
+Khi chia sẻ tài liệu học tập, xác định người nhận và mục đích sử dụng trước. Sau đó kiểm tra tài liệu có thông tin cá nhân hoặc nội bộ hay không. Chọn quyền truy cập phù hợp với người nhận và kiểm tra lại quyền sau khi chia sẻ. Nếu gửi nhầm, thông báo cho người phụ trách để cùng xử lý.
+
+Người học chịu trách nhiệm giữ thông tin của mình và tôn trọng thông tin của người khác. Khi chưa chắc một yêu cầu chia sẻ có phù hợp hay không, hỏi người phụ trách trước khi thực hiện. Báo sự cố sớm giúp nhóm có cơ hội kiểm tra và xử lý; không tự che giấu một lần gửi nhầm tài liệu.
