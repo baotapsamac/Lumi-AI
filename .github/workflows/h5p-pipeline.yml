@@ -1,0 +1,22 @@
+name: H5P pipeline gate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - feat/automated-h5p-pipeline
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - name: Static H5P regression gate
+        run: node scripts/check-h5p-pipeline.mjs
