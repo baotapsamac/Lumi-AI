@@ -56,6 +56,7 @@ import { runMaterializedH5PPipeline } from '../../utils/h5p-pipeline';
 import type { MaterializedH5PPlan } from '../../utils/h5p-pipeline';
 import { generateH5PPackage, downloadH5PPackage } from '../../utils/h5p-generator';
 import { generateMaterializedPlanFromDocx } from '../../utils/long-docx-pipeline';
+import { loadDocxProject, saveDocxProject, downloadProjectFile } from '../../utils/project-store';
 
 import type { ContentType, CommandOption, GeneratingSkeleton } from './types';
 
@@ -120,6 +121,14 @@ function EditorPage() {
   const [docxReviewPlan, setDocxReviewPlan] = React.useState<MaterializedH5PPlan | null>(null);
   const [docxReviewTitle, setDocxReviewTitle] = React.useState('');
 
+  React.useEffect(() => {
+    const saved = loadDocxProject();
+    if (saved) {
+      setDocxReviewPlan(saved.plan);
+      setDocxReviewTitle(saved.title);
+    }
+  }, []);
+
   // Local UI state - Generating skeletons
   const [generatingSkeletons, setGeneratingSkeletons] = React.useState<GeneratingSkeleton[]>([]);
 
@@ -181,6 +190,14 @@ function EditorPage() {
 
       setDocxReviewPlan(plan);
       setDocxReviewTitle(baseTitle);
+      saveDocxProject({
+        version: '1.0',
+        id: plan.lesson_id,
+        title: baseTitle,
+        sourceFileName: file.name,
+        updatedAt: new Date().toISOString(),
+        plan,
+      });
       setSnackbar({
         open: true,
         message: `Đã phân tích ${sections.length} phần. Hãy duyệt câu hỏi trước khi xuất H5P.`,
@@ -512,6 +529,16 @@ function EditorPage() {
               throw new Error(failed || 'Package Validator không cho phép xuất H5P.');
             }
             downloadH5PPackage(result.blob, docxReviewTitle || 'bai-hoc');
+            const project = {
+              version: '1.0' as const,
+              id: approvedPlan.lesson_id,
+              title: docxReviewTitle || 'bai-hoc',
+              sourceFileName: docxReviewTitle ? `${docxReviewTitle}.docx` : 'source.docx',
+              updatedAt: new Date().toISOString(),
+              plan: approvedPlan,
+            };
+            saveDocxProject(project);
+            downloadProjectFile(project);
             setDocxReviewPlan(null);
             setSnackbar({ open: true, message: `Đã xuất H5P. Validator: ${result.report.status}.`, severity: 'success' });
           } catch (error) {
