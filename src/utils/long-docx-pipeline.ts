@@ -159,6 +159,7 @@ Yêu cầu:
 - Mỗi câu có 2-5 phương án và ít nhất một đáp án đúng.
 - Nếu SOURCE không đủ để tạo câu hỏi có đáp án chắc chắn, để questions=[].
 - Không tạo quy trình, thông số hoặc dữ kiện không xuất hiện trong SOURCE.
+- Nếu SOURCE mô tả thao tác với vũ khí, không chuyển phần thao tác đó thành hướng dẫn thực hành, checklist thao tác, tối ưu hóa quy trình hoặc câu hỏi yêu cầu người học thực hiện thao tác. Chỉ được tạo nội dung nhận biết/khái niệm/yêu cầu kỹ thuật/an toàn ở mức không hướng dẫn thao tác.
 - summary không được biến suy luận thành sự thật từ nguồn.
 
 SOURCE_ID: ${section.id}
