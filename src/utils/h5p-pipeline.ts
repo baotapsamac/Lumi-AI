@@ -5,6 +5,7 @@ export type MaterializedAnswer = {
   correct: boolean;
   feedback?: string;
   origin?: string;
+  source_ids?: string[];
 };
 
 export type MaterializedQuestion = {
@@ -13,6 +14,9 @@ export type MaterializedQuestion = {
   question: string;
   answers: MaterializedAnswer[];
   source_segments?: string[];
+  question_source_ids?: string[];
+  feedback_source_ids?: string[];
+  review_state?: 'draft' | 'qa_pass' | 'needs_review' | 'approved' | 'rejected';
 };
 
 export type MaterializedItem =
