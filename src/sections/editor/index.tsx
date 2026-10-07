@@ -52,6 +52,8 @@ import { AIChatDrawer } from './components/ai-chat-drawer';
 import { TurnIntoMenu } from './components/turn-into-menu';
 import { SystemPromptDialog } from './components/system-prompt-dialog';
 import { generateH5PPackage, downloadH5PPackage } from '../../utils/h5p-generator';
+import { runMaterializedH5PPipeline } from '../../utils/h5p-pipeline';
+import { generateMaterializedPlanFromDocx } from '../../utils/long-docx-pipeline';
 
 import type { ContentType, CommandOption, GeneratingSkeleton } from './types';
 
@@ -112,6 +114,7 @@ function EditorPage() {
 
   // Local UI state - Download
   const [downloadLoading, setDownloadLoading] = React.useState(false);
+  const [docxLoading, setDocxLoading] = React.useState(false);
 
   // Local UI state - Generating skeletons
   const [generatingSkeletons, setGeneratingSkeletons] = React.useState<GeneratingSkeleton[]>([]);
@@ -144,6 +147,57 @@ function EditorPage() {
       });
     } finally {
       setDownloadLoading(false);
+    }
+  };
+
+  const handleDocxImport = async (file: File) => {
+    if (!apiToken.trim()) {
+      setSnackbar({ open: true, message: 'Hãy cấu hình API token trước khi xử lý DOCX.', severity: 'error' });
+      return;
+    }
+
+    setDocxLoading(true);
+    try {
+      const baseTitle = file.name.replace(/\.docx$/i, '') || 'bai-hoc';
+      setSnackbar({ open: true, message: 'Đang đọc và chia tài liệu DOCX...', severity: 'info' });
+
+      const { plan, sections } = await generateMaterializedPlanFromDocx(file, {
+        apiEndpoint,
+        apiToken,
+        maxChunkChars: 12000,
+        questionsPerChunk: 2,
+        onProgress: (completed, total, label) => {
+          setSnackbar({
+            open: true,
+            message: `Đang xử lý ${completed}/${total}: ${label}`,
+            severity: 'info',
+          });
+        },
+      });
+
+      const result = await runMaterializedH5PPipeline(baseTitle, plan);
+      if (!result.blob || !result.report.gates.package_layer_ready) {
+        const failed = result.report.checks
+          .filter((check) => check.result === 'FAIL' || check.result === 'BLOCK')
+          .map((check) => check.name)
+          .join('; ');
+        throw new Error(failed || 'Package Validator không cho phép xuất H5P.');
+      }
+
+      downloadH5PPackage(result.blob, baseTitle);
+      setSnackbar({
+        open: true,
+        message: `Đã tạo H5P từ ${sections.length} phần của DOCX. Package Validator: ${result.report.status}.`,
+        severity: 'success',
+      });
+    } catch (error) {
+      setSnackbar({
+        open: true,
+        message: `Không thể tạo H5P từ DOCX: ${error instanceof Error ? error.message : 'Lỗi không xác định'}`,
+        severity: 'error',
+      });
+    } finally {
+      setDocxLoading(false);
     }
   };
 
@@ -318,12 +372,14 @@ function EditorPage() {
           apiToken={apiToken}
           hasCustomSystemPrompt={customSystemPrompt !== null}
           downloadLoading={downloadLoading}
+          docxLoading={docxLoading}
           hasContent={hasContent}
           onProviderChange={(newProvider) => dispatch(providerChanged(newProvider))}
           onEndpointChange={(endpoint) => dispatch(apiEndpointChanged(endpoint))}
           onTokenChange={(token) => dispatch(apiTokenChanged(token))}
           onSystemPromptEdit={() => setSystemPromptDialogOpen(true)}
           onDownload={handleDownload}
+          onDocxImport={handleDocxImport}
         />
 
         {/* Editor Canvas */}
