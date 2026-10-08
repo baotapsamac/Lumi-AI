@@ -19,6 +19,12 @@ export const PROVIDERS: Record<ProviderType, ProviderConfig> = {
     model: 'openrouter/free',
     requiresModel: true,
   },
+  groq: {
+    name: 'Groq (có hạn mức miễn phí)',
+    endpoint: 'https://api.groq.com/openai/v1/chat/completions',
+    model: 'llama-3.1-8b-instant',
+    requiresModel: true,
+  },
   custom: {
     name: 'API tương thích OpenAI (tùy chỉnh)',
     endpoint: 'http://localhost:1234/v1/chat/completions',
