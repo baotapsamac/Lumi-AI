@@ -5,7 +5,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import { chatMessageAdded } from 'src/state/chat/actions';
 import { selectChatMessages } from 'src/state/chat/selectors';
 
-import { PROVIDERS } from './providers';
+import { requestAiText } from '../../utils/ai-chat-client';
 import {
   worksheetContentsSet,
   worksheetTitleChanged,
@@ -14,6 +14,7 @@ import {
 import {
   selectTitle,
   selectProvider,
+  selectModel,
   selectApiToken,
   selectApiEndpoint,
   selectOrderedContent,
@@ -92,33 +93,6 @@ function executeCommandSync(command: WorksheetCommand, dispatch: AppDispatch) {
   }
 }
 
-async function callOpenAI(
-  messages: OpenAIMessage[],
-  apiEndpoint: string,
-  apiToken: string,
-  requiresModel: boolean
-): Promise<string> {
-  const body: Record<string, unknown> = { messages, temperature: 0.7 };
-  if (requiresModel) body.model = 'gpt-5.2';
-
-  const response = await fetch(apiEndpoint, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${apiToken}`,
-    },
-    body: JSON.stringify(body),
-  });
-
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`API Error: ${response.status} - ${errorText}`);
-  }
-
-  const data = await response.json();
-  return data.choices?.[0]?.message?.content || '';
-}
-
 // ----------------------------------------------------------------------
 
 export const generateQuestion = createAsyncThunk<
@@ -130,10 +104,11 @@ export const generateQuestion = createAsyncThunk<
   const provider = selectProvider(state);
   const apiEndpoint = selectApiEndpoint(state);
   const apiToken = selectApiToken(state);
+  const model = selectModel(state);
   const title = selectTitle(state);
   const content = selectOrderedContent(state);
 
-  if (!apiToken.trim()) throw new Error('Bitte geben Sie einen API-Token ein');
+  if (!apiToken.trim()) throw new Error('Vui lòng nhập API key');
 
   const targetItem = targetContentId ? content.find((c) => c.id === targetContentId) : null;
 
@@ -151,15 +126,15 @@ export const generateQuestion = createAsyncThunk<
       ? `Wandle den folgenden Inhalt in eine Multiple-Choice-Frage um:\n\n${context}\n\nBehalte den Sinn und Inhalt bei, aber verwandle es in eine lehrreiche Multiple-Choice-Frage mit Antwortmöglichkeiten.\n\nWICHTIG: Antworte NUR mit einem JSON-Objekt im folgenden Format (keine zusätzlichen Erklärungen):\n{\n  "question": "Die Frage hier",\n  "answers": [\n    {"text": "Antwort 1", "correct": false},\n    {"text": "Richtige Antwort", "correct": true}\n  ]\n}\n\nDie Frage und alle Antworten müssen auf Deutsch sein. Erstelle mindestens 2 und maximal 4 Antwortmöglichkeiten.`
       : `Erstelle eine Multiple-Choice-Frage basierend auf folgendem Arbeitsblatt-Kontext:\n\n${context}\n\nWICHTIG: Antworte NUR mit einem JSON-Objekt im folgenden Format (keine zusätzlichen Erklärungen):\n{\n  "question": "Die Frage hier",\n  "answers": [\n    {"text": "Antwort 1", "correct": false},\n    {"text": "Richtige Antwort", "correct": true}\n  ]\n}\n\nDie Frage und alle Antworten müssen auf Deutsch sein. Erstelle mindestens 2 und maximal 4 Antwortmöglichkeiten.`;
 
-  const raw = await callOpenAI(
+  const raw = await requestAiText(
     [{ role: 'user', content: prompt }],
     apiEndpoint,
     apiToken,
-    PROVIDERS[provider].requiresModel
+    model
   );
 
   const jsonMatch = raw.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) throw new Error('Keine gültige JSON-Antwort vom API erhalten');
+  if (!jsonMatch) throw new Error('AI không trả về JSON hợp lệ');
 
   const parsed = JSON.parse(jsonMatch[0]);
   return {
@@ -181,10 +156,11 @@ export const generateText = createAsyncThunk<
   const provider = selectProvider(state);
   const apiEndpoint = selectApiEndpoint(state);
   const apiToken = selectApiToken(state);
+  const model = selectModel(state);
   const title = selectTitle(state);
   const content = selectOrderedContent(state);
 
-  if (!apiToken.trim()) throw new Error('Bitte geben Sie einen API-Token ein');
+  if (!apiToken.trim()) throw new Error('Vui lòng nhập API key');
 
   const targetItem = targetContentId ? content.find((c) => c.id === targetContentId) : null;
 
@@ -202,11 +178,11 @@ export const generateText = createAsyncThunk<
       ? `Wandle den folgenden Inhalt in einen informativen Text um:\n\n${context}\n\nBehalte den Kerninhalt und die Bedeutung bei, aber verwandle es in einen gut strukturierten, informativen Text.\n\nDer Text sollte:\n- Auf Deutsch verfasst sein\n- Gut strukturiert und verständlich sein\n- Für Bildungszwecke geeignet sein\n- 2-4 Absätze lang sein\n\nAntworte NUR mit dem Text selbst, ohne zusätzliche Erklärungen oder Formatierung.`
       : `Erstelle einen informativen und lehrreichen Text basierend auf folgendem Arbeitsblatt-Kontext:\n\n${context}\n\nDer Text sollte:\n- Auf Deutsch verfasst sein\n- Gut strukturiert und verständlich sein\n- Für Bildungszwecke geeignet sein\n- 2-4 Absätze lang sein\n\nAntworte NUR mit dem Text selbst, ohne zusätzliche Erklärungen oder Formatierung.`;
 
-  const raw = await callOpenAI(
+  const raw = await requestAiText(
     [{ role: 'user', content: prompt }],
     apiEndpoint,
     apiToken,
-    PROVIDERS[provider].requiresModel
+    model
   );
 
   return { id: `content-${Date.now()}`, type: 'text', text: raw.trim() };
@@ -223,16 +199,17 @@ export const sendChatMessage = createAsyncThunk<
   async ({ userInput, creationState }, { getState, dispatch }) => {
     const state = getState();
     const apiToken = selectApiToken(state);
+  const model = selectModel(state);
     const provider = selectProvider(state);
     const apiEndpoint = selectApiEndpoint(state);
     const chatMessages = selectChatMessages(state);
     const title = selectTitle(state);
     const content = selectOrderedContent(state);
 
-    if (!apiToken.trim()) throw new Error('Bitte geben Sie Ihren API-Token ein');
-    if (!userInput.trim()) throw new Error('Eingabe ist leer');
+    if (!apiToken.trim()) throw new Error('Vui lòng nhập API key');
+    if (!userInput.trim()) throw new Error('Nội dung nhập đang trống');
 
-    const { requiresModel } = PROVIDERS[provider];
+    const requiresModel = model;
 
     // Guided creation: step 1 – just acknowledge topic, ask for audience
     if (creationState.step === 'asking_topic') {
@@ -261,14 +238,14 @@ export const sendChatMessage = createAsyncThunk<
 
       const generatePrompt = `Du erstellst ein Bildungs-Arbeitsblatt. Generiere einen vollständigen Arbeitsblatt-Entwurf basierend auf:\n\nThema: ${topic}\nZielgruppe: ${audience}\n\nErstelle ein Arbeitsblatt mit:\n1. Einem passenden Titel\n2. 2-3 Textblöcken, die das Thema zielgruppengerecht einführen und erklären\n3. 2-3 Multiple-Choice-Fragen zum Verständnistest\n\nWICHTIG: Alle Inhalte (Titel, Texte, Fragen, Antworten) MÜSSEN auf Deutsch sein!\n\nAntworte mit mehreren JSON-Befehlsblöcken zum Aufbau des Arbeitsblatts. Verwende diese Formate:\n\n\`\`\`json\n{"action": "set_title", "title": "Dein Titel hier"}\n\`\`\`\n\n\`\`\`json\n{"action": "add_text", "text": "Dein erklärender Text hier..."}\n\`\`\`\n\n\`\`\`json\n{"action": "add_question", "question": "Deine Frage?", "answers": [{"text": "Falsche Antwort", "correct": false}, {"text": "Richtige Antwort", "correct": true}]}\n\`\`\`\n\nFüge eine kurze Einleitung in natürlicher Sprache vor den Befehlen ein und eine Zusammenfassung danach. Antworte komplett auf Deutsch.`;
 
-      const raw = await callOpenAI(
+      const raw = await requestAiText(
         [
           { role: 'system', content: generatePrompt },
           { role: 'user', content: `Erstelle ein Arbeitsblatt über "${topic}" für ${audience}.` },
         ],
         apiEndpoint,
         apiToken,
-        requiresModel
+        model
       );
 
       dispatch(worksheetContentsSet([]));
@@ -302,7 +279,7 @@ export const sendChatMessage = createAsyncThunk<
     // Normal chat mode
     const systemPrompt = `Du bist ein hilfreicher KI-Assistent für einen Arbeitsblatt-Editor. Du hilfst Nutzern beim Erstellen von Bildungs-Arbeitsblättern mit verschiedenen Inhaltstypen.\n\nDer Nutzer arbeitet an einem Arbeitsblatt. Hier ist der aktuelle Stand:\n\n${buildWorksheetContext(title, content)}\n\nDu kannst dem Nutzer helfen durch:\n1. Beantworten von Fragen zum Arbeitsblatt\n2. Vorschlagen von Verbesserungen oder neuen Inhalten\n3. Ändern des Arbeitsblatts auf Anfrage (du antwortest mit speziellen Befehlen)\n\nWenn der Nutzer dich bittet, Inhalte hinzuzufügen oder zu ändern, antworte mit einem JSON-Befehlsblock:\n\`\`\`json\n{"action": "add_text", "text": "Dein Text hier"}\n\`\`\`\noder\n\`\`\`json\n{"action": "add_question", "question": "Deine Frage", "answers": [{"text": "Antwort 1", "correct": true}, {"text": "Antwort 2", "correct": false}]}\n\`\`\`\noder\n\`\`\`json\n{"action": "set_title", "title": "Neuer Titel"}\n\`\`\`\n\nWICHTIG: Antworte IMMER auf Deutsch. Alle generierten Inhalte müssen auf Deutsch sein.`;
 
-    const raw = await callOpenAI(
+    const raw = await requestAiText(
       [
         { role: 'system', content: systemPrompt },
         ...chatMessages.map((msg) => ({ role: msg.role, content: msg.content })),
@@ -310,7 +287,7 @@ export const sendChatMessage = createAsyncThunk<
       ],
       apiEndpoint,
       apiToken,
-      requiresModel
+      model
     );
 
     const jsonMatch = raw.match(/```json\n([\s\S]*?)\n```/);
