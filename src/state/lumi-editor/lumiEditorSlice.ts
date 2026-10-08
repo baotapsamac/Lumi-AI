@@ -26,6 +26,7 @@ export const initialState: LumiEditorState = {
     provider: validProvider,
     apiEndpoint: loadFromLocalStorage('api_endpoint', PROVIDERS[validProvider].endpoint),
     apiToken: loadFromLocalStorage('api_token', ''),
+    model: loadFromLocalStorage('api_model', PROVIDERS[validProvider].model),
   },
   title: '',
   content: {},
@@ -45,9 +46,13 @@ export const lumiEditorSlice = createSlice({
     providerChanged: (state, action: PayloadAction<ProviderType>) => {
       state.apiConfig.provider = action.payload;
       state.apiConfig.apiEndpoint = PROVIDERS[action.payload].endpoint;
+      state.apiConfig.model = PROVIDERS[action.payload].model;
     },
     apiEndpointChanged: (state, action: PayloadAction<string>) => {
       state.apiConfig.apiEndpoint = action.payload;
+    },
+    modelChanged: (state, action: PayloadAction<string>) => {
+      state.apiConfig.model = action.payload;
     },
     apiTokenChanged: (state, action: PayloadAction<string>) => {
       state.apiConfig.apiToken = action.payload;
@@ -162,6 +167,7 @@ export const {
   providerChanged,
   apiEndpointChanged,
   apiTokenChanged,
+  modelChanged,
   worksheetReset,
   worksheetTitleChanged,
   worksheetContentAdded,
