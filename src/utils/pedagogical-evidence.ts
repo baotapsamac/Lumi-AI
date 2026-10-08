@@ -79,6 +79,8 @@ export function approveWithEvidence<T>(
 ): Revision<T> {
   const audit = verifiedAudit(revision, ledger);
   if (!hasGateEvidence(revision, ledger, gate)) throw new Error('Missing current-revision gate evidence.');
+  if (gate !== 'outcomes' && !revision.approvals.some(a => a.gate === 'outcomes' && a.revision === revision.revision)) throw new Error('Outcomes approval required.');
+  if (gate === 'publication' && !revision.approvals.some(a => a.gate === 'design' && a.revision === revision.revision)) throw new Error('Design approval required.');
   if (!audit.schema.valid) throw new Error('Invalid canonical JSON Schema.');
   if (gate !== 'outcomes' && !audit.design_ready) throw new Error('Alignment or semantic review unresolved.');
   if (gate === 'outcomes') {
