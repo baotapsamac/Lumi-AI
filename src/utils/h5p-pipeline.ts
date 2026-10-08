@@ -25,6 +25,7 @@ export type MaterializedItem =
       type: 'text';
       content: string;
       materialization_mode?: string;
+      content_html?: string;
     }
   | {
       id: string;
@@ -131,10 +132,10 @@ function metadata(contentType: string, title: string) {
   };
 }
 
-function makeAdvancedText(text: string, title: string) {
+function makeAdvancedText(text: string, title: string, contentHtml?: string) {
   return {
     content: {
-      params: { text: paragraphs(text) },
+      params: { text: contentHtml || paragraphs(text) },
       library: 'H5P.AdvancedText 1.1',
       metadata: metadata('Text', title),
       subContentId: uuid(),
@@ -215,7 +216,7 @@ function makeMultiChoice(question: MaterializedQuestion) {
 type ColumnEntry = ReturnType<typeof makeAdvancedText> | ReturnType<typeof makeMultiChoice>;
 
 function itemToColumnEntries(item: MaterializedItem): ColumnEntry[] {
-  if (item.type === 'text') return [makeAdvancedText(item.content, item.id)];
+  if (item.type === 'text') return [makeAdvancedText(item.content, item.id, item.content_html)];
   if (item.type === 'multiple-choice') return item.items.map(makeMultiChoice);
   return [makeAdvancedText(item.content || 'Nội dung này được đánh giá bởi giảng viên ngoài phần chấm điểm tự động.', item.id)];
 }
