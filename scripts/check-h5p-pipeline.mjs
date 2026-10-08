@@ -25,6 +25,7 @@ const checks = [
   ['failed review blocks compilation', /c.result === 'BLOCK' \|\| c.result === 'FAIL'/.test(pipeline)],
   ['heading level tracked', /headingLevel/.test(docx)],
   ['source tables rendered as HTML', /sourceSectionHtml/.test(docx) && /<table><tbody>/.test(docx) && /content_html/.test(pipeline)],
+  ['unhandled DOCX media blocks export', /unsupportedMedia/.test(docx) && /unsupportedDrawings/.test(docx)],
   ['review gate before export', /review_state = 'approved'/.test(review) && /PL-10/.test(pipeline)],
   ['per-question review UI', /Bỏ câu hỏi/.test(review) && /Duyệt và xuất H5P/.test(review)],
   ['project persistence', /saveDocxProject/.test(projectStore) && /loadDocxProject/.test(projectStore) && /downloadProjectFile/.test(projectStore)],
