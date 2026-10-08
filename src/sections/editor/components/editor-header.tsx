@@ -23,14 +23,12 @@ type EditorHeaderProps = {
   apiToken: string;
   model: string;
   onModelChange: (model: string) => void;
-  hasCustomSystemPrompt: boolean;
   downloadLoading: boolean;
   docxLoading: boolean;
   hasContent: boolean;
   onProviderChange: (provider: ProviderType) => void;
   onEndpointChange: (endpoint: string) => void;
   onTokenChange: (token: string) => void;
-  onSystemPromptEdit: () => void;
   onDownload: () => void;
   onDocxImport: (file: File) => void;
 };
