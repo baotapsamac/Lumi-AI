@@ -12,7 +12,7 @@ import { runMaterializedH5PPipeline } from '../utils/h5p-pipeline';
 import { auditStructuralAlignment } from '../utils/pedagogical-alignment';
 import { acceptProposal, proposeRevision } from '../utils/pedagogical-approval';
 import { adaptApprovedLesson } from '../utils/pedagogical-h5p-adapter';
-import { runMaterializedH5PPipeline } from '../utils/h5p-pipeline';
+
 import { downloadStudioProject, parseStudioProject } from '../utils/pedagogical-project';
 
 import type { ExportLesson } from '../utils/pedagogical-h5p-adapter';
@@ -37,7 +37,6 @@ export default function DesignStudioPage() {
   const [draft, setDraft] = React.useState(JSON.stringify(project.current.value, null, 2));
   const [message, setMessage] = React.useState('');
   const [exportJson, setExportJson] = React.useState('');
-  const [compiling, setCompiling] = React.useState(false);
   const [endpoint, setEndpoint] = React.useState('');
   const [token, setToken] = React.useState('');
   const [model, setModel] = React.useState('');
@@ -124,35 +123,6 @@ export default function DesignStudioPage() {
       setMessage(error instanceof Error ? error.message : 'Tệp dự án không hợp lệ.');
     }
   };
-  const compileH5p = async () => {
-    if (!exportPlan.ready || !audit.design_ready) {
-      setMessage('Không thể biên dịch: thiết kế chưa vượt qua kiểm định và phê duyệt.');
-      return;
-    }
-    setCompiling(true);
-    try {
-      const result = await runMaterializedH5PPipeline(project.current.value.lesson.title, exportPlan.plan);
-      setExportJson(JSON.stringify({ report: result.report, completion: exportPlan.completion }, null, 2));
-      if (!result.blob) {
-        setMessage('Compiler từ chối xuất. Xem báo cáo kiểm tra bên dưới.');
-        return;
-      }
-      const url = URL.createObjectURL(result.blob);
-      try {
-        const anchor = document.createElement('a');
-        anchor.href = url;
-        anchor.download = project.current.value.lesson.id + '.h5p';
-        anchor.click();
-      } finally {
-        URL.revokeObjectURL(url);
-      }
-      setMessage('Đã tạo tệp H5P; cần kiểm thử mở, sửa và lưu bằng Lumi Desktop.');
-    } catch (error) {
-      setMessage(error instanceof Error ? error.message : 'Lỗi H5P Compiler.');
-    } finally {
-      setCompiling(false);
-    }
-  };
   const compileApprovedDesign = async () => {
     if (!exportPlan.ready || !approved || !audit.design_ready) {
       setMessage('Chưa đủ điều kiện biên dịch: cần kiểm định và phê duyệt thiết kế.');
@@ -203,7 +173,6 @@ export default function DesignStudioPage() {
         <Button variant="outlined" disabled>Duyệt chuẩn đầu ra (chờ schema)</Button>
         <Button variant="outlined" onClick={exportPlanJson}>Xem H5P Export Plan</Button>
         <Button variant="contained" disabled={compileBusy || !exportPlan.ready || !approved || !audit.design_ready} onClick={() => void compileApprovedDesign()}>{compileBusy ? "Đang biên dịch..." : "Biên dịch H5P đã duyệt"}</Button>
-        <Button variant="contained" disabled={!exportPlan.ready || compiling} onClick={() => void compileH5p()}>{compiling ? "Đang biên dịch..." : "Xuất H5P"}</Button>
       </Stack>
       {message && <Alert severity="info" sx={{ mb: 2 }}>{message}</Alert>}
       <Typography variant="body2" sx={{ mb: 1 }}>
