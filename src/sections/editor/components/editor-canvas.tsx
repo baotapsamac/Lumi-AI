@@ -117,7 +117,7 @@ export function EditorCanvas({
       }
 
       default:
-        return <Typography>Nicht unterstützter Inhaltstyp</Typography>;
+        return <Typography>Loại nội dung chưa được hỗ trợ</Typography>;
     }
   };
 
