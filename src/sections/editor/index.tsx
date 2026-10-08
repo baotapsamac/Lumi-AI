@@ -22,6 +22,8 @@ import {
 import {
   selectTitle,
   selectProvider,
+  selectModel,
+  modelChanged,
   selectApiToken,
   providerChanged,
   apiTokenChanged,
@@ -67,6 +69,7 @@ function EditorPage() {
 
   // Redux state (data only)
   const provider = useSelector(selectProvider);
+  const model = useSelector(selectModel);
   const apiEndpoint = useSelector(selectApiEndpoint);
   const apiToken = useSelector(selectApiToken);
   const title = useSelector(selectTitle);
@@ -177,6 +180,7 @@ function EditorPage() {
       const { plan, sections } = await generateMaterializedPlanFromDocx(file, {
         apiEndpoint,
         apiToken,
+        model,
         maxChunkChars: 12000,
         questionsPerChunk: 2,
         onProgress: (completed, total, label) => {
@@ -384,6 +388,8 @@ function EditorPage() {
           provider={provider}
           apiEndpoint={apiEndpoint}
           apiToken={apiToken}
+          model={model}
+          onModelChange={(value) => dispatch(modelChanged(value))}
           hasCustomSystemPrompt={customSystemPrompt !== null}
           downloadLoading={downloadLoading}
           docxLoading={docxLoading}
