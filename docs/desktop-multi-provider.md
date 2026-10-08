@@ -17,7 +17,7 @@ Gemini có thể có hạn mức API miễn phí tùy khu vực và chính sách
 
 ## Bảo mật và giới hạn bản preview
 
-- API key đang được lưu bằng localStorage của ứng dụng, **chưa được mã hóa bằng Windows Credential Manager**. Không dùng khóa có hạn mức chi tiêu lớn và không chia sẻ máy/tệp cấu hình.
+- API key chỉ giữ trong bộ nhớ phiên ứng dụng và phải nhập lại khi khởi động. Chưa có tích hợp Windows Credential Manager; không dùng khóa có hạn mức chi tiêu lớn.
 - Mã nguồn đã có một số giao diện tiếng Việt, nhưng **chưa Việt hóa toàn bộ** các cửa sổ và luồng hướng dẫn.
 - Chưa nghiệm thu trên máy Windows của người dùng; GitHub CI chỉ xác nhận đóng gói.
 - DOCX có ảnh/đồ họa chưa hỗ trợ sẽ bị chặn để tránh mất dữ liệu; kiểm thử với tài liệu DOCX chỉ có chữ và bảng trước.
