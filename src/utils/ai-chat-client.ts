@@ -9,11 +9,12 @@ export async function requestAiText(
 ): Promise<string> {
   if (!endpoint.trim() || !model.trim()) throw new Error('Vui lòng nhập API Endpoint và tên mô hình.');
   if (!token.trim()) throw new Error('Vui lòng nhập API key. Với máy chủ nội bộ, dùng khóa giả nếu máy chủ yêu cầu.');
-  const url = endpoint.trim().replace(/\/$/, '');
+  const url = endpoint.trim().replace(/\/+$/, '');
+  const selectedModel = model.trim();
   if (!/^https:\/\//i.test(url) && !/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\//i.test(url)) {
     throw new Error('Chỉ cho phép HTTPS hoặc HTTP trên localhost để bảo vệ API key.');
   }
-  const body: Record<string, unknown> = { model, messages };
+  const body: Record<string, unknown> = { model: selectedModel, messages };
   if (temperature !== undefined) body.temperature = temperature;
   const response = await fetch(url, {
     method: 'POST',
