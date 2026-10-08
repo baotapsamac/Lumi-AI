@@ -67,6 +67,8 @@ import type { ContentType, CommandOption, GeneratingSkeleton } from './types';
 // ----------------------------------------------------------------------
 
 function EditorPage() {
+  // Keep legacy editor components unmounted in the DOCX-first workflow.
+  const [legacyUiEnabled] = React.useState(false);
   const dispatch = useDispatch();
 
   // Redux state (data only)
@@ -412,7 +414,7 @@ function EditorPage() {
           <Typography variant="body2" color="text.secondary" sx={{ mt: 3 }}>Quy trình: DOCX → phân tích nguồn → tạo nội dung và câu hỏi → giảng viên duyệt → kiểm tra → tải H5P.</Typography>
         </Box>
         {/* Editor Canvas (legacy editor disabled in DOCX-first workflow) */}
-        {false && (
+        {legacyUiEnabled && (
         <EditorCanvas
           title={title}
           content={content}
@@ -451,11 +453,11 @@ function EditorPage() {
 
         )}
         {/* AI Chat Handle */}
-        {false && !chatDrawerOpen && <AIChatHandle onClick={() => setChatDrawerOpen(true)} />}
+        {legacyUiEnabled && !chatDrawerOpen && <AIChatHandle onClick={() => setChatDrawerOpen(true)} />}
       </Box>
 
       {/* AI Chat Drawer */}
-      {false && <AIChatDrawer
+      {legacyUiEnabled && <AIChatDrawer
         open={chatDrawerOpen}
         apiToken={apiToken}
         chatMessages={chatMessages}
@@ -593,7 +595,7 @@ function EditorPage() {
       </Box>
 
       {/* System Prompt Dialog */}
-      {false && <SystemPromptDialog
+      {legacyUiEnabled && <SystemPromptDialog
         open={systemPromptDialogOpen}
         customPrompt={customSystemPrompt}
         defaultPrompt={buildSystemPrompt(title, content)}
