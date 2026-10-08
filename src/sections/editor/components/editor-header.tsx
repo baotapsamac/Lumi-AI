@@ -3,7 +3,6 @@ import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Select from '@mui/material/Select';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
 import InputLabel from '@mui/material/InputLabel';
@@ -42,14 +41,12 @@ export function EditorHeader({
   apiToken,
   model,
   onModelChange,
-  hasCustomSystemPrompt,
   downloadLoading,
   docxLoading,
   hasContent,
   onProviderChange,
   onEndpointChange,
   onTokenChange,
-  onSystemPromptEdit,
   onDownload,
   onDocxImport,
 }: EditorHeaderProps) {
@@ -120,21 +117,11 @@ export function EditorHeader({
             icon={<Iconify icon="solar:check-circle-bold" width={16} />}
           />
         )}
-        <Tooltip title={hasCustomSystemPrompt ? 'Prompt đã chỉnh sửa' : 'Chỉnh sửa prompt'}>
-          <Button
-            size="small"
-            variant={hasCustomSystemPrompt ? 'contained' : 'outlined'}
-            onClick={onSystemPromptEdit}
-            startIcon={<Iconify icon="solar:file-text-bold" width={20} />}
-          >
-            Prompt
-          </Button>
-        </Tooltip>
       </Stack>
       <Stack direction="row" spacing={1}>
         <Button
           component="label"
-          variant="outlined"
+          variant="contained"
           disabled={docxLoading}
           startIcon={
             docxLoading ? (
@@ -144,7 +131,7 @@ export function EditorHeader({
             )
           }
         >
-          {docxLoading ? 'Đang xử lý DOCX...' : 'DOCX → H5P'}
+          {docxLoading ? 'Đang xử lý DOCX...' : 'Nạp DOCX và tạo học liệu'}
           <input
             hidden
             type="file"
@@ -156,20 +143,6 @@ export function EditorHeader({
             }}
           />
         </Button>
-      <Button
-        variant="contained"
-        startIcon={
-          downloadLoading ? (
-            <CircularProgress size={20} color="inherit" />
-          ) : (
-            <Iconify icon="solar:download-bold" />
-          )
-        }
-        onClick={onDownload}
-        disabled={!hasContent || downloadLoading}
-      >
-        {downloadLoading ? 'Đang chuẩn bị...' : 'Tải xuống'}
-      </Button>
       </Stack>
     </Box>
   );
