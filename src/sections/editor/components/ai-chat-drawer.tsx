@@ -115,7 +115,7 @@ export function AIChatDrawer({
                 </IconButton>
               </Tooltip>
             )}
-            <IconButton onClick={onClose} aria-label="Chat schließen">
+            <IconButton onClick={onClose} aria-label="Đóng trò chuyện">
               <Iconify icon="eva:arrow-ios-forward-fill" />
             </IconButton>
           </Stack>
@@ -138,9 +138,9 @@ export function AIChatDrawer({
             <Stack spacing={2} alignItems="center" justifyContent="center" sx={{ height: '100%' }}>
               <Iconify icon="solar:cup-star-bold" width={48} sx={{ color: 'text.secondary' }} />
               <Typography color="text.secondary" textAlign="center" variant="body2">
-                Bitte mich, dir bei deinem Bài học zu helfen!
+                Hãy yêu cầu AI hỗ trợ soạn bài học!
                 <br />
-                Ich kann Inhalte hinzufügen, Fragen beantworten und mehr.
+                Tôi có thể bổ sung nội dung, trả lời câu hỏi và hỗ trợ soạn bài.
               </Typography>
               <Button
                 variant="outlined"
@@ -149,7 +149,7 @@ export function AIChatDrawer({
                 startIcon={<Iconify icon="solar:cup-star-bold" width={18} />}
                 disabled={!apiToken}
               >
-                Geführte Erstellung starten
+                Bắt đầu tạo bài có hướng dẫn
               </Button>
             </Stack>
           ) : (
@@ -192,7 +192,7 @@ export function AIChatDrawer({
                   {isAssistant && ttsSupported && (
                     <Box sx={{ mt: 0.25 }}>
                       <Tooltip
-                        title={isThisMessageSpeaking ? 'Vorlesen stoppen' : 'Vorlesen'}
+                        title={isThisMessageSpeaking ? 'Dừng đọc' : 'Đọc nội dung'}
                         placement="bottom"
                       >
                         <IconButton
@@ -202,7 +202,7 @@ export function AIChatDrawer({
                               ? onStopSpeaking()
                               : onSpeakMessage(text, msg.id)
                           }
-                          aria-label={isThisMessageSpeaking ? 'Vorlesen stoppen' : 'Vorlesen'}
+                          aria-label={isThisMessageSpeaking ? 'Dừng đọc' : 'Đọc nội dung'}
                           sx={{ opacity: 0.6, '&:hover': { opacity: 1 } }}
                         >
                           <Iconify
@@ -251,7 +251,7 @@ export function AIChatDrawer({
               >
                 <CircularProgress size={16} />
                 <Typography variant="body2" color="text.secondary">
-                  Denke nach...
+                  Đang suy nghĩ...
                 </Typography>
               </Paper>
             </Box>
@@ -277,7 +277,7 @@ export function AIChatDrawer({
               }}
             />
             <Typography variant="caption" color="text.secondary">
-              Sprachaufnahme läuft…
+              Đang ghi âm…
             </Typography>
           </Stack>
         )}
@@ -285,7 +285,7 @@ export function AIChatDrawer({
         {/* Chat Input */}
         <TextField
           fullWidth
-          placeholder="Bitte die KI um Hilfe bei deinem Bài học..."
+          placeholder="Nhập yêu cầu hỗ trợ soạn bài học..."
           variant="outlined"
           size="small"
           value={chatInput}
@@ -302,7 +302,7 @@ export function AIChatDrawer({
             input: {
               startAdornment: sttSupported ? (
                 <Tooltip
-                  title={isListening ? 'Aufnahme stoppen' : 'Spracheingabe'}
+                  title={isListening ? 'Dừng ghi âm' : 'Nhập bằng giọng nói'}
                   placement="top"
                 >
                   <span>
@@ -311,7 +311,7 @@ export function AIChatDrawer({
                       onClick={onMicClick}
                       disabled={chatLoading || !apiToken}
                       color={isListening ? 'error' : 'default'}
-                      aria-label={isListening ? 'Aufnahme stoppen' : 'Spracheingabe starten'}
+                      aria-label={isListening ? 'Dừng ghi âm' : 'Bắt đầu nhập bằng giọng nói'}
                       aria-pressed={isListening}
                       sx={{ mr: 0.5 }}
                     >
@@ -328,7 +328,7 @@ export function AIChatDrawer({
                   color="primary"
                   onClick={onSendMessage}
                   disabled={chatLoading || !apiToken || !chatInput.trim()}
-                  aria-label="Nachricht senden"
+                  aria-label="Gửi tin nhắn"
                 >
                   {chatLoading ? (
                     <CircularProgress size={20} />
