@@ -12,7 +12,7 @@ import { requestAiText } from '../utils/ai-chat-client';
 import { runMaterializedH5PPipeline } from '../utils/h5p-pipeline';
 import { auditLesson } from '../utils/pedagogical-semantic-auditor';
 import { validateLessonSchema } from '../utils/pedagogical-schema-validator';
-import { approveGate } from '../utils/pedagogical-approval';
+import { approveWithEvidence, emptyEvidenceLedger, recordGateEvidence, recordSemanticReview, verifiedAudit } from '../utils/pedagogical-evidence';
 import { acceptProposal, proposeRevision } from '../utils/pedagogical-approval';
 import { adaptApprovedLesson } from '../utils/pedagogical-h5p-adapter';
 
@@ -39,10 +39,14 @@ export default function DesignStudioPage() {
     title: starter.lesson.title,
     current: { revision: 0, value: starter, approvals: [] },
     history: [],
+    evidence: emptyEvidenceLedger(),
     saved_at: new Date().toISOString(),
   });
   const [draft, setDraft] = React.useState(JSON.stringify(project.current.value, null, 2));
   const [message, setMessage] = React.useState('');
+  const [reviewer, setReviewer] = React.useState('');
+  const [reviewRationale, setReviewRationale] = React.useState('');
+  const [reviewSource, setReviewSource] = React.useState('');
   const [exportJson, setExportJson] = React.useState('');
   const [endpoint, setEndpoint] = React.useState('');
   const [token, setToken] = React.useState('');
@@ -51,7 +55,7 @@ export default function DesignStudioPage() {
   const [aiBusy, setAiBusy] = React.useState(false);
   const [compileBusy, setCompileBusy] = React.useState(false);
   const [aiProposal, setAiProposal] = React.useState<{ baseRevision: number; value: ExportLesson; explanation: string } | null>(null);
-  const audit = auditLesson(project.current.value);
+  const audit = verifiedAudit(project.current, project.evidence || emptyEvidenceLedger());
   const preflight = validateLessonSchema(project.current.value);
   const approved = project.current.approvals.some((a) => a.gate === 'design' && a.revision === project.current.revision);
   const exportPlan = adaptApprovedLesson(project.current.value, approved, audit.design_ready);
@@ -132,8 +136,9 @@ export default function DesignStudioPage() {
       return;
     }
     try {
-      const next = approveGate(project.current, 'outcomes', new Date().toISOString(), { schema_valid: preflight.valid, alignment_passed: audit.design_ready, auditor_complete: audit.design_ready });
-      setProject((prev) => ({ ...prev, current: next }));
+      const ledger = recordGateEvidence(project.current, project.evidence || emptyEvidenceLedger(), { gate: 'outcomes', reviewer, rationale: reviewRationale, reviewed_at: new Date().toISOString() });
+      const next = approveWithEvidence(project.current, ledger, 'outcomes', new Date().toISOString());
+      setProject((prev) => ({ ...prev, current: next, evidence: ledger }));
       setMessage('Đã ghi nhận phê duyệt chuẩn đầu ra; kiểm định đầy đủ vẫn cần thực hiện.');
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Không thể duyệt.');
@@ -187,6 +192,11 @@ export default function DesignStudioPage() {
       <Alert severity="warning" sx={{ mb: 2 }}>
         JSON Schema đã được kiểm tra trong ứng dụng. Các quy tắc ngữ nghĩa vẫn cần chuyên gia xác nhận; xuất bản chính thức tiếp tục bị khóa cho đến khi kiểm định đầy đủ.
       </Alert>
+      <Stack direction={{ xs: 'column', md: 'row' }} spacing={1} sx={{ mb: 2 }}>
+        <TextField label="Người kiểm định" size="small" value={reviewer} onChange={(e) => setReviewer(e.target.value)} />
+        <TextField label="Nhận xét / lý do phê duyệt" size="small" value={reviewRationale} onChange={(e) => setReviewRationale(e.target.value)} />
+        <TextField label="Tài liệu / bằng chứng đối chiếu" size="small" value={reviewSource} onChange={(e) => setReviewSource(e.target.value)} />
+      </Stack>
       <Stack direction="row" spacing={1} sx={{ mb: 2 }} flexWrap="wrap">
         <Button variant="outlined" onClick={() => downloadStudioProject(project)}>Lưu dự án JSON</Button>
         <Button component="label" variant="outlined">
@@ -199,9 +209,40 @@ export default function DesignStudioPage() {
         <Button variant="outlined" onClick={applyDraft}>Lưu bản chỉnh sửa</Button>
         <Button variant="outlined" disabled={!preflight.valid} onClick={approveOutcomes}>Duyệt chuẩn đầu ra</Button>
         <Button variant="outlined" onClick={exportPlanJson}>Xem H5P Export Plan</Button>
+        <Button variant="outlined" disabled={!audit.design_ready} onClick={() => {
+          try {
+            const ledger = recordGateEvidence(project.current, project.evidence || emptyEvidenceLedger(), { gate: 'design', reviewer, rationale: reviewRationale, reviewed_at: new Date().toISOString() });
+            const next = approveWithEvidence(project.current, ledger, 'design', new Date().toISOString());
+            setProject(prev => ({ ...prev, current: next, evidence: ledger }));
+            setMessage('Đã phê duyệt thiết kế với bằng chứng phiên bản hiện tại.');
+          } catch (e) { setMessage(e instanceof Error ? e.message : 'Không thể duyệt thiết kế.'); }
+        }}>Duyệt thiết kế</Button>
         <Button variant="contained" disabled={compileBusy || !exportPlan.ready || !approved || !audit.design_ready} onClick={() => void compileApprovedDesign()}>{compileBusy ? "Đang biên dịch..." : "Biên dịch H5P đã duyệt"}</Button>
       </Stack>
       {message && <Alert severity="info" sx={{ mb: 2 }}>{message}</Alert>}
+      <Typography variant="h6" sx={{ mt: 2 }}>Bằng chứng thẩm định ngữ nghĩa</Typography>
+      {audit.review_required.map(ruleId => <Stack key={ruleId} direction="row" spacing={1} alignItems="center" sx={{ mb: 1 }}>
+        <Typography sx={{ minWidth: 80 }}>{ruleId}</Typography>
+        <Button size="small" variant="outlined" onClick={() => {
+          try {
+            const ledger = recordSemanticReview(project.current, project.evidence || emptyEvidenceLedger(), {
+              rule_id: ruleId, reviewer, rationale: reviewRationale, source_reference: reviewSource,
+              reviewed_at: new Date().toISOString(), verdict: 'pass',
+            });
+            setProject(prev => ({ ...prev, evidence: ledger }));
+            setMessage('Đã ghi bằng chứng thẩm định ' + ruleId + ' cho phiên bản hiện tại.');
+          } catch (e) { setMessage(e instanceof Error ? e.message : 'Thiếu bằng chứng.'); }
+        }}>Ghi nhận đạt</Button>
+        <Button size="small" color="error" variant="outlined" onClick={() => {
+          try {
+            const ledger = recordSemanticReview(project.current, project.evidence || emptyEvidenceLedger(), {
+              rule_id: ruleId, reviewer, rationale: reviewRationale, source_reference: reviewSource,
+              reviewed_at: new Date().toISOString(), verdict: 'fail',
+            });
+            setProject(prev => ({ ...prev, evidence: ledger }));
+          } catch (e) { setMessage(e instanceof Error ? e.message : 'Thiếu bằng chứng.'); }
+        }}>Không đạt</Button>
+      </Stack>)}
       <Typography variant="body2" sx={{ mb: 1 }}>Kiểm tra JSON Schema: {preflight.valid ? 'PASS' : 'FAIL'} · {preflight.issues.length} vấn đề</Typography>
       <Typography variant="body2" sx={{ mb: 1 }}>
         Phiên bản {project.current.revision} · Audit: {audit.status} · {audit.findings.length} lỗi cấu trúc · {audit.review_required.length} quy tắc cần chuyên gia duyệt ·
