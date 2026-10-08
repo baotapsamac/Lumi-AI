@@ -121,10 +121,9 @@ export const generateQuestion = createAsyncThunk<
           : buildWorksheetContext(title, content)
       : buildWorksheetContext(title, content);
 
-  const prompt =
-    mode === 'transform'
-      ? `Wandle den folgenden Inhalt in eine Multiple-Choice-Frage um:\n\n${context}\n\nBehalte den Sinn und Inhalt bei, aber verwandle es in eine lehrreiche Multiple-Choice-Frage mit Antwortmöglichkeiten.\n\nWICHTIG: Antworte NUR mit einem JSON-Objekt im folgenden Format (keine zusätzlichen Erklärungen):\n{\n  "question": "Die Frage hier",\n  "answers": [\n    {"text": "Antwort 1", "correct": false},\n    {"text": "Richtige Antwort", "correct": true}\n  ]\n}\n\nDie Frage und alle Antworten müssen auf Deutsch sein. Erstelle mindestens 2 und maximal 4 Antwortmöglichkeiten.`
-      : `Erstelle eine Multiple-Choice-Frage basierend auf folgendem Arbeitsblatt-Kontext:\n\n${context}\n\nWICHTIG: Antworte NUR mit einem JSON-Objekt im folgenden Format (keine zusätzlichen Erklärungen):\n{\n  "question": "Die Frage hier",\n  "answers": [\n    {"text": "Antwort 1", "correct": false},\n    {"text": "Richtige Antwort", "correct": true}\n  ]\n}\n\nDie Frage und alle Antworten müssen auf Deutsch sein. Erstelle mindestens 2 und maximal 4 Antwortmöglichkeiten.`;
+  const prompt = mode === 'transform'
+    ? `Hãy chuyển nội dung sau thành một câu hỏi trắc nghiệm tiếng Việt, bám sát nội dung nguồn, không thêm kiến thức ngoài nguồn:\n\n${context}\n\nChỉ trả về JSON: {"question":"Câu hỏi","answers":[{"text":"Đáp án đúng","correct":true},{"text":"Đáp án sai","correct":false}]}. Tạo từ 2 đến 4 phương án.`
+    : `Tạo một câu hỏi trắc nghiệm tiếng Việt dựa trên ngữ cảnh sau, không thêm kiến thức không có trong ngữ cảnh:\n\n${context}\n\nChỉ trả về JSON: {"question":"Câu hỏi","answers":[{"text":"Đáp án đúng","correct":true},{"text":"Đáp án sai","correct":false}]}. Tạo từ 2 đến 4 phương án.`;
 
   const raw = await requestAiText(
     [{ role: 'user', content: prompt }],
@@ -173,10 +172,9 @@ export const generateText = createAsyncThunk<
           : buildWorksheetContext(title, content)
       : buildWorksheetContext(title, content);
 
-  const prompt =
-    mode === 'transform'
-      ? `Wandle den folgenden Inhalt in einen informativen Text um:\n\n${context}\n\nBehalte den Kerninhalt und die Bedeutung bei, aber verwandle es in einen gut strukturierten, informativen Text.\n\nDer Text sollte:\n- Auf Deutsch verfasst sein\n- Gut strukturiert und verständlich sein\n- Für Bildungszwecke geeignet sein\n- 2-4 Absätze lang sein\n\nAntworte NUR mit dem Text selbst, ohne zusätzliche Erklärungen oder Formatierung.`
-      : `Erstelle einen informativen und lehrreichen Text basierend auf folgendem Arbeitsblatt-Kontext:\n\n${context}\n\nDer Text sollte:\n- Auf Deutsch verfasst sein\n- Gut strukturiert und verständlich sein\n- Für Bildungszwecke geeignet sein\n- 2-4 Absätze lang sein\n\nAntworte NUR mit dem Text selbst, ohne zusätzliche Erklärungen oder Formatierung.`;
+  const prompt = mode === 'transform'
+    ? `Hãy diễn đạt nội dung sau thành đoạn văn tiếng Việt dễ hiểu, không tự ý thêm kiến thức:\n\n${context}\n\nChỉ trả về văn bản, không có giải thích ngoài lề.`
+    : `Viết đoạn văn học tập bằng tiếng Việt dựa trên ngữ cảnh sau, không thêm kiến thức không có trong ngữ cảnh:\n\n${context}\n\nChỉ trả về văn bản.`;
 
   const raw = await requestAiText(
     [{ role: 'user', content: prompt }],
