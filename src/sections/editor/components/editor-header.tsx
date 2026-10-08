@@ -22,6 +22,8 @@ type EditorHeaderProps = {
   provider: ProviderType;
   apiEndpoint: string;
   apiToken: string;
+  model: string;
+  onModelChange: (model: string) => void;
   hasCustomSystemPrompt: boolean;
   downloadLoading: boolean;
   docxLoading: boolean;
@@ -38,6 +40,8 @@ export function EditorHeader({
   provider,
   apiEndpoint,
   apiToken,
+  model,
+  onModelChange,
   hasCustomSystemPrompt,
   downloadLoading,
   docxLoading,
@@ -63,11 +67,11 @@ export function EditorHeader({
     >
       <Stack direction="row" spacing={2} alignItems="center">
         <FormControl size="small" sx={{ minWidth: 150 }}>
-          <InputLabel id="provider-select-label">Provider</InputLabel>
+          <InputLabel id="provider-select-label">Nhà cung cấp AI</InputLabel>
           <Select
             labelId="provider-select-label"
             value={provider}
-            label="Provider"
+            label="Nhà cung cấp AI"
             onChange={(e) => onProviderChange(e.target.value as ProviderType)}
           >
             {Object.entries(PROVIDERS).map(([key, config]) => (
@@ -79,11 +83,11 @@ export function EditorHeader({
         </FormControl>
         <TextField
           size="small"
-          label="API Endpoint"
+          label="Địa chỉ API"
           value={apiEndpoint}
           onChange={(e) => onEndpointChange(e.target.value)}
           placeholder="https://api.openai.com/v1/chat/completions"
-          sx={{ minWidth: 350 }}
+          sx={{ minWidth: 260 }}
         />
         <TextField
           size="small"
@@ -91,8 +95,8 @@ export function EditorHeader({
           type="password"
           value={apiToken}
           onChange={(e) => onTokenChange(e.target.value)}
-          placeholder="Bearer token eingeben"
-          sx={{ minWidth: 250 }}
+          placeholder="Nhập API key"
+          sx={{ minWidth: 190 }}
           slotProps={{
             input: {
               startAdornment: (
@@ -101,15 +105,22 @@ export function EditorHeader({
             },
           }}
         />
+        <TextField
+          size="small"
+          label="Mô hình AI"
+          value={model}
+          onChange={(e) => onModelChange(e.target.value)}
+          sx={{ minWidth: 170 }}
+        />
         {apiToken && (
           <Chip
             size="small"
-            label="Konfiguriert"
+            label="Đã cấu hình"
             color="success"
             icon={<Iconify icon="solar:check-circle-bold" width={16} />}
           />
         )}
-        <Tooltip title={hasCustomSystemPrompt ? 'Systemprompt (angepasst)' : 'Systemprompt bearbeiten'}>
+        <Tooltip title={hasCustomSystemPrompt ? 'Prompt đã chỉnh sửa' : 'Chỉnh sửa prompt'}>
           <Button
             size="small"
             variant={hasCustomSystemPrompt ? 'contained' : 'outlined'}
@@ -157,7 +168,7 @@ export function EditorHeader({
         onClick={onDownload}
         disabled={!hasContent || downloadLoading}
       >
-        {downloadLoading ? 'Wird vorbereitet...' : 'Herunterladen'}
+        {downloadLoading ? 'Đang chuẩn bị...' : 'Tải xuống'}
       </Button>
       </Stack>
     </Box>
