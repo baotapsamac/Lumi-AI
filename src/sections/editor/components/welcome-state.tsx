@@ -23,10 +23,10 @@ export function WelcomeState({ onStartGuidedCreation }: WelcomeStateProps) {
       }}
     >
       <Typography variant="h5" color="text.secondary">
-        Bitte fügen Sie einen Titel hinzu, um zu beginnen
+        Nhập tiêu đề để bắt đầu
       </Typography>
       <Typography variant="body2" color="text.secondary">
-        oder
+        hoặc
       </Typography>
       <Button
         variant="contained"
@@ -43,7 +43,7 @@ export function WelcomeState({ onStartGuidedCreation }: WelcomeStateProps) {
           },
         }}
       >
-        Mit KI-Assistent erstellen
+        Tạo bằng trợ lý AI
       </Button>
     </Box>
   );
