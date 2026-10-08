@@ -154,6 +154,22 @@ export async function extractDocxSections(
   return sections;
 }
 
+function escapeSourceHtml(value: string): string {
+  return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function sourceSectionHtml(section: DocxSection): string {
+  return section.blocks.map((block) => {
+    if (block.type === 'table' && block.rows) {
+      return `<table><tbody>${block.rows.map((row) =>
+        `<tr>${row.map((cell) => `<td>${escapeSourceHtml(cell)}</td>`).join('')}</tr>`
+      ).join('')}</tbody></table>`;
+    }
+    return `<p>${escapeSourceHtml(block.text).replace(/\\n/g, '<br>')}</p>`;
+  }).join('');
+}
+
 function extractJsonObject(raw: string): GeneratedChunk {
   const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
   const candidate = fenced?.[1] || raw.match(/\{[\s\S]*\}/)?.[0];
@@ -304,6 +320,7 @@ export async function generateMaterializedPlanFromDocx(
         id: `${section.id}-TEXT`,
         type: 'text',
         content: section.text,
+        content_html: sourceSectionHtml(section),
         materialization_mode: 'SOURCE_EXTRACT',
       },
     ];
