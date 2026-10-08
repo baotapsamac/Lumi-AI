@@ -49,17 +49,18 @@ export function approveGate<T>(
   current: Revision<T>,
   gate: Gate,
   approved_at: string,
-  checks: { schema_valid: boolean; alignment_passed: boolean; package_valid?: boolean },
+  checks: { schema_valid: boolean; alignment_passed: boolean; package_valid?: boolean; runtime_accepted?: boolean; accessibility_passed?: boolean; dependency_valid?: boolean; auditor_complete?: boolean },
 ): Revision<T> {
   if (!checks.schema_valid) throw new Error('Cannot approve: schema validation failed.');
+  if (!checks.auditor_complete) throw new Error('Cannot approve: complete independent alignment audit required.');
   if (gate !== 'outcomes' && !checks.alignment_passed) {
     throw new Error('Cannot approve: alignment audit has unresolved findings.');
   }
-  if (gate === 'design' && !current.approvals.some((a) => a.gate === 'outcomes')) {
+  if (gate === 'design' && !current.approvals.some((a) => a.gate === 'outcomes' && a.revision === current.revision)) {
     throw new Error('Approve outcomes first.');
   }
   if (gate === 'publication' && (
-    !current.approvals.some((a) => a.gate === 'design') || !checks.package_valid
+    !current.approvals.some((a) => a.gate === 'design' && a.revision === current.revision) || !checks.package_valid || !checks.runtime_accepted || !checks.accessibility_passed || !checks.dependency_valid
   )) {
     throw new Error('Design approval and package validation are required.');
   }
