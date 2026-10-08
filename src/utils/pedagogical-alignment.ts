@@ -65,6 +65,9 @@ export function auditStructuralAlignment(lesson: LessonForAudit) {
   for (const item of activities) {
     if (!(item.supports_outcomes || []).length) report('AL-04', 'fail', item.id, 'Activity thiếu LO');
   }
+  for (const item of resources) {
+    if (!(item.supports_outcomes || []).length) report('AL-05', 'fail', item.id, 'Resource chưa liên kết LO');
+  }
   for (const item of outcomes.filter((outcome) => outcome.status === 'locked')) {
     if (!evidence.some((ev) => ev.supports_outcomes?.includes(item.id))) {
       report('EV-01', 'fail', item.id, 'LO chưa có evidence');
@@ -75,12 +78,15 @@ export function auditStructuralAlignment(lesson: LessonForAudit) {
       report('AL-01', 'fail', item.id, 'Evidence chưa được đánh giá');
     }
   }
+  const requiredRuleIds = ['LO-01','LO-02','LO-03','EV-01','EV-02','EV-03','AL-01','AL-02','AL-03','AL-04','AL-05','AL-06','LA-01','LA-02','LA-03','MR-01','AF-01','AF-02','PR-01','PR-02','RF-01','RF-02','RF-03','PUB-01','PUB-02'];
+  const implemented = ['RF-01', 'RF-02', 'RF-03', 'EV-01', 'AL-01', 'AL-02', 'AL-03', 'AL-04', 'AL-05'];
   return {
+    pending_rules: requiredRuleIds.filter((id) => !implemented.includes(id)),
     status: findings.some((item) => item.severity === 'block') ? 'block'
       : findings.length ? 'fail' : 'warn',
     design_ready: false,
     findings,
-    implemented_rules: ['RF-01', 'RF-02', 'RF-03', 'EV-01', 'AL-01', 'AL-02', 'AL-03', 'AL-04'],
+    implemented_rules: implemented,
     note: 'Partial structural checks only. Full schema, semantic audit and human approvals remain required.',
   };
 }
