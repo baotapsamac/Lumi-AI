@@ -129,7 +129,7 @@ export const sendMessage =
         if (index === messages.length - 1 && msg.role === 'user') {
           return {
             role: msg.role,
-            content: `${msg.content}\n\n[Aktueller Stand des Arbeitsblatts: ${currentStateJson}]`,
+            content: `${msg.content}\n\n[Trạng thái bài học hiện tại: ${currentStateJson}]`,
           };
         }
         return { role: msg.role, content: msg.content };
