@@ -40,3 +40,30 @@ test('review cannot be replayed after lesson mutation',()=>{
 test('fake gate boolean flags are not accepted by evidence approval API',()=>{
  const r=revision();assert.throws(()=>approveWithEvidence(r,emptyEvidenceLedger(),'publication','2026-10-08T10:00:00Z',{package_valid:true,runtime_accepted:true,accessibility_passed:true,dependency_valid:true}));
 });
+
+test('three gates require current revision evidence and prerequisite approvals',()=>{
+ let r=revision();let ledger=emptyEvidenceLedger();
+ const sign=(gate)=>{ledger=recordGateEvidence(r,ledger,{gate,reviewer:'Teacher',rationale:'Checked',reviewed_at:'2026-10-08T10:00:00Z'});};
+ sign('outcomes');
+ r=approveWithEvidence(r,ledger,'outcomes','2026-10-08T10:00:00Z');
+ sign('design');
+ assert.throws(()=>approveWithEvidence(r,ledger,'design','2026-10-08T10:00:00Z'));
+ for(const id of verifiedAudit(r,ledger).missing_reviews) ledger=review(r,ledger,id);
+ assert.equal(verifiedAudit(r,ledger).review_complete,true);
+ assert.equal(verifiedAudit(r,ledger).design_ready,true);
+ r=approveWithEvidence(r,ledger,'design','2026-10-08T10:00:00Z');
+ sign('publication');
+ assert.throws(()=>approveWithEvidence(r,ledger,'publication','2026-10-08T10:00:00Z'));
+ r=approveWithEvidence(r,ledger,'publication','2026-10-08T10:00:00Z',{
+   package_valid:true,runtime_accepted:true,accessibility_passed:true,dependency_valid:true
+ });
+ assert.deepEqual(r.approvals.map(x=>x.gate),['outcomes','design','publication']);
+});
+test('failed review cannot be promoted to PASS',()=>{
+ const r=revision();
+ const ledger=recordSemanticReview(r,emptyEvidenceLedger(),{
+   rule_id:'LO-03',reviewer:'Teacher',rationale:'Not observable',source_reference:'doc-1',
+   reviewed_at:'2026-10-08T10:00:00Z',verdict:'fail'
+ });
+ assert.ok(verifiedAudit(r,ledger).missing_reviews.includes('LO-03'));
+});
