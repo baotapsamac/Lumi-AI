@@ -36,7 +36,7 @@ export function ContentMenu({
         <ListItemIcon>
           <Iconify icon="solar:restart-bold" width={20} />
         </ListItemIcon>
-        <ListItemText primary="Umwandeln in" />
+        <ListItemText primary="Chuyển thành" />
         <Iconify icon="eva:arrow-ios-forward-fill" width={16} sx={{ ml: 'auto' }} />
       </MenuItem>
     </Menu>
