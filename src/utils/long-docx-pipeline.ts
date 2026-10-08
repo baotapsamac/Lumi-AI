@@ -75,6 +75,10 @@ export async function extractDocxSections(
 
   const bodyNode = document.getElementsByTagName('w:body')[0];
   if (!bodyNode) throw new Error('DOCX không có phần thân văn bản.');
+  const unsupportedMedia = Array.from(document.getElementsByTagName('a:blip')).length + Array.from(document.getElementsByTagName('v:imagedata')).length;
+  if (unsupportedMedia > 0) {
+    throw new Error(`DOCX có ${unsupportedMedia} hình ảnh. Phiên bản này chưa nhúng hình vào H5P; đã dừng để tránh xuất tài liệu thiếu nội dung.`);
+  }
   const paragraphs = Array.from(bodyNode.children).flatMap((node) => {
     if (node.localName === 'p') {
       const text = xmlText(node).trim();
