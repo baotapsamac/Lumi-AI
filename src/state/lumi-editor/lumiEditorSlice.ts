@@ -25,7 +25,7 @@ export const initialState: LumiEditorState = {
   apiConfig: {
     provider: validProvider,
     apiEndpoint: loadFromLocalStorage('api_endpoint', PROVIDERS[validProvider].endpoint),
-    apiToken: loadFromLocalStorage('api_token', ''),
+    apiToken: '',
     model: loadFromLocalStorage('api_model', PROVIDERS[validProvider].model),
   },
   title: '',
