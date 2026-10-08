@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 
+import { requestAiText } from '../utils/ai-chat-client';
 import { auditStructuralAlignment } from '../utils/pedagogical-alignment';
 import { acceptProposal, proposeRevision } from '../utils/pedagogical-approval';
 import { adaptApprovedLesson } from '../utils/pedagogical-h5p-adapter';
@@ -34,6 +35,12 @@ export default function DesignStudioPage() {
   const [draft, setDraft] = React.useState(JSON.stringify(project.current.value, null, 2));
   const [message, setMessage] = React.useState('');
   const [exportJson, setExportJson] = React.useState('');
+  const [endpoint, setEndpoint] = React.useState('');
+  const [token, setToken] = React.useState('');
+  const [model, setModel] = React.useState('');
+  const [instruction, setInstruction] = React.useState('');
+  const [aiBusy, setAiBusy] = React.useState(false);
+  const [aiProposal, setAiProposal] = React.useState<{ baseRevision: number; value: ExportLesson; explanation: string } | null>(null);
   const audit = auditStructuralAlignment(project.current.value);
   const approved = project.current.approvals.some((a) => a.gate === 'design');
   const exportPlan = adaptApprovedLesson(project.current.value, approved, audit.design_ready);
@@ -53,6 +60,45 @@ export default function DesignStudioPage() {
       setMessage('Đã lưu phiên bản mới. Các phê duyệt cần được thực hiện lại.');
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Không đọc được JSON.');
+    }
+  };
+  const askAi = async () => {
+    if (!instruction.trim()) return;
+    setAiBusy(true);
+    setAiProposal(null);
+    try {
+      const baseRevision = project.current.revision;
+      const raw = await requestAiText([
+        { role: 'system', content: 'Bạn là chuyên gia thiết kế sư phạm. Trả về đúng một JSON object với hai khóa explanation (string) và lesson (object). Lesson giữ cấu trúc đầu vào; không tự ý thay đổi chuẩn đầu ra chính thức; đề xuất chỉ là bản nháp, cần giảng viên duyệt. Không bịa nguồn.' },
+        { role: 'user', content: 'Yêu cầu: ' + instruction + '\\nBản thiết kế hiện tại: ' + JSON.stringify(project.current.value) },
+      ], endpoint, token, model);
+      const jsonText = raw.replace(/^```(?:json)?\\s*/i, '').replace(/\\s*```$/, '').trim();
+      const parsed: unknown = JSON.parse(jsonText);
+      if (!parsed || typeof parsed !== 'object') throw new Error('AI trả về dữ liệu không hợp lệ.');
+      const proposal = parsed as { explanation?: string; lesson?: ExportLesson };
+      if (!proposal.lesson?.lesson?.id || !Array.isArray(proposal.lesson.learning_units)) {
+        throw new Error('AI không trả về cấu trúc lesson hợp lệ.');
+      }
+      setAiProposal({ baseRevision, value: proposal.lesson, explanation: proposal.explanation || 'Đề xuất chỉnh sửa' });
+      setMessage('AI đã đề xuất bản chỉnh sửa. Kiểm tra trước khi chấp nhận.');
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'Không gọi được AI.');
+    } finally {
+      setAiBusy(false);
+    }
+  };
+  const acceptAi = () => {
+    if (!aiProposal) return;
+    try {
+      const proposal = proposeRevision(project.current, aiProposal.value, aiProposal.explanation, [aiProposal.value.lesson.id]);
+      if (aiProposal.baseRevision !== project.current.revision) throw new Error('Đề xuất đã cũ. Yêu cầu AI tạo lại.');
+      const decision = acceptProposal(project.current, proposal, true);
+      setProject((prev) => ({ ...prev, current: decision.next, history: [...prev.history, prev.current], saved_at: new Date().toISOString() }));
+      setDraft(JSON.stringify(decision.next.value, null, 2));
+      setAiProposal(null);
+      setMessage('Đã chấp nhận đề xuất. Phê duyệt cũ đã bị vô hiệu hóa.');
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'Không thể chấp nhận.');
     }
   };
   const importProject = async (file: File) => {
@@ -94,6 +140,25 @@ export default function DesignStudioPage() {
         Phiên bản {project.current.revision} · Audit: {audit.status} · {audit.findings.length} lỗi ·
         Đã duyệt thiết kế: {approved ? 'Có' : 'Chưa'} · Sẵn sàng xuất: {exportPlan.ready ? 'Có' : 'Chưa'}
       </Typography>
+      <Typography variant="h6" sx={{ mt: 2 }}>Trao đổi với AI về bản thiết kế</Typography>
+      <Alert severity="info" sx={{ mb: 1 }}>API key chỉ sử dụng trong phiên làm việc; không lưu trong tệp dự án. Mọi đề xuất đều cần duyệt thủ công.</Alert>
+      <Stack direction={{ xs: 'column', md: 'row' }} spacing={1} sx={{ mb: 1 }}>
+        <TextField label="API endpoint (HTTPS)" value={endpoint} onChange={(e) => setEndpoint(e.target.value)} fullWidth size="small" />
+        <TextField label="Model" value={model} onChange={(e) => setModel(e.target.value)} size="small" />
+        <TextField label="API key" type="password" value={token} onChange={(e) => setToken(e.target.value)} size="small" />
+      </Stack>
+      <TextField label="Yêu cầu chỉnh sửa thiết kế" value={instruction} onChange={(e) => setInstruction(e.target.value)} fullWidth multiline minRows={2} />
+      <Button sx={{ my: 1 }} variant="contained" disabled={aiBusy || !instruction.trim()} onClick={() => void askAi()}>
+        {aiBusy ? 'Đang nhận đề xuất...' : 'Gửi yêu cầu AI'}
+      </Button>
+      {aiProposal && <Box sx={{ mb: 2 }}>
+        <Alert severity="warning">{aiProposal.explanation} · Chưa áp dụng thay đổi</Alert>
+        <TextField label="Đề xuất AI (xem trước)" multiline minRows={7} fullWidth value={JSON.stringify(aiProposal.value, null, 2)} />
+        <Stack direction="row" spacing={1} sx={{ mt: 1 }}>
+          <Button variant="contained" onClick={acceptAi}>Chấp nhận đề xuất</Button>
+          <Button onClick={() => setAiProposal(null)}>Từ chối</Button>
+        </Stack>
+      </Box>}
       <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
         <TextField label="lesson.json (bản chỉnh sửa)" multiline minRows={18} fullWidth value={draft}
           onChange={(e) => setDraft(e.target.value)} />
