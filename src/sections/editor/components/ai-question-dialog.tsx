@@ -35,36 +35,34 @@ export function AIQuestionDialog({
       <DialogTitle>
         <Stack direction="row" alignItems="center" spacing={1}>
           <Iconify icon="solar:cup-star-bold" width={24} />
-          <span>Frage mit KI generieren</span>
+          <span>Tạo câu hỏi bằng AI</span>
         </Stack>
       </DialogTitle>
       <DialogContent>
         <Stack spacing={2} sx={{ mt: 1 }}>
           <Typography variant="body2" color="text.secondary">
-            Geben Sie den Kontext oder das Thema ein, aus dem Sie eine Frage generieren möchten. Die
-            KI erstellt eine Single- oder Multiple-Choice-Frage basierend auf dem angegebenen
-            Kontext.
+            Nhập nội dung hoặc chủ đề để AI tạo câu hỏi trắc nghiệm một hoặc nhiều đáp án đúng.
           </Typography>
           <TextField
-            label="Kontext"
+            label="Nội dung tham chiếu"
             multiline
             rows={6}
             fullWidth
             value={dialogState.context}
             onChange={(e) => onContextChange(e.target.value)}
-            placeholder="Geben Sie den Text oder das Thema ein, aus dem die KI eine Frage generieren soll..."
+            placeholder="Nhập nội dung hoặc chủ đề cần tạo câu hỏi..."
             disabled={dialogState.loading}
           />
           {!apiToken && (
             <Alert severity="warning">
-              Bitte geben Sie Ihren API-Token in der Kopfzeile ein, bevor Sie Fragen generieren.
+              Vui lòng nhập khóa API ở thanh trên trước khi tạo câu hỏi.
             </Alert>
           )}
         </Stack>
       </DialogContent>
       <DialogActions sx={{ px: 3, pb: 2 }}>
         <Button onClick={onClose} disabled={dialogState.loading}>
-          Abbrechen
+          Hủy
         </Button>
         <Button
           variant="contained"
@@ -78,7 +76,7 @@ export function AIQuestionDialog({
             )
           }
         >
-          {dialogState.loading ? 'Wird generiert...' : 'Frage generieren'}
+          {dialogState.loading ? 'Đang tạo...' : 'Tạo câu hỏi'}
         </Button>
       </DialogActions>
     </Dialog>
