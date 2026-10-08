@@ -95,7 +95,8 @@ export async function extractDocxSections(
           Array.from(cell.getElementsByTagName('w:p')).map(xmlText).join(' / ').trim()
         )
       );
-      const text = rows.map((row) => row.join(' | ')).join('\\n');
+      const text = rows.map((row) => row.join(' | ')).join('\
+');
       return text ? [{ text, style: 'SourceTable', rows }] : [];
     }
     return [];
@@ -111,7 +112,9 @@ export async function extractDocxSections(
   let headingLevel = 1;
 
   const flush = () => {
-    const text = buffer.map((entry) => entry.text).join('\n\n').trim();
+    const text = buffer.map((entry) => entry.text).join('
+
+').trim();
     if (!text) return;
     sections.push({
       id: `SEGMENT-${String(sections.length + 1).padStart(4, '0')}`,
@@ -175,7 +178,8 @@ function sourceSectionHtml(section: DocxSection): string {
         `<tr>${row.map((cell) => `<td>${escapeSourceHtml(cell)}</td>`).join('')}</tr>`
       ).join('')}</tbody></table>`;
     }
-    return `<p>${escapeSourceHtml(block.text).replace(/\\n/g, '<br>')}</p>`;
+    return `<p>${escapeSourceHtml(block.text).replace(/\
+/g, '<br>')}</p>`;
   }).join('');
 }
 
@@ -211,7 +215,9 @@ Hãy tạo đúng một JSON object, không có lời giải thích ngoài JSON:
 Yêu cầu:
 - Ngôn ngữ tiếng Việt.
 - Tối đa ${questionsPerChunk} câu hỏi; chất lượng quan trọng hơn số lượng.
-- Mỗi câu có 2-5 phương án và ít nhất một đáp án đúng.\n- Tất cả phương án phải lấy từ SOURCE; distractor là thông tin thật trong SOURCE nhưng sai trong ngữ cảnh câu hỏi, ưu tiên cùng loại ngữ nghĩa.\n- Nếu không đủ distractor chất lượng, thử cấu trúc Multiple Choice khác; vẫn không đủ thì bỏ câu hỏi.
+- Mỗi câu có 2-5 phương án và ít nhất một đáp án đúng.
+- Tất cả phương án phải lấy từ SOURCE; distractor là thông tin thật trong SOURCE nhưng sai trong ngữ cảnh câu hỏi, ưu tiên cùng loại ngữ nghĩa.
+- Nếu không đủ distractor chất lượng, thử cấu trúc Multiple Choice khác; vẫn không đủ thì bỏ câu hỏi.
 - Nếu SOURCE không đủ để tạo câu hỏi có đáp án chắc chắn, để questions=[].
 - Không tạo quy trình, thông số hoặc dữ kiện không xuất hiện trong SOURCE.
 - Nếu SOURCE mô tả thao tác với vũ khí, không chuyển phần thao tác đó thành hướng dẫn thực hành, checklist thao tác, tối ưu hóa quy trình hoặc câu hỏi yêu cầu người học thực hiện thao tác. Chỉ được tạo nội dung nhận biết/khái niệm/yêu cầu kỹ thuật/an toàn ở mức không hướng dẫn thao tác.
@@ -220,7 +226,9 @@ Yêu cầu:
 SOURCE_ID: ${section.id}
 HEADING: ${section.heading}
 SOURCE_BLOCKS:
-${section.blocks.map((block) => `[${block.id}] ${block.text}`).join('\n\n')}`;
+${section.blocks.map((block) => `[${block.id}] ${block.text}`).join('
+
+')}`;
 
   let lastError: Error | null = null;
   for (let attempt = 1; attempt <= 3; attempt += 1) {
@@ -272,7 +280,9 @@ function normalizeQuestion(
   const blockById = new Map(section.blocks.map((block) => [block.id, block.text] as const));
   const answerIsSourceExtract = (answer: MaterializedAnswer) =>
     (answer.source_ids || []).some((id) => (blockById.get(id) || '').includes(answer.text));
-  // Distractors can be pedagogically valid paraphrases; source IDs remain mandatory.\n  // Do not silently reject a complete question solely because an option is not verbatim.\n  if (!answers.filter((answer) => answer.correct).every(answerIsSourceExtract)) return null;
+  // Distractors can be pedagogically valid paraphrases; source IDs remain mandatory.
+  // Do not silently reject a complete question solely because an option is not verbatim.
+  if (!answers.filter((answer) => answer.correct).every(answerIsSourceExtract)) return null;
 
   const selectionMode =
     raw.selection_mode === 'multiple' || answers.filter((answer) => answer.correct).length > 1
@@ -298,7 +308,8 @@ export async function generateMaterializedPlanFromDocx(
   if (!options.apiToken.trim()) throw new Error('Chưa cấu hình API token.');
 
   const sections = await extractDocxSections(file, options.maxChunkChars ?? 12000);
-  const chapters: MaterializedChapter[] = [];\n  const missingAssessments: string[] = [];
+  const chapters: MaterializedChapter[] = [];
+  const missingAssessments: string[] = [];
 
   for (let index = 0; index < sections.length; index += 1) {
     const section = sections[index];
@@ -318,7 +329,8 @@ export async function generateMaterializedPlanFromDocx(
       },
     ];
 
-    if (questions.length === 0) missingAssessments.push(section.heading);\n    if (questions.length > 0) {
+    if (questions.length === 0) missingAssessments.push(section.heading);
+    if (questions.length > 0) {
       items.push({
         id: `${section.id}-MCQ`,
         type: 'multiple-choice',
@@ -345,6 +357,11 @@ export async function generateMaterializedPlanFromDocx(
       status: 'PASS_WITH_WARNINGS',
       chapters,
       warnings: [
+        ...missingAssessments.map((heading) => ({
+          code: 'MANUAL_ASSESSMENT_REQUIRED',
+          heading,
+          message: `Mục "${heading}" chưa có câu hỏi được xác thực; giảng viên cần bổ sung hoặc phê duyệt phương pháp đánh giá khác.`,
+        })),
         {
           code: 'AI_SOURCE_DERIVED_CONTENT_REQUIRES_REVIEW',
           message: 'Câu hỏi do AI tạo từ nguồn cần được người dùng duyệt trước khi xuất bản; nội dung học giữ nguyên nguồn.',
