@@ -35,35 +35,34 @@ export function AITextDialog({
       <DialogTitle>
         <Stack direction="row" alignItems="center" spacing={1}>
           <Iconify icon="solar:cup-star-bold" width={24} />
-          <span>Text mit KI generieren</span>
+          <span>Tạo văn bản bằng AI</span>
         </Stack>
       </DialogTitle>
       <DialogContent>
         <Stack spacing={2} sx={{ mt: 1 }}>
           <Typography variant="body2" color="text.secondary">
-            Geben Sie den Kontext oder das Thema ein, aus dem Sie Textinhalt generieren möchten. Die
-            KI erstellt informativen Text basierend auf dem angegebenen Kontext.
+            Nhập nội dung hoặc chủ đề để AI soạn đoạn văn bản phù hợp.
           </Typography>
           <TextField
-            label="Kontext"
+            label="Nội dung tham chiếu"
             multiline
             rows={6}
             fullWidth
             value={dialogState.context}
             onChange={(e) => onContextChange(e.target.value)}
-            placeholder="Geben Sie das Thema oder den Kontext ein, aus dem die KI Text generieren soll..."
+            placeholder="Nhập chủ đề hoặc nội dung để AI soạn văn bản..."
             disabled={dialogState.loading}
           />
           {!apiToken && (
             <Alert severity="warning">
-              Bitte geben Sie Ihren API-Token in der Kopfzeile ein, bevor Sie Text generieren.
+              Vui lòng nhập khóa API ở thanh trên trước khi tạo văn bản.
             </Alert>
           )}
         </Stack>
       </DialogContent>
       <DialogActions sx={{ px: 3, pb: 2 }}>
         <Button onClick={onClose} disabled={dialogState.loading}>
-          Abbrechen
+          Hủy
         </Button>
         <Button
           variant="contained"
@@ -77,7 +76,7 @@ export function AITextDialog({
             )
           }
         >
-          {dialogState.loading ? 'Wird generiert...' : 'Text generieren'}
+          {dialogState.loading ? 'Đang tạo...' : 'Tạo văn bản'}
         </Button>
       </DialogActions>
     </Dialog>
