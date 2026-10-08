@@ -1,4 +1,5 @@
 import { unzipSync } from 'fflate';
+import { requestAiText } from './ai-chat-client';
 
 import type { SourceBlock } from './source-model';
 import type {
@@ -221,36 +222,20 @@ HEADING: ${section.heading}
 SOURCE_BLOCKS:
 ${section.blocks.map((block) => `[${block.id}] ${block.text}`).join('\n\n')}`;
 
-  const body: Record<string, unknown> = {
-    model: options.model || 'gpt-5.2',
-    messages: [
-      {
-        role: 'system',
-        content:
-          'Bạn tạo nội dung giáo dục bám sát nguồn. Không được dùng kiến thức ngoài phần SOURCE được cung cấp.',
-      },
-      { role: 'user', content: prompt },
-    ],
-    temperature: 0.2,
-  };
-
   let lastError: Error | null = null;
   for (let attempt = 1; attempt <= 3; attempt += 1) {
     try {
-      const response = await fetch(options.apiEndpoint, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${options.apiToken}`,
-        },
-        body: JSON.stringify(body),
-      });
-      if (!response.ok) {
-        const detail = await response.text();
-        throw new Error(`AI API lỗi ${response.status}: ${detail.slice(0, 500)}`);
-      }
-      const data = await response.json();
-      return extractJsonObject(data.choices?.[0]?.message?.content || '');
+      const response = await requestAiText(
+        [
+          { role: 'system', content: 'Bạn tạo nội dung giáo dục bám sát nguồn. Không được dùng kiến thức ngoài phần SOURCE được cung cấp.' },
+          { role: 'user', content: prompt },
+        ],
+        options.apiEndpoint,
+        options.apiToken,
+        options.model || 'gpt-4.1-mini',
+        0.2
+      );
+      return extractJsonObject(response);
     } catch (error) {
       lastError = error instanceof Error ? error : new Error(String(error));
       if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
