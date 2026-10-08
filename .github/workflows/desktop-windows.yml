@@ -1,0 +1,40 @@
+name: Lumi-AI Desktop Windows
+# Windows installer CI: a branch push to this workflow also triggers a build.
+on:
+  workflow_dispatch:
+  push:
+    branches: [master, feat/automated-h5p-pipeline]
+    paths:
+      - 'src-tauri/**'
+      - 'src/**'
+      - 'vite.config.ts'
+      - 'package.json'
+      - '.github/workflows/desktop-windows.yml'
+concurrency:
+  group: desktop-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  windows-installer:
+    runs-on: windows-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: yarn
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: cargo install tauri-cli --version '^2' --locked
+      - run: cargo tauri icon src-tauri/app-icon.svg
+      - run: cargo tauri build --bundles nsis
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lumi-ai-windows-installer
+          path: src-tauri/target/release/bundle/nsis/*.exe
+          if-no-files-found: error
