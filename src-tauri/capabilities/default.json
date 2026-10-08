@@ -1,0 +1,10 @@
+{
+  "identifier": "default",
+  "description": "Lumi-AI desktop default window",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default"
+  ]
+}

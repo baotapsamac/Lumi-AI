@@ -3,7 +3,6 @@ import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Select from '@mui/material/Select';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
 import InputLabel from '@mui/material/InputLabel';
@@ -22,28 +21,32 @@ type EditorHeaderProps = {
   provider: ProviderType;
   apiEndpoint: string;
   apiToken: string;
-  hasCustomSystemPrompt: boolean;
+  model: string;
+  onModelChange: (model: string) => void;
   downloadLoading: boolean;
+  docxLoading: boolean;
   hasContent: boolean;
   onProviderChange: (provider: ProviderType) => void;
   onEndpointChange: (endpoint: string) => void;
   onTokenChange: (token: string) => void;
-  onSystemPromptEdit: () => void;
   onDownload: () => void;
+  onDocxImport: (file: File) => void;
 };
 
 export function EditorHeader({
   provider,
   apiEndpoint,
   apiToken,
-  hasCustomSystemPrompt,
+  model,
+  onModelChange,
   downloadLoading,
+  docxLoading,
   hasContent,
   onProviderChange,
   onEndpointChange,
   onTokenChange,
-  onSystemPromptEdit,
   onDownload,
+  onDocxImport,
 }: EditorHeaderProps) {
   return (
     <Box
@@ -59,11 +62,11 @@ export function EditorHeader({
     >
       <Stack direction="row" spacing={2} alignItems="center">
         <FormControl size="small" sx={{ minWidth: 150 }}>
-          <InputLabel id="provider-select-label">Provider</InputLabel>
+          <InputLabel id="provider-select-label">Nhà cung cấp AI</InputLabel>
           <Select
             labelId="provider-select-label"
             value={provider}
-            label="Provider"
+            label="Nhà cung cấp AI"
             onChange={(e) => onProviderChange(e.target.value as ProviderType)}
           >
             {Object.entries(PROVIDERS).map(([key, config]) => (
@@ -75,11 +78,11 @@ export function EditorHeader({
         </FormControl>
         <TextField
           size="small"
-          label="API Endpoint"
+          label="Địa chỉ API"
           value={apiEndpoint}
           onChange={(e) => onEndpointChange(e.target.value)}
           placeholder="https://api.openai.com/v1/chat/completions"
-          sx={{ minWidth: 350 }}
+          sx={{ minWidth: 260 }}
         />
         <TextField
           size="small"
@@ -87,8 +90,8 @@ export function EditorHeader({
           type="password"
           value={apiToken}
           onChange={(e) => onTokenChange(e.target.value)}
-          placeholder="Bearer token eingeben"
-          sx={{ minWidth: 250 }}
+          placeholder="Nhập API key"
+          sx={{ minWidth: 190 }}
           slotProps={{
             input: {
               startAdornment: (
@@ -97,39 +100,48 @@ export function EditorHeader({
             },
           }}
         />
+        <TextField
+          size="small"
+          label="Mô hình AI"
+          value={model}
+          onChange={(e) => onModelChange(e.target.value)}
+          sx={{ minWidth: 170 }}
+        />
         {apiToken && (
           <Chip
             size="small"
-            label="Konfiguriert"
+            label="Đã cấu hình"
             color="success"
             icon={<Iconify icon="solar:check-circle-bold" width={16} />}
           />
         )}
-        <Tooltip title={hasCustomSystemPrompt ? 'Systemprompt (angepasst)' : 'Systemprompt bearbeiten'}>
-          <Button
-            size="small"
-            variant={hasCustomSystemPrompt ? 'contained' : 'outlined'}
-            onClick={onSystemPromptEdit}
-            startIcon={<Iconify icon="solar:file-text-bold" width={20} />}
-          >
-            Prompt
-          </Button>
-        </Tooltip>
       </Stack>
-      <Button
-        variant="contained"
-        startIcon={
-          downloadLoading ? (
-            <CircularProgress size={20} color="inherit" />
-          ) : (
-            <Iconify icon="solar:download-bold" />
-          )
-        }
-        onClick={onDownload}
-        disabled={!hasContent || downloadLoading}
-      >
-        {downloadLoading ? 'Wird vorbereitet...' : 'Herunterladen'}
-      </Button>
+      <Stack direction="row" spacing={1}>
+        <Button
+          component="label"
+          variant="contained"
+          disabled={docxLoading}
+          startIcon={
+            docxLoading ? (
+              <CircularProgress size={20} color="inherit" />
+            ) : (
+              <Iconify icon="solar:file-text-bold" />
+            )
+          }
+        >
+          {docxLoading ? 'Đang xử lý DOCX...' : 'Nạp DOCX và tạo học liệu'}
+          <input
+            hidden
+            type="file"
+            accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            onChange={(event) => {
+              const file = event.target.files?.[0];
+              if (file) onDocxImport(file);
+              event.currentTarget.value = '';
+            }}
+          />
+        </Button>
+      </Stack>
     </Box>
   );
 }

@@ -21,7 +21,8 @@ const localStoragePersistenceMiddleware: Middleware = (storeApi) => (next) => (a
     if (typeof window !== 'undefined') {
       localStorage.setItem('api_provider', apiConfig.provider);
       localStorage.setItem('api_endpoint', apiConfig.apiEndpoint);
-      localStorage.setItem('api_token', apiConfig.apiToken);
+      localStorage.setItem('api_model', apiConfig.model);
+      localStorage.removeItem('api_token');
     }
   }
   return result;

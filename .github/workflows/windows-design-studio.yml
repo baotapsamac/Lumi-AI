@@ -1,0 +1,30 @@
+name: Windows Design Studio Build
+
+on:
+  push:
+    branches:
+      - feat/automated-h5p-pipeline
+  pull_request:
+    branches:
+      - feat/automated-h5p-pipeline
+  workflow_dispatch:
+
+jobs:
+  windows-build:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Typecheck and production build
+        run: yarn build
+      - name: Check output
+        shell: pwsh
+        run: |
+          if (-not (Test-Path dist)) { throw "Missing dist directory" }
+          Write-Host "Windows web bundle generated. Lumi Desktop round-trip NOT tested."

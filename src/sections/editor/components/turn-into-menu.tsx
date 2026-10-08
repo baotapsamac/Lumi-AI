@@ -47,7 +47,7 @@ export function TurnIntoMenu({ anchorEl, onClose, onMouseLeave, onSelect, onAITr
             <Iconify icon={option.icon} width={20} />
           </ListItemIcon>
           <ListItemText primary={option.label} />
-          <Tooltip title="Mit KI umwandeln" placement="right">
+          <Tooltip title="Chuyển đổi bằng AI" placement="right">
             <IconButton
               size="small"
               className="ai-button"

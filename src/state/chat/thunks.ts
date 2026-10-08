@@ -1,11 +1,10 @@
 import type { RootState, AppDispatch } from 'src/state';
 import type { Content } from 'src/state/lumi-editor/types';
 
-import axios from 'axios';
+import { requestAiText } from '../../utils/ai-chat-client';
 
-import { PROVIDERS } from 'src/state/lumi-editor/providers';
 import { worksheetContentsSet, worksheetTitleChanged } from 'src/state/lumi-editor/lumiEditorSlice';
-import { selectTitle, selectApiToken, selectProvider, selectApiEndpoint, selectOrderedContent } from 'src/state/lumi-editor/lumiEditorSelectors';
+import { selectTitle, selectApiToken, selectProvider, selectModel, selectApiEndpoint, selectOrderedContent } from 'src/state/lumi-editor/lumiEditorSelectors';
 
 import { chatMessageAdded } from './actions';
 import { buildSystemPrompt } from './prompts';
@@ -117,6 +116,7 @@ export const sendMessage =
       const apiToken = selectApiToken(state);
       const apiEndpoint = selectApiEndpoint(state);
       const provider = selectProvider(state);
+      const model = selectModel(state);
       const title = selectTitle(state);
       const content = selectOrderedContent(state);
 
@@ -129,28 +129,18 @@ export const sendMessage =
         if (index === messages.length - 1 && msg.role === 'user') {
           return {
             role: msg.role,
-            content: `${msg.content}\n\n[Aktueller Stand des Arbeitsblatts: ${currentStateJson}]`,
+            content: `${msg.content}\n\n[Trạng thái bài học hiện tại: ${currentStateJson}]`,
           };
         }
         return { role: msg.role, content: msg.content };
       });
 
-      const requestBody: Record<string, unknown> = {
-        messages: [{ role: 'system', content: systemPrompt }, ...openAiMessages],
-      };
-
-      if (PROVIDERS[provider].requiresModel) {
-        requestBody.model = 'gpt-5.4';
-      }
-
-      const response = await axios.post(apiEndpoint, requestBody, {
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${apiToken}`,
-        },
-      });
-
-      const rawReply: string = response.data.choices[0].message.content;
+      const rawReply = await requestAiText(
+        [{ role: 'system', content: systemPrompt }, ...openAiMessages],
+        apiEndpoint,
+        apiToken,
+        model
+      );
 
       // Strip worksheet block from chat text and apply update if parseable
       const { displayText: reply, payload } = extractWorksheetBlock(rawReply);
@@ -172,7 +162,7 @@ export const sendMessage =
         chatMessageAdded({
           id: crypto.randomUUID(),
           role: 'assistant',
-          content: `Fehler: ${error instanceof Error ? error.message : 'Unbekannter Fehler'}`,
+          content: `Lỗi: ${error instanceof Error ? error.message : 'Lỗi không xác định'}`,
           createdAt: Date.now(),
         })
       );

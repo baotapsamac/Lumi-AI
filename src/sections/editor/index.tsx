@@ -1,6 +1,8 @@
 import * as React from 'react';
 
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
 
@@ -22,6 +24,8 @@ import {
 import {
   selectTitle,
   selectProvider,
+  selectModel,
+  modelChanged,
   selectApiToken,
   providerChanged,
   apiTokenChanged,
@@ -51,17 +55,25 @@ import { AIChatHandle } from './components/ai-chat-handle';
 import { AIChatDrawer } from './components/ai-chat-drawer';
 import { TurnIntoMenu } from './components/turn-into-menu';
 import { SystemPromptDialog } from './components/system-prompt-dialog';
+import { DocxQuestionReviewDialog } from './components/docx-question-review-dialog';
+import { runMaterializedH5PPipeline } from '../../utils/h5p-pipeline';
+import type { MaterializedH5PPlan } from '../../utils/h5p-pipeline';
 import { generateH5PPackage, downloadH5PPackage } from '../../utils/h5p-generator';
+import { generateMaterializedPlanFromDocx } from '../../utils/long-docx-pipeline';
+import { loadDocxProject, saveDocxProject, downloadProjectFile, importProjectFile } from '../../utils/project-store';
 
 import type { ContentType, CommandOption, GeneratingSkeleton } from './types';
 
 // ----------------------------------------------------------------------
 
 function EditorPage() {
+  // Keep legacy editor components unmounted in the DOCX-first workflow.
+  const [legacyUiEnabled] = React.useState(false);
   const dispatch = useDispatch();
 
   // Redux state (data only)
   const provider = useSelector(selectProvider);
+  const model = useSelector(selectModel);
   const apiEndpoint = useSelector(selectApiEndpoint);
   const apiToken = useSelector(selectApiToken);
   const title = useSelector(selectTitle);
@@ -112,6 +124,17 @@ function EditorPage() {
 
   // Local UI state - Download
   const [downloadLoading, setDownloadLoading] = React.useState(false);
+  const [docxLoading, setDocxLoading] = React.useState(false);
+  const [docxReviewPlan, setDocxReviewPlan] = React.useState<MaterializedH5PPlan | null>(null);
+  const [docxReviewTitle, setDocxReviewTitle] = React.useState('');
+
+  React.useEffect(() => {
+    const saved = loadDocxProject();
+    if (saved) {
+      setDocxReviewPlan(saved.plan);
+      setDocxReviewTitle(saved.title);
+    }
+  }, []);
 
   // Local UI state - Generating skeletons
   const [generatingSkeletons, setGeneratingSkeletons] = React.useState<GeneratingSkeleton[]>([]);
@@ -139,11 +162,64 @@ function EditorPage() {
     } catch (error) {
       setSnackbar({
         open: true,
-        message: `Fehler beim Erstellen des H5P-Pakets: ${error instanceof Error ? error.message : 'Unbekannter Fehler'}`,
+        message: `Lỗi khi tạo gói H5P: ${error instanceof Error ? error.message : 'Lỗi không xác định'}`,
         severity: 'error',
       });
     } finally {
       setDownloadLoading(false);
+    }
+  };
+
+  const handleDocxImport = async (file: File) => {
+    if (!apiToken.trim()) {
+      setSnackbar({ open: true, message: 'Hãy cấu hình API token trước khi xử lý DOCX.', severity: 'error' });
+      return;
+    }
+
+    setDocxLoading(true);
+    try {
+      const baseTitle = file.name.replace(/\.docx$/i, '') || 'bai-hoc';
+      setSnackbar({ open: true, message: 'Đang đọc và chia tài liệu DOCX...', severity: 'info' });
+
+      const { plan, sections } = await generateMaterializedPlanFromDocx(file, {
+        apiEndpoint,
+        apiToken,
+        model,
+        maxChunkChars: 12000,
+        questionsPerChunk: 2,
+        onProgress: (completed, total, label) => {
+          setSnackbar({
+            open: true,
+            message: `Đang xử lý ${completed}/${total}: ${label}`,
+            severity: 'info',
+          });
+        },
+      });
+
+      setDocxReviewPlan(plan);
+      setDocxReviewTitle(baseTitle);
+      saveDocxProject({
+        version: '1.0',
+        id: plan.lesson_id,
+        title: baseTitle,
+        sourceFileName: file.name,
+        updatedAt: new Date().toISOString(),
+        plan,
+      });
+      setSnackbar({
+        open: true,
+        message: `Đã phân tích ${sections.length} phần. Hãy duyệt câu hỏi trước khi xuất H5P.`,
+        severity: 'success',
+      });
+      return;
+    } catch (error) {
+      setSnackbar({
+        open: true,
+        message: `Không thể tạo H5P từ DOCX: ${error instanceof Error ? error.message : 'Lỗi không xác định'}`,
+        severity: 'error',
+      });
+    } finally {
+      setDocxLoading(false);
     }
   };
 
@@ -180,13 +256,13 @@ function EditorPage() {
       }
       setSnackbar({
         open: true,
-        message: mode === 'transform' ? 'Inhalt erfolgreich umgewandelt' : 'Frage erfolgreich generiert',
+        message: mode === 'transform' ? 'Đã chuyển đổi nội dung' : 'Đã tạo câu hỏi',
         severity: 'success',
       });
     } catch (error) {
       setSnackbar({
         open: true,
-        message: error instanceof Error ? error.message : 'Fehler beim Generieren der Frage',
+        message: error instanceof Error ? error.message : 'Lỗi khi tạo câu hỏi',
         severity: 'error',
       });
     } finally {
@@ -226,13 +302,13 @@ function EditorPage() {
       }
       setSnackbar({
         open: true,
-        message: mode === 'transform' ? 'Inhalt erfolgreich umgewandelt' : 'Text erfolgreich generiert',
+        message: mode === 'transform' ? 'Đã chuyển đổi nội dung' : 'Đã tạo văn bản',
         severity: 'success',
       });
     } catch (error) {
       setSnackbar({
         open: true,
-        message: error instanceof Error ? error.message : 'Fehler beim Generieren des Textes',
+        message: error instanceof Error ? error.message : 'Lỗi khi tạo văn bản',
         severity: 'error',
       });
     } finally {
@@ -316,17 +392,29 @@ function EditorPage() {
           provider={provider}
           apiEndpoint={apiEndpoint}
           apiToken={apiToken}
-          hasCustomSystemPrompt={customSystemPrompt !== null}
+          model={model}
+          onModelChange={(value) => dispatch(modelChanged(value))}
           downloadLoading={downloadLoading}
+          docxLoading={docxLoading}
           hasContent={hasContent}
           onProviderChange={(newProvider) => dispatch(providerChanged(newProvider))}
           onEndpointChange={(endpoint) => dispatch(apiEndpointChanged(endpoint))}
           onTokenChange={(token) => dispatch(apiTokenChanged(token))}
-          onSystemPromptEdit={() => setSystemPromptDialogOpen(true)}
           onDownload={handleDownload}
+          onDocxImport={handleDocxImport}
         />
 
-        {/* Editor Canvas */}
+        <Box sx={{ maxWidth: 760, mx: 'auto', mt: 10, px: 3, textAlign: 'center' }}>
+          <Typography variant="h4" sx={{ mb: 2 }}>Lumi-AI — Tạo học liệu từ DOCX</Typography>
+          <Typography color="text.secondary" sx={{ mb: 4 }}>Nạp tài liệu Word. Lumi tự đọc, phân chia nội dung và tạo câu hỏi bám sát nguồn. Chỉ khi cần giảng viên duyệt câu hỏi, ứng dụng mới yêu cầu xác nhận trước khi xuất H5P.</Typography>
+          <Button component="label" size="large" variant="contained" disabled={docxLoading}>
+            {docxLoading ? 'Đang phân tích tài liệu...' : 'Chọn tệp DOCX'}
+            <input hidden type="file" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" onChange={(event) => { const file = event.target.files?.[0]; if (file) handleDocxImport(file); event.currentTarget.value = ''; }} />
+          </Button>
+          <Typography variant="body2" color="text.secondary" sx={{ mt: 3 }}>Quy trình: DOCX → phân tích nguồn → tạo nội dung và câu hỏi → giảng viên duyệt → kiểm tra → tải H5P.</Typography>
+        </Box>
+        {/* Editor Canvas (legacy editor disabled in DOCX-first workflow) */}
+        {legacyUiEnabled && (
         <EditorCanvas
           title={title}
           content={content}
@@ -363,12 +451,13 @@ function EditorPage() {
           onOpenAiTextDialog={() => handleGenerateText('create', null)}
         />
 
+        )}
         {/* AI Chat Handle */}
-        {!chatDrawerOpen && <AIChatHandle onClick={() => setChatDrawerOpen(true)} />}
+        {legacyUiEnabled && !chatDrawerOpen && <AIChatHandle onClick={() => setChatDrawerOpen(true)} />}
       </Box>
 
       {/* AI Chat Drawer */}
-      <AIChatDrawer
+      {legacyUiEnabled && <AIChatDrawer
         open={chatDrawerOpen}
         apiToken={apiToken}
         chatMessages={chatMessages}
@@ -398,7 +487,7 @@ function EditorPage() {
         }}
         onSpeakMessage={speech.speak}
         onStopSpeaking={speech.stopSpeaking}
-      />
+      />}
 
       {/* Command Menu */}
       <CommandMenu
@@ -443,14 +532,76 @@ function EditorPage() {
         }}
       />
 
+      <DocxQuestionReviewDialog
+        open={docxReviewPlan !== null}
+        plan={docxReviewPlan}
+        onCancel={() => setDocxReviewPlan(null)}
+        onApprove={async (approvedPlan) => {
+          try {
+            setDocxLoading(true);
+            const result = await runMaterializedH5PPipeline(docxReviewTitle || 'bai-hoc', approvedPlan);
+            if (!result.blob || !result.report.gates.package_layer_ready) {
+              const failed = result.report.checks
+                .filter((check) => check.result === 'FAIL' || check.result === 'BLOCK')
+                .map((check) => check.name)
+                .join('; ');
+              throw new Error(failed || 'Package Validator không cho phép xuất H5P.');
+            }
+            downloadH5PPackage(result.blob, docxReviewTitle || 'bai-hoc');
+            const project = {
+              version: '1.0' as const,
+              id: approvedPlan.lesson_id,
+              title: docxReviewTitle || 'bai-hoc',
+              sourceFileName: docxReviewTitle ? `${docxReviewTitle}.docx` : 'source.docx',
+              updatedAt: new Date().toISOString(),
+              plan: approvedPlan,
+            };
+            saveDocxProject(project);
+            downloadProjectFile(project);
+            setDocxReviewPlan(null);
+            setSnackbar({ open: true, message: `Đã xuất H5P. Validator: ${result.report.status}.`, severity: 'success' });
+          } catch (error) {
+            setSnackbar({ open: true, message: `Không thể xuất H5P: ${error instanceof Error ? error.message : 'Lỗi không xác định'}`, severity: 'error' });
+          } finally {
+            setDocxLoading(false);
+          }
+        }}
+      />
+
+      <Box sx={{ position: 'fixed', bottom: 16, left: 16, zIndex: 1200 }}>
+        <input
+          id="lumiai-open-project"
+          type="file"
+          accept=".json,.lumiai.json"
+          style={{ display: 'none' }}
+          onChange={async (event) => {
+            const file = event.target.files?.[0];
+            if (!file) return;
+            try {
+              const project = await importProjectFile(file);
+              saveDocxProject(project);
+              setDocxReviewPlan(project.plan);
+              setDocxReviewTitle(project.title);
+              setSnackbar({ open: true, message: 'Đã mở dự án Lumi-AI.', severity: 'success' });
+            } catch (error) {
+              setSnackbar({ open: true, message: error instanceof Error ? error.message : 'Không thể mở dự án.', severity: 'error' });
+            }
+            event.target.value = '';
+          }}
+        />
+        <Box component="label" htmlFor="lumiai-open-project" sx={{ cursor: 'pointer', bgcolor: 'background.paper', p: 1, borderRadius: 1, boxShadow: 2 }}>
+          Mở dự án Lumi-AI
+        </Box>
+      </Box>
+
       {/* System Prompt Dialog */}
-      <SystemPromptDialog
+      {legacyUiEnabled && <SystemPromptDialog
         open={systemPromptDialogOpen}
         customPrompt={customSystemPrompt}
         defaultPrompt={buildSystemPrompt(title, content)}
         onClose={() => setSystemPromptDialogOpen(false)}
         onSave={(prompt) => dispatch({ type: CHAT_SYSTEM_PROMPT_CHANGED, payload: prompt })}
-      />
+      />}
 
       {/* Snackbar */}
       <Snackbar

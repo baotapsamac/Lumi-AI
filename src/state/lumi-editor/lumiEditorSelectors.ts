@@ -18,6 +18,8 @@ export const selectProvider = createSelector([selectApiConfig], (config) => conf
 
 export const selectApiEndpoint = createSelector([selectApiConfig], (config) => config.apiEndpoint);
 
+export const selectModel = createSelector([selectApiConfig], (config) => config.model);
+
 export const selectApiToken = createSelector([selectApiConfig], (config) => config.apiToken);
 
 // Worksheet

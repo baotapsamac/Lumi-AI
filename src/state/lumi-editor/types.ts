@@ -1,11 +1,12 @@
 export type ID = string;
 
-export type ProviderType = 'openai';
+export type ProviderType = 'openai' | 'gemini' | 'openrouter' | 'groq' | 'custom';
 
 export interface ProviderConfig {
   name: string;
   endpoint: string;
   requiresModel: boolean;
+  model: string;
 }
 
 export interface TextContent {
@@ -42,6 +43,7 @@ export interface LumiEditorState {
     provider: ProviderType;
     apiEndpoint: string;
     apiToken: string;
+    model: string;
   };
   title: string;
   content: {

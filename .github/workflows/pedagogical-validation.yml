@@ -1,0 +1,32 @@
+name: Pedagogical validation and approval security
+on:
+  push:
+    branches: [master, feat/automated-h5p-pipeline]
+    paths:
+      - 'pedagogical/**'
+      - 'src/utils/pedagogical-*.ts'
+      - 'tests/**'
+      - '.github/workflows/pedagogical-validation.yml'
+  pull_request:
+  workflow_dispatch:
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'jsonschema>=4.23,<5'
+      - run: python -m unittest discover -s tests -p 'test_lesson_schema.py' -v
+  alignment-and-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: node --test tests/pedagogical.test.mjs
+      - run: yarn build
