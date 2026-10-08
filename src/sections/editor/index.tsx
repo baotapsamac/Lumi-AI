@@ -158,7 +158,7 @@ function EditorPage() {
     } catch (error) {
       setSnackbar({
         open: true,
-        message: `Fehler beim Erstellen des H5P-Pakets: ${error instanceof Error ? error.message : 'Unbekannter Fehler'}`,
+        message: `Lỗi khi tạo gói H5P: ${error instanceof Error ? error.message : 'Lỗi không xác định'}`,
         severity: 'error',
       });
     } finally {
@@ -252,13 +252,13 @@ function EditorPage() {
       }
       setSnackbar({
         open: true,
-        message: mode === 'transform' ? 'Inhalt erfolgreich umgewandelt' : 'Frage erfolgreich generiert',
+        message: mode === 'transform' ? 'Đã chuyển đổi nội dung' : 'Đã tạo câu hỏi',
         severity: 'success',
       });
     } catch (error) {
       setSnackbar({
         open: true,
-        message: error instanceof Error ? error.message : 'Fehler beim Generieren der Frage',
+        message: error instanceof Error ? error.message : 'Lỗi khi tạo câu hỏi',
         severity: 'error',
       });
     } finally {
@@ -298,13 +298,13 @@ function EditorPage() {
       }
       setSnackbar({
         open: true,
-        message: mode === 'transform' ? 'Inhalt erfolgreich umgewandelt' : 'Text erfolgreich generiert',
+        message: mode === 'transform' ? 'Đã chuyển đổi nội dung' : 'Đã tạo văn bản',
         severity: 'success',
       });
     } catch (error) {
       setSnackbar({
         open: true,
-        message: error instanceof Error ? error.message : 'Fehler beim Generieren des Textes',
+        message: error instanceof Error ? error.message : 'Lỗi khi tạo văn bản',
         severity: 'error',
       });
     } finally {
