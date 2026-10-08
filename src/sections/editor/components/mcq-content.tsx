@@ -36,7 +36,7 @@ export function MCQContentRenderer({
         multiline
         fullWidth
         autoFocus={isEmpty}
-        placeholder="Frage in der ersten Zeile\nAntwortoption 1\n*Richtige Antwort (mit * markieren)\nAntwortoption 2"
+        placeholder="Câu hỏi ở dòng đầu\nĐáp án 1\n*Đáp án đúng (đánh dấu *)\nĐáp án 2"
         onChange={(e) => onChange(e.target.value)}
         onFocus={(e) => {
           if (!isFocused) {
