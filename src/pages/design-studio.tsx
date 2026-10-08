@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 
 import { auditStructuralAlignment } from '../utils/pedagogical-alignment';
-import { approveGate, acceptProposal, proposeRevision } from '../utils/pedagogical-approval';
+import { acceptProposal, proposeRevision } from '../utils/pedagogical-approval';
 import { adaptApprovedLesson } from '../utils/pedagogical-h5p-adapter';
 import { downloadStudioProject, parseStudioProject } from '../utils/pedagogical-project';
 
@@ -55,17 +55,6 @@ export default function DesignStudioPage() {
       setMessage(error instanceof Error ? error.message : 'Không đọc được JSON.');
     }
   };
-  const approveOutcomes = () => {
-    try {
-      const current = approveGate(project.current, 'outcomes', new Date().toISOString(), {
-        schema_valid: false,
-        alignment_passed: false,
-      });
-      setProject((prev) => ({ ...prev, current }));
-    } catch (error) {
-      setMessage(error instanceof Error ? error.message : 'Chưa thể phê duyệt.');
-    }
-  };
   const importProject = async (file: File) => {
     try {
       const parsed = parseStudioProject<ExportLesson>(await file.text());
@@ -97,7 +86,7 @@ export default function DesignStudioPage() {
           }} />
         </Button>
         <Button variant="outlined" onClick={applyDraft}>Lưu bản chỉnh sửa</Button>
-        <Button variant="outlined" onClick={approveOutcomes}>Duyệt chuẩn đầu ra</Button>
+        <Button variant="outlined" disabled>Duyệt chuẩn đầu ra (chờ schema)</Button>
         <Button variant="outlined" onClick={exportPlanJson}>Xem H5P Export Plan</Button>
       </Stack>
       {message && <Alert severity="info" sx={{ mb: 2 }}>{message}</Alert>}
