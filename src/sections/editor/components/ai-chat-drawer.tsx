@@ -94,18 +94,18 @@ export function AIChatDrawer({
       <Box sx={{ p: 2, height: '100%', display: 'flex', flexDirection: 'column' }}>
         {/* Header */}
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-          <Typography variant="h6">KI-Assistent</Typography>
+          <Typography variant="h6">Trợ lý AI</Typography>
           <Stack direction="row" alignItems="center" spacing={0.5}>
             {ttsSupported && (
               <Tooltip
-                title={readAloudEnabled ? 'Vorlesen deaktivieren' : 'Antworten vorlesen'}
+                title={readAloudEnabled ? 'Tắt đọc nội dung' : 'Đọc câu trả lời'}
                 placement="bottom"
               >
                 <IconButton
                   size="small"
                   onClick={onReadAloudToggle}
                   color={readAloudEnabled ? 'primary' : 'default'}
-                  aria-label={readAloudEnabled ? 'Vorlesen deaktivieren' : 'Antworten vorlesen'}
+                  aria-label={readAloudEnabled ? 'Tắt đọc nội dung' : 'Đọc câu trả lời'}
                   aria-pressed={readAloudEnabled}
                 >
                   <Iconify
@@ -138,7 +138,7 @@ export function AIChatDrawer({
             <Stack spacing={2} alignItems="center" justifyContent="center" sx={{ height: '100%' }}>
               <Iconify icon="solar:cup-star-bold" width={48} sx={{ color: 'text.secondary' }} />
               <Typography color="text.secondary" textAlign="center" variant="body2">
-                Bitte mich, dir bei deinem Arbeitsblatt zu helfen!
+                Bitte mich, dir bei deinem Bài học zu helfen!
                 <br />
                 Ich kann Inhalte hinzufügen, Fragen beantworten und mehr.
               </Typography>
@@ -285,7 +285,7 @@ export function AIChatDrawer({
         {/* Chat Input */}
         <TextField
           fullWidth
-          placeholder="Bitte die KI um Hilfe bei deinem Arbeitsblatt..."
+          placeholder="Bitte die KI um Hilfe bei deinem Bài học..."
           variant="outlined"
           size="small"
           value={chatInput}
