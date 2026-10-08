@@ -12,7 +12,6 @@ import { approveGate, acceptProposal, proposeRevision } from '../utils/pedagogic
 import { adaptApprovedLesson } from '../utils/pedagogical-h5p-adapter';
 import { downloadStudioProject, parseStudioProject } from '../utils/pedagogical-project';
 
-import type { Revision } from '../utils/pedagogical-approval';
 import type { ExportLesson } from '../utils/pedagogical-h5p-adapter';
 import type { StudioProject } from '../utils/pedagogical-project';
 
