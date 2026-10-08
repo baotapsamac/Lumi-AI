@@ -1,6 +1,6 @@
 export type ID = string;
 
-export type ProviderType = 'openai' | 'gemini' | 'openrouter' | 'custom';
+export type ProviderType = 'openai' | 'gemini' | 'openrouter' | 'groq' | 'custom';
 
 export interface ProviderConfig {
   name: string;
