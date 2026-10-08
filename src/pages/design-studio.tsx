@@ -10,7 +10,6 @@ import Link from '@mui/material/Link';
 
 import { requestAiText } from '../utils/ai-chat-client';
 import { runMaterializedH5PPipeline } from '../utils/h5p-pipeline';
-import { auditLesson } from '../utils/pedagogical-semantic-auditor';
 import { validateLessonSchema } from '../utils/pedagogical-schema-validator';
 import { approveWithEvidence, emptyEvidenceLedger, recordGateEvidence, recordSemanticReview, verifiedAudit } from '../utils/pedagogical-evidence';
 import { acceptProposal, proposeRevision } from '../utils/pedagogical-approval';
