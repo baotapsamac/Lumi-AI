@@ -1,4 +1,5 @@
 name: Pedagogical validation and approval security
+# Revalidate evidence-bound three-gate approval security.
 on:
   push:
     branches: [master, feat/automated-h5p-pipeline]
