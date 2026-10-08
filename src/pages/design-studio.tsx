@@ -6,6 +6,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
+import Link from '@mui/material/Link';
 
 import { requestAiText } from '../utils/ai-chat-client';
 import { runMaterializedH5PPipeline } from '../utils/h5p-pipeline';
@@ -21,10 +22,14 @@ import type { ExportLesson } from '../utils/pedagogical-h5p-adapter';
 import type { StudioProject } from '../utils/pedagogical-project';
 
 const starter: ExportLesson = {
-  lesson: { id: 'lesson-1', title: 'Bài học mới', language: 'vi' },
-  learning_units: [{ id: 'unit-1', title: 'Nội dung 1', activities: [
-    { id: 'activity-1', instruction: 'Mô tả hoạt động học tập ở đây.', resources: [] },
+  schema_version: '1.0',
+  lesson: { id: 'lesson-1', title: 'Bài học mới', language: 'vi', status: 'draft' },
+  outcomes: [{ id: 'lo-1', text: 'Mô tả được nội dung chính của bài học', source: 'user_provided', status: 'pending_approval', cognitive_process: 'understand' }],
+  evidence: [{ id: 'ev-1', description: 'Bản trình bày mô tả nội dung bài học', evidence_type: 'constructed_response', supports_outcomes: ['lo-1'] }],
+  learning_units: [{ id: 'unit-1', title: 'Nội dung 1', supports_outcomes: ['lo-1'], activities: [
+    { id: 'activity-1', learning_type: 'production', supports_outcomes: ['lo-1'], instruction: 'Viết bản mô tả ngắn và trình bày để giảng viên nhận xét.', resources: [], assessment: { id: 'as-1', purpose: 'formative', supports_outcomes: ['lo-1'], measures_evidence: ['ev-1'], assessment_function: 'construct', interaction_preference: 'external' } },
   ] }],
+  qa: { status: 'not_run', checks: [] },
 };
 
 export default function DesignStudioPage() {
@@ -178,6 +183,7 @@ export default function DesignStudioPage() {
   return (
     <Box sx={{ p: 3, maxWidth: 1200, mx: 'auto' }}>
       <Typography variant="h4" sx={{ mb: 2 }}>Lumi-AI · Design Studio (thử nghiệm)</Typography>
+      <Link href="/editor" underline="hover">Mở Editor cũ (DOCX, câu hỏi và công cụ hiện có)</Link>
       <Alert severity="warning" sx={{ mb: 2 }}>
         Chưa tích hợp đầy đủ JSON Schema, AI conversation và semantic auditor. Xuất bản chính thức bị khóa.
       </Alert>
