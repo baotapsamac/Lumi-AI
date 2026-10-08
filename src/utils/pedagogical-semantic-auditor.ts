@@ -14,7 +14,6 @@ export function auditLesson(value: unknown, officialSnapshot?: Record<string,str
   const activities: Obj[] = units.flatMap(u => Array.isArray(u.activities) ? u.activities : []);
   const resources: Obj[] = activities.flatMap(a => Array.isArray(a.resources) ? a.resources : []);
   const assessments: Obj[] = [...activities.flatMap(a => a.assessment ? [a.assessment] : []), ...(lesson.final_assessment?.assessments || [])];
-  const evidence: Obj[] = Array.isArray(lesson.evidence) ? lesson.evidence : [];
   const structural = auditStructuralAlignment(lesson);
   const findings = structural.findings;
   const results: RuleResult[] = (rulebook.rules as {id:string}[]).map(rule => {
@@ -33,7 +32,7 @@ export function auditLesson(value: unknown, officialSnapshot?: Record<string,str
     }
     if (o.source === 'ai_proposed' && !['pending_approval','locked','rejected'].includes(o.status)) set('LO-02','block','Trạng thái chuẩn đầu ra AI không hợp lệ');
   }
-  if (officialSnapshot && Object.keys(officialSnapshot).some(id => !outcomes.some(o => o.id === id && o.source === 'official'))) set('LO-01','block','Thiếu chuẩn đầu ra chính thức');
+  if (officialSnapshot && Object.keys(officialSnapshot).some(id => !outcomes.some(candidate => candidate.id === id && candidate.source === 'official'))) set('LO-01','block','Thiếu chuẩn đầu ra chính thức');
   for (const a of activities) if (!['acquisition','investigation','discussion','practice','collaboration','production'].includes(a.learning_type)) set('LA-01','fail','Learning type không hợp lệ');
   for (const o of outcomes.filter(o => higher.has(o.cognitive_process))) {
     const matching = activities.filter(a => a.supports_outcomes?.includes(o.id));
