@@ -1,6 +1,8 @@
 import * as React from 'react';
 
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
 
@@ -390,19 +392,27 @@ function EditorPage() {
           apiToken={apiToken}
           model={model}
           onModelChange={(value) => dispatch(modelChanged(value))}
-          hasCustomSystemPrompt={customSystemPrompt !== null}
           downloadLoading={downloadLoading}
           docxLoading={docxLoading}
           hasContent={hasContent}
           onProviderChange={(newProvider) => dispatch(providerChanged(newProvider))}
           onEndpointChange={(endpoint) => dispatch(apiEndpointChanged(endpoint))}
           onTokenChange={(token) => dispatch(apiTokenChanged(token))}
-          onSystemPromptEdit={() => setSystemPromptDialogOpen(true)}
           onDownload={handleDownload}
           onDocxImport={handleDocxImport}
         />
 
-        {/* Editor Canvas */}
+        <Box sx={{ maxWidth: 760, mx: 'auto', mt: 10, px: 3, textAlign: 'center' }}>
+          <Typography variant="h4" sx={{ mb: 2 }}>Lumi-AI — Tạo học liệu từ DOCX</Typography>
+          <Typography color="text.secondary" sx={{ mb: 4 }}>Nạp tài liệu Word. Lumi tự đọc, phân chia nội dung và tạo câu hỏi bám sát nguồn. Chỉ khi cần giảng viên duyệt câu hỏi, ứng dụng mới yêu cầu xác nhận trước khi xuất H5P.</Typography>
+          <Button component="label" size="large" variant="contained" disabled={docxLoading}>
+            {docxLoading ? 'Đang phân tích tài liệu...' : 'Chọn tệp DOCX'}
+            <input hidden type="file" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" onChange={(event) => { const file = event.target.files?.[0]; if (file) handleDocxImport(file); event.currentTarget.value = ''; }} />
+          </Button>
+          <Typography variant="body2" color="text.secondary" sx={{ mt: 3 }}>Quy trình: DOCX → phân tích nguồn → tạo nội dung và câu hỏi → giảng viên duyệt → kiểm tra → tải H5P.</Typography>
+        </Box>
+        {/* Editor Canvas (legacy editor disabled in DOCX-first workflow) */}
+        {false && (
         <EditorCanvas
           title={title}
           content={content}
@@ -439,12 +449,13 @@ function EditorPage() {
           onOpenAiTextDialog={() => handleGenerateText('create', null)}
         />
 
+        )}
         {/* AI Chat Handle */}
-        {!chatDrawerOpen && <AIChatHandle onClick={() => setChatDrawerOpen(true)} />}
+        {false && !chatDrawerOpen && <AIChatHandle onClick={() => setChatDrawerOpen(true)} />}
       </Box>
 
       {/* AI Chat Drawer */}
-      <AIChatDrawer
+      {false && <AIChatDrawer
         open={chatDrawerOpen}
         apiToken={apiToken}
         chatMessages={chatMessages}
@@ -474,7 +485,7 @@ function EditorPage() {
         }}
         onSpeakMessage={speech.speak}
         onStopSpeaking={speech.stopSpeaking}
-      />
+      />}
 
       {/* Command Menu */}
       <CommandMenu
@@ -582,13 +593,13 @@ function EditorPage() {
       </Box>
 
       {/* System Prompt Dialog */}
-      <SystemPromptDialog
+      {false && <SystemPromptDialog
         open={systemPromptDialogOpen}
         customPrompt={customSystemPrompt}
         defaultPrompt={buildSystemPrompt(title, content)}
         onClose={() => setSystemPromptDialogOpen(false)}
         onSave={(prompt) => dispatch({ type: CHAT_SYSTEM_PROMPT_CHANGED, payload: prompt })}
-      />
+      />}
 
       {/* Snackbar */}
       <Snackbar
