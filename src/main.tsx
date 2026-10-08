@@ -1,7 +1,11 @@
+declare global {
+  interface Window { __TAURI_INTERNALS__?: unknown }
+}
+
 import { StrictMode } from 'react';
 import { Provider } from 'react-redux';
 import { createRoot } from 'react-dom/client';
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router';
+import { Outlet, RouterProvider, createBrowserRouter, createHashRouter } from 'react-router';
 
 import App from './app';
 import { store } from './state';
@@ -10,7 +14,9 @@ import { ErrorBoundary } from './routes/components';
 
 // ----------------------------------------------------------------------
 
-const router = createBrowserRouter([
+const makeRouter = window.__TAURI_INTERNALS__ ? createHashRouter : createBrowserRouter;
+
+const router = makeRouter([
   {
     Component: () => (
       <App>
