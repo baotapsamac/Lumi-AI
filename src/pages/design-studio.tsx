@@ -49,10 +49,17 @@ export default function DesignStudioPage() {
   const approved = project.current.approvals.some((a) => a.gate === 'design');
   const exportPlan = adaptApprovedLesson(project.current.value, approved, audit.design_ready);
 
+  const officialOutcomesChanged = (next: ExportLesson): boolean => {
+    const before = (project.current.value as ExportLesson & { outcomes?: Array<{ id: string; source?: string; text?: string }> }).outcomes || [];
+    const after = (next as ExportLesson & { outcomes?: Array<{ id: string; source?: string; text?: string }> }).outcomes || [];
+    return before.some((outcome) => outcome.source === 'official' &&
+      !after.some((candidate) => candidate.id === outcome.id && candidate.source === 'official' && candidate.text === outcome.text));
+  };
   const applyDraft = () => {
     try {
       const next = JSON.parse(draft) as ExportLesson;
       if (!next.lesson?.id || !Array.isArray(next.learning_units)) throw new Error('Thiếu cấu trúc bài học.');
+      if (officialOutcomesChanged(next)) throw new Error('Không được thay đổi hoặc xóa chuẩn đầu ra chính thức.');
       const proposal = proposeRevision(project.current, next, 'Cập nhật nội dung bài học', [next.lesson.id]);
       const decision = acceptProposal(project.current, proposal, true);
       setProject((prev) => ({
@@ -83,6 +90,7 @@ export default function DesignStudioPage() {
       if (!proposal.lesson?.lesson?.id || !Array.isArray(proposal.lesson.learning_units)) {
         throw new Error('AI không trả về cấu trúc lesson hợp lệ.');
       }
+      if (officialOutcomesChanged(proposal.lesson)) throw new Error('AI đề xuất sửa chuẩn đầu ra chính thức; đề xuất bị từ chối.');
       setAiProposal({ baseRevision, value: proposal.lesson, explanation: proposal.explanation || 'Đề xuất chỉnh sửa' });
       setMessage('AI đã đề xuất bản chỉnh sửa. Kiểm tra trước khi chấp nhận.');
     } catch (error) {
@@ -94,6 +102,7 @@ export default function DesignStudioPage() {
   const acceptAi = () => {
     if (!aiProposal) return;
     try {
+      if (officialOutcomesChanged(aiProposal.value)) throw new Error('Không được thay đổi chuẩn đầu ra chính thức.');
       const proposal = proposeRevision(project.current, aiProposal.value, aiProposal.explanation, [aiProposal.value.lesson.id]);
       if (aiProposal.baseRevision !== project.current.revision) throw new Error('Đề xuất đã cũ. Yêu cầu AI tạo lại.');
       const decision = acceptProposal(project.current, proposal, true);
