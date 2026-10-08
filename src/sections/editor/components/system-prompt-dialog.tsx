@@ -64,13 +64,13 @@ export function SystemPromptDialog({ open, customPrompt, defaultPrompt, onClose,
       </DialogContent>
       <DialogActions>
         <Button onClick={handleReset} disabled={isDefault} color="inherit">
-          Zurücksetzen
+          Đặt lại
         </Button>
         <Button onClick={onClose} color="inherit">
-          Abbrechen
+          Hủy
         </Button>
         <Button onClick={handleSave} variant="contained">
-          Speichern
+          Lưu
         </Button>
       </DialogActions>
     </Dialog>
