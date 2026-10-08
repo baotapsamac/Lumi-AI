@@ -1,4 +1,5 @@
 import { auditLesson } from './pedagogical-semantic-auditor';
+import { approveGate } from './pedagogical-approval';
 import type { Gate, Revision } from './pedagogical-approval';
 
 export type ReviewVerdict = 'pass' | 'fail';
@@ -69,4 +70,28 @@ export function hasGateEvidence<T>(revision: Revision<T>, ledger: EvidenceLedger
   const fingerprint = lessonFingerprint(revision.value);
   return ledger.gates.some(x => x.gate === gate && x.revision === revision.revision
     && x.lesson_fingerprint === fingerprint && x.reviewer.trim() && x.rationale.trim() && Number.isFinite(Date.parse(x.reviewed_at)));
+}
+
+/** The UI must use this function rather than supplying its own validation booleans. */
+export function approveWithEvidence<T>(
+  revision: Revision<T>, ledger: EvidenceLedger, gate: Gate, approvedAt: string,
+  publication?: { package_valid: boolean; runtime_accepted: boolean; accessibility_passed: boolean; dependency_valid: boolean },
+): Revision<T> {
+  const audit = verifiedAudit(revision, ledger);
+  if (!hasGateEvidence(revision, ledger, gate)) throw new Error('Missing current-revision gate evidence.');
+  if (!audit.schema.valid) throw new Error('Invalid canonical JSON Schema.');
+  if (gate !== 'outcomes' && !audit.design_ready) throw new Error('Alignment or semantic review unresolved.');
+  if (gate === 'outcomes') {
+    const value = revision.value as { outcomes?: Array<{ status?: string }> };
+    if (!value.outcomes?.length || value.outcomes.some(x => x.status !== 'locked')) throw new Error('Outcomes must be locked.');
+  }
+  return approveGate(revision, gate, approvedAt, {
+    schema_valid: audit.schema.valid,
+    alignment_passed: audit.design_ready,
+    auditor_complete: gate === 'outcomes' ? audit.schema.valid : audit.review_complete && audit.design_ready,
+    package_valid: publication?.package_valid,
+    runtime_accepted: publication?.runtime_accepted,
+    accessibility_passed: publication?.accessibility_passed,
+    dependency_valid: publication?.dependency_valid,
+  });
 }
