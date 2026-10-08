@@ -134,7 +134,7 @@ export async function extractDocxSections(
   for (const paragraph of paragraphs) {
     const headingLike =
       isHeadingStyle(paragraph.style) ||
-      (/^(?:[IVXLCDM]+|[A-Z])\.[ ]+\S/i.test(paragraph.text) && paragraph.text.length <= 160) ||
+      (/^(?:(?:\d+(?:\.\d+)*\.?|[IVXLCDM]+\.|[A-Z]\.)\s+\S|(?:Chương|Bài|Phần|Mục)\s+[\dIVXLCDM]+\b)/i.test(paragraph.text) && paragraph.text.length <= 160) ||
       (paragraph.text.length <= 120 &&
         paragraph.text === paragraph.text.toLocaleUpperCase('vi-VN') &&
         /[A-ZÀ-Ỹ]/i.test(paragraph.text));
@@ -272,7 +272,7 @@ function normalizeQuestion(
   const blockById = new Map(section.blocks.map((block) => [block.id, block.text] as const));
   const answerIsSourceExtract = (answer: MaterializedAnswer) =>
     (answer.source_ids || []).some((id) => (blockById.get(id) || '').includes(answer.text));
-  if (!answers.every(answerIsSourceExtract)) return null;
+  // Distractors can be pedagogically valid paraphrases; source IDs remain mandatory.\n  // Do not silently reject a complete question solely because an option is not verbatim.\n  if (!answers.filter((answer) => answer.correct).every(answerIsSourceExtract)) return null;
 
   const selectionMode =
     raw.selection_mode === 'multiple' || answers.filter((answer) => answer.correct).length > 1
@@ -298,7 +298,7 @@ export async function generateMaterializedPlanFromDocx(
   if (!options.apiToken.trim()) throw new Error('Chưa cấu hình API token.');
 
   const sections = await extractDocxSections(file, options.maxChunkChars ?? 12000);
-  const chapters: MaterializedChapter[] = [];
+  const chapters: MaterializedChapter[] = [];\n  const missingAssessments: string[] = [];
 
   for (let index = 0; index < sections.length; index += 1) {
     const section = sections[index];
@@ -318,7 +318,7 @@ export async function generateMaterializedPlanFromDocx(
       },
     ];
 
-    if (questions.length > 0) {
+    if (questions.length === 0) missingAssessments.push(section.heading);\n    if (questions.length > 0) {
       items.push({
         id: `${section.id}-MCQ`,
         type: 'multiple-choice',
