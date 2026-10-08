@@ -1,4 +1,5 @@
 import type { Revision } from './pedagogical-approval';
+import type { EvidenceLedger } from './pedagogical-evidence';
 
 export type StudioProject<T> = {
   format: 'lumi-ai-design-project';
@@ -7,6 +8,7 @@ export type StudioProject<T> = {
   current: Revision<T>;
   history: Revision<T>[];
   saved_at: string;
+  evidence?: EvidenceLedger;
 };
 
 /** Portable JSON project persistence. Does not store API credentials. */
@@ -29,6 +31,9 @@ export function parseStudioProject<T>(raw: string): StudioProject<T> {
   ) {
     throw new Error('Invalid Lumi-AI project structure.');
   }
+  if (project.evidence && (!Array.isArray(project.evidence.reviews) || !Array.isArray(project.evidence.gates))) throw new Error('Invalid evidence ledger.');
+  // Imported approval flags are not trusted without a matching evidence ledger.
+  if (!project.evidence) project.current.approvals = [];
   return project as StudioProject<T>;
 }
 
