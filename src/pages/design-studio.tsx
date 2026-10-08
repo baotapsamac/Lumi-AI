@@ -10,6 +10,8 @@ import TextField from '@mui/material/TextField';
 import { requestAiText } from '../utils/ai-chat-client';
 import { runMaterializedH5PPipeline } from '../utils/h5p-pipeline';
 import { auditStructuralAlignment } from '../utils/pedagogical-alignment';
+import { preflightLesson } from '../utils/pedagogical-preflight';
+import { approveGate } from '../utils/pedagogical-approval';
 import { acceptProposal, proposeRevision } from '../utils/pedagogical-approval';
 import { adaptApprovedLesson } from '../utils/pedagogical-h5p-adapter';
 
@@ -45,6 +47,7 @@ export default function DesignStudioPage() {
   const [compileBusy, setCompileBusy] = React.useState(false);
   const [aiProposal, setAiProposal] = React.useState<{ baseRevision: number; value: ExportLesson; explanation: string } | null>(null);
   const audit = auditStructuralAlignment(project.current.value);
+  const preflight = preflightLesson(project.current.value);
   const approved = project.current.approvals.some((a) => a.gate === 'design');
   const exportPlan = adaptApprovedLesson(project.current.value, approved, audit.design_ready);
 
@@ -113,6 +116,24 @@ export default function DesignStudioPage() {
       setMessage(error instanceof Error ? error.message : 'Không thể chấp nhận.');
     }
   };
+  const approveOutcomes = () => {
+    if (!preflight.valid) {
+      setMessage('Chưa đạt kiểm tra cấu trúc: ' + preflight.issues.map((i) => i.path).join(', '));
+      return;
+    }
+    const lesson = project.current.value as ExportLesson & { outcomes?: Array<{ status: string }> };
+    if (!lesson.outcomes?.length || lesson.outcomes.some((o) => o.status !== 'locked')) {
+      setMessage('Tất cả chuẩn đầu ra phải được giảng viên khóa trước khi duyệt.');
+      return;
+    }
+    try {
+      const next = approveGate(project.current, 'outcomes', new Date().toISOString(), { schema_valid: preflight.valid, alignment_passed: false });
+      setProject((prev) => ({ ...prev, current: next }));
+      setMessage('Đã ghi nhận phê duyệt chuẩn đầu ra; kiểm định đầy đủ vẫn cần thực hiện.');
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'Không thể duyệt.');
+    }
+  };
   const importProject = async (file: File) => {
     try {
       const parsed = parseStudioProject<ExportLesson>(await file.text());
@@ -170,11 +191,12 @@ export default function DesignStudioPage() {
           }} />
         </Button>
         <Button variant="outlined" onClick={applyDraft}>Lưu bản chỉnh sửa</Button>
-        <Button variant="outlined" disabled>Duyệt chuẩn đầu ra (chờ schema)</Button>
+        <Button variant="outlined" disabled={!preflight.valid} onClick={approveOutcomes}>Duyệt chuẩn đầu ra</Button>
         <Button variant="outlined" onClick={exportPlanJson}>Xem H5P Export Plan</Button>
         <Button variant="contained" disabled={compileBusy || !exportPlan.ready || !approved || !audit.design_ready} onClick={() => void compileApprovedDesign()}>{compileBusy ? "Đang biên dịch..." : "Biên dịch H5P đã duyệt"}</Button>
       </Stack>
       {message && <Alert severity="info" sx={{ mb: 2 }}>{message}</Alert>}
+      <Typography variant="body2" sx={{ mb: 1 }}>Kiểm tra cấu trúc sơ bộ: {preflight.valid ? 'PASS' : 'FAIL'} · {preflight.issues.length} vấn đề</Typography>
       <Typography variant="body2" sx={{ mb: 1 }}>
         Phiên bản {project.current.revision} · Audit: {audit.status} · {audit.findings.length} lỗi ·
         Đã duyệt thiết kế: {approved ? 'Có' : 'Chưa'} · Sẵn sàng xuất: {exportPlan.ready ? 'Có' : 'Chưa'}
@@ -203,6 +225,7 @@ export default function DesignStudioPage() {
           onChange={(e) => setDraft(e.target.value)} />
         <Box sx={{ width: '100%' }}>
           <Typography variant="h6">Kiểm định cấu trúc</Typography>
+          {preflight.issues.map((issue, i) => <Alert severity="error" key={'schema-' + i} sx={{ my: 1 }}>{issue.path}: {issue.message}</Alert>)}
           {audit.findings.map((f, i) => <Alert severity="error" key={i} sx={{ my: 1 }}>
             {f.rule_id} · {f.entity_id}: {f.message}
           </Alert>)}
