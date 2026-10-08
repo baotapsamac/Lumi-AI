@@ -10,8 +10,8 @@ import Link from '@mui/material/Link';
 
 import { requestAiText } from '../utils/ai-chat-client';
 import { runMaterializedH5PPipeline } from '../utils/h5p-pipeline';
-import { auditStructuralAlignment } from '../utils/pedagogical-alignment';
-import { preflightLesson } from '../utils/pedagogical-preflight';
+import { auditLesson } from '../utils/pedagogical-semantic-auditor';
+import { validateLessonSchema } from '../utils/pedagogical-schema-validator';
 import { approveGate } from '../utils/pedagogical-approval';
 import { acceptProposal, proposeRevision } from '../utils/pedagogical-approval';
 import { adaptApprovedLesson } from '../utils/pedagogical-h5p-adapter';
@@ -51,9 +51,9 @@ export default function DesignStudioPage() {
   const [aiBusy, setAiBusy] = React.useState(false);
   const [compileBusy, setCompileBusy] = React.useState(false);
   const [aiProposal, setAiProposal] = React.useState<{ baseRevision: number; value: ExportLesson; explanation: string } | null>(null);
-  const audit = auditStructuralAlignment(project.current.value);
-  const preflight = preflightLesson(project.current.value);
-  const approved = project.current.approvals.some((a) => a.gate === 'design');
+  const audit = auditLesson(project.current.value);
+  const preflight = validateLessonSchema(project.current.value);
+  const approved = project.current.approvals.some((a) => a.gate === 'design' && a.revision === project.current.revision);
   const exportPlan = adaptApprovedLesson(project.current.value, approved, audit.design_ready);
 
   const officialOutcomesChanged = (next: ExportLesson): boolean => {
@@ -132,7 +132,7 @@ export default function DesignStudioPage() {
       return;
     }
     try {
-      const next = approveGate(project.current, 'outcomes', new Date().toISOString(), { schema_valid: preflight.valid, alignment_passed: false });
+      const next = approveGate(project.current, 'outcomes', new Date().toISOString(), { schema_valid: preflight.valid, alignment_passed: audit.design_ready, auditor_complete: audit.design_ready });
       setProject((prev) => ({ ...prev, current: next }));
       setMessage('Đã ghi nhận phê duyệt chuẩn đầu ra; kiểm định đầy đủ vẫn cần thực hiện.');
     } catch (error) {
@@ -185,7 +185,7 @@ export default function DesignStudioPage() {
       <Typography variant="h4" sx={{ mb: 2 }}>Lumi-AI · Design Studio (thử nghiệm)</Typography>
       <Link href="/editor" underline="hover">Mở Editor cũ (DOCX, câu hỏi và công cụ hiện có)</Link>
       <Alert severity="warning" sx={{ mb: 2 }}>
-        Chưa tích hợp đầy đủ JSON Schema, AI conversation và semantic auditor. Xuất bản chính thức bị khóa.
+        JSON Schema đã được kiểm tra trong ứng dụng. Các quy tắc ngữ nghĩa vẫn cần chuyên gia xác nhận; xuất bản chính thức tiếp tục bị khóa cho đến khi kiểm định đầy đủ.
       </Alert>
       <Stack direction="row" spacing={1} sx={{ mb: 2 }} flexWrap="wrap">
         <Button variant="outlined" onClick={() => downloadStudioProject(project)}>Lưu dự án JSON</Button>
@@ -202,9 +202,9 @@ export default function DesignStudioPage() {
         <Button variant="contained" disabled={compileBusy || !exportPlan.ready || !approved || !audit.design_ready} onClick={() => void compileApprovedDesign()}>{compileBusy ? "Đang biên dịch..." : "Biên dịch H5P đã duyệt"}</Button>
       </Stack>
       {message && <Alert severity="info" sx={{ mb: 2 }}>{message}</Alert>}
-      <Typography variant="body2" sx={{ mb: 1 }}>Kiểm tra cấu trúc sơ bộ: {preflight.valid ? 'PASS' : 'FAIL'} · {preflight.issues.length} vấn đề</Typography>
+      <Typography variant="body2" sx={{ mb: 1 }}>Kiểm tra JSON Schema: {preflight.valid ? 'PASS' : 'FAIL'} · {preflight.issues.length} vấn đề</Typography>
       <Typography variant="body2" sx={{ mb: 1 }}>
-        Phiên bản {project.current.revision} · Audit: {audit.status} · {audit.findings.length} lỗi ·
+        Phiên bản {project.current.revision} · Audit: {audit.status} · {audit.findings.length} lỗi cấu trúc · {audit.review_required.length} quy tắc cần chuyên gia duyệt ·
         Đã duyệt thiết kế: {approved ? 'Có' : 'Chưa'} · Sẵn sàng xuất: {exportPlan.ready ? 'Có' : 'Chưa'}
       </Typography>
       <Typography variant="h6" sx={{ mt: 2 }}>Trao đổi với AI về bản thiết kế</Typography>
