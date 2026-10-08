@@ -25,7 +25,7 @@ export function useApiConfig() {
 
   const [apiToken, setApiToken] = React.useState(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('api_token') || '';
+      return '';
     }
     return '';
   });
@@ -39,9 +39,6 @@ export function useApiConfig() {
     localStorage.setItem('api_endpoint', apiEndpoint);
   }, [apiEndpoint]);
 
-  React.useEffect(() => {
-    localStorage.setItem('api_token', apiToken);
-  }, [apiToken]);
 
   // Auto-update endpoint when provider changes
   const handleProviderChange = (newProvider: ProviderType) => {
