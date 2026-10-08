@@ -207,7 +207,7 @@ export const sendChatMessage = createAsyncThunk<
     if (!apiToken.trim()) throw new Error('Vui lòng nhập API key');
     if (!userInput.trim()) throw new Error('Nội dung nhập đang trống');
 
-    const requiresModel = model;
+    
 
     // Guided creation: step 1 – just acknowledge topic, ask for audience
     if (creationState.step === 'asking_topic') {
@@ -215,7 +215,7 @@ export const sendChatMessage = createAsyncThunk<
         assistantMessage: {
           id: `msg-${Date.now()}`,
           role: 'assistant' as const,
-          content: `Super! Dein Arbeitsblatt wird sich mit "${userInput}" befassen.\n\nWer ist die Zielgruppe? (z.B. "Grundschüler", "Biologie-Oberstufenkurs", "Erwachsene Lernende", "Studierende im ersten Semester")`,
+          content: `Đã nhận chủ đề "${userInput}".\n\nĐối tượng người học là ai (ví dụ: học viên trung cấp, sinh viên đại học)?`,
         },
       };
     }
@@ -229,17 +229,29 @@ export const sendChatMessage = createAsyncThunk<
         chatMessageAdded({
           id: `msg-${Date.now()}`,
           role: 'assistant',
-          content: `Perfekt! Ich erstelle jetzt ein Arbeitsblatt über "${topic}" für ${audience}. Das kann einen Moment dauern...`,
+          content: `Đang tạo bản nháp bài học "${topic}" cho ${audience}. Vui lòng chờ...`,
           createdAt: Date.now(),
         })
       );
 
-      const generatePrompt = `Du erstellst ein Bildungs-Arbeitsblatt. Generiere einen vollständigen Arbeitsblatt-Entwurf basierend auf:\n\nThema: ${topic}\nZielgruppe: ${audience}\n\nErstelle ein Arbeitsblatt mit:\n1. Einem passenden Titel\n2. 2-3 Textblöcken, die das Thema zielgruppengerecht einführen und erklären\n3. 2-3 Multiple-Choice-Fragen zum Verständnistest\n\nWICHTIG: Alle Inhalte (Titel, Texte, Fragen, Antworten) MÜSSEN auf Deutsch sein!\n\nAntworte mit mehreren JSON-Befehlsblöcken zum Aufbau des Arbeitsblatts. Verwende diese Formate:\n\n\`\`\`json\n{"action": "set_title", "title": "Dein Titel hier"}\n\`\`\`\n\n\`\`\`json\n{"action": "add_text", "text": "Dein erklärender Text hier..."}\n\`\`\`\n\n\`\`\`json\n{"action": "add_question", "question": "Deine Frage?", "answers": [{"text": "Falsche Antwort", "correct": false}, {"text": "Richtige Antwort", "correct": true}]}\n\`\`\`\n\nFüge eine kurze Einleitung in natürlicher Sprache vor den Befehlen ein und eine Zusammenfassung danach. Antworte komplett auf Deutsch.`;
+      const generatePrompt = `Bạn là trợ lý biên soạn học liệu tiếng Việt. Chủ đề: ${topic}. Đối tượng: ${audience}. Hãy tạo tiêu đề, 2–3 đoạn văn và 2–3 câu hỏi trắc nghiệm phù hợp, chỉ dùng kiến thức có căn cứ. Tất cả nội dung bằng tiếng Việt.
+
+Trả về các khối lệnh JSON riêng trong markdown như:
+\`\`\`json
+{"action":"set_title","title":"Tiêu đề"}
+\`\`\`
+\`\`\`json
+{"action":"add_text","text":"Đoạn văn"}
+\`\`\`
+\`\`\`json
+{"action":"add_question","question":"Câu hỏi?","answers":[{"text":"Đúng","correct":true},{"text":"Sai","correct":false}]}
+\`\`\`
+Giới thiệu ngắn và tổng kết bằng tiếng Việt.`
 
       const raw = await requestAiText(
         [
           { role: 'system', content: generatePrompt },
-          { role: 'user', content: `Erstelle ein Arbeitsblatt über "${topic}" für ${audience}.` },
+          { role: 'user', content: `Hãy tạo bài học về "${topic}" cho ${audience}.` },
         ],
         apiEndpoint,
         apiToken,
@@ -266,8 +278,8 @@ export const sendChatMessage = createAsyncThunk<
           role: 'assistant' as const,
           content:
             commands.length > 0
-              ? `Fertig! Ich habe einen Arbeitsblatt-Entwurf mit ${commands.length} Elementen erstellt. Du kannst jetzt:\n\n• Jeden Inhalt direkt im Editor bearbeiten\n• Mich bitten, mehr Inhalt hinzuzufügen\n• Mich bitten, bestimmte Teile zu ändern\n\nWas möchtest du als nächstes tun?`
-              : `Ich habe einige Ideen für dein Arbeitsblatt generiert. ${raw}\n\nMöchtest du, dass ich es nochmal versuche?`,
+              ? `Đã tạo bản nháp với ${commands.length} thành phần. Bạn có thể chỉnh sửa nội dung hoặc yêu cầu bổ sung.`
+              : `AI đã trả về nội dung nhưng chưa tạo được thành phần hợp lệ: ${raw}. Bạn có muốn thử lại?`,
           commands,
         },
         commands,
@@ -275,7 +287,20 @@ export const sendChatMessage = createAsyncThunk<
     }
 
     // Normal chat mode
-    const systemPrompt = `Du bist ein hilfreicher KI-Assistent für einen Arbeitsblatt-Editor. Du hilfst Nutzern beim Erstellen von Bildungs-Arbeitsblättern mit verschiedenen Inhaltstypen.\n\nDer Nutzer arbeitet an einem Arbeitsblatt. Hier ist der aktuelle Stand:\n\n${buildWorksheetContext(title, content)}\n\nDu kannst dem Nutzer helfen durch:\n1. Beantworten von Fragen zum Arbeitsblatt\n2. Vorschlagen von Verbesserungen oder neuen Inhalten\n3. Ändern des Arbeitsblatts auf Anfrage (du antwortest mit speziellen Befehlen)\n\nWenn der Nutzer dich bittet, Inhalte hinzuzufügen oder zu ändern, antworte mit einem JSON-Befehlsblock:\n\`\`\`json\n{"action": "add_text", "text": "Dein Text hier"}\n\`\`\`\noder\n\`\`\`json\n{"action": "add_question", "question": "Deine Frage", "answers": [{"text": "Antwort 1", "correct": true}, {"text": "Antwort 2", "correct": false}]}\n\`\`\`\noder\n\`\`\`json\n{"action": "set_title", "title": "Neuer Titel"}\n\`\`\`\n\nWICHTIG: Antworte IMMER auf Deutsch. Alle generierten Inhalte müssen auf Deutsch sein.`;
+    const systemPrompt = `Bạn là trợ lý AI hỗ trợ biên soạn học liệu. Chỉ trả lời bằng tiếng Việt. Nội dung bài học hiện tại:
+${buildWorksheetContext(title, content)}
+
+Khi người dùng yêu cầu thêm nội dung, có thể trả về một khối JSON trong markdown theo một trong các mẫu:
+\`\`\`json
+{"action":"add_text","text":"Nội dung"}
+\`\`\`
+\`\`\`json
+{"action":"add_question","question":"Câu hỏi?","answers":[{"text":"Đúng","correct":true},{"text":"Sai","correct":false}]}
+\`\`\`
+\`\`\`json
+{"action":"set_title","title":"Tiêu đề"}
+\`\`\`
+Không tự ý sửa nội dung nguồn người dùng cung cấp.`
 
     const raw = await requestAiText(
       [
