@@ -6,14 +6,21 @@ type Assessment = {
   id: string;
   interaction_preference?: string | null;
   assessment_function: string;
+  purpose?: string;
+  supports_outcomes?: string[];
+  measures_evidence?: string[];
   items?: AssessmentItem[];
 };
 type Resource = { id: string; type: string; content?: string; purpose: string };
-type Activity = { id: string; instruction: string; resources?: Resource[]; assessment?: Assessment | null };
-type Unit = { id: string; title: string; activities: Activity[] };
+type Activity = { id: string; instruction: string; learning_type?: string; supports_outcomes?: string[]; resources?: Resource[]; assessment?: Assessment | null };
+type Unit = { id: string; title: string; supports_outcomes?: string[]; activities: Activity[] };
 export type ExportLesson = {
-  lesson: { id: string; title: string; language: string };
+  schema_version?: string;
+  lesson: { id: string; title: string; language: string; status?: string };
+  outcomes?: Array<{ id: string; text: string; source: string; status: string; cognitive_process?: string }>;
+  evidence?: Array<{ id: string; description: string; evidence_type: string; supports_outcomes: string[] }>;
   learning_units: Unit[];
+  qa?: { status: string; checks: unknown[] };
 };
 export type CompletionItem = {
   unit_id: string;
